@@ -1,3 +1,3 @@
 var gulp = require('gulp');
 
-gulp.task('default', ['html', 'less']);
+gulp.task('default', ['html', 'sass']);

@@ -1,5 +1,5 @@
 #Main File#
-We import all the less files here, do not modify first 3 lines, that should
+We import all the sass files here, do not modify first 3 lines, that should
 be kept like this:
 
 `@import "bourbon";
