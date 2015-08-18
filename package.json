@@ -16,7 +16,7 @@
     "bootstrap",
     "css"
   ],
-  "author": "Jose Menor <josemenor@gmail.com> (josemenor.com)",
+  "author": "resmio <developers@resmio.com> (resmio.com)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/resmio/elzar/issues"
@@ -25,6 +25,7 @@
   "devDependencies": {
     "bootstrap-sass": "file:bootstrap-sass",
     "browser-sync": "^2.3.1",
+    "browserify": "^11.0.1",
     "gulp": "^3.8.11",
     "gulp-bower": "0.0.10",
     "gulp-cached": "^1.0.4",
@@ -35,6 +36,7 @@
     "require-dir": "^0.1.0"
   },
   "dependencies": {
-    "gulp-sourcemaps": "^1.5.0"
+    "gulp-sourcemaps": "^1.5.0",
+    "jquery": "^1.11.0"
   }
 }
