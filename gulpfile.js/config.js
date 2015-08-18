@@ -1,7 +1,7 @@
-var publicDirectory = "./build";
-var publicAssets = publicDirectory + "/assets";
-var sourceDirectory = "./app";
-var sourceAssets = sourceDirectory + "/assets";
+var publicDirectory = './build';
+var publicAssets = publicDirectory + '/assets';
+var sourceDirectory = './app';
+var sourceAssets = sourceDirectory;
 var sassSourceDirectory = sourceAssets + '/styles/**/*.{sass,scss}';
 
 module.exports = {
@@ -14,7 +14,7 @@ module.exports = {
       baseDir: publicDirectory
     },
     files: ['build/**/*.html'],
-    browser: "google chrome canary"
+    browser: 'google chrome canary'
   },
 
   html: {
@@ -26,7 +26,7 @@ module.exports = {
   sass: {
     watch: sassSourceDirectory,
     src: sassSourceDirectory,
-    dest: publicAssets + "/styles",
+    dest: publicAssets + '/styles',
     settings: {},
   }
 };
