@@ -30,6 +30,7 @@
     "gulp-bower": "0.0.10",
     "gulp-cached": "^1.0.4",
     "gulp-changed": "^1.3.0",
+    "gulp-filter": "^3.0.0",
     "gulp-notify": "^2.2.0",
     "gulp-sass": "^2.0.4",
     "gulp-scss-lint": "^0.2.3",

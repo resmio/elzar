@@ -30,7 +30,7 @@ module.exports = {
 
   sass: {
     watch: sassSourceDirectory,
-    src: sassSourceDirectory,
+    src: sassSourceDirectory, 
     dest: publicAssets + '/styles',
     settings: {},
   }
