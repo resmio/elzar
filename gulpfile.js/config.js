@@ -9,6 +9,11 @@ module.exports = {
   sourceAssets: sourceAssets,
   publicAssets: publicAssets,
 
+  bootstrap : {
+    src: './bootstrap-sass/assets/stylesheets/bootstrap/**',
+    dest: './app/styles/bootstrap'
+  },
+
   browserSync: {
     server: {
       baseDir: publicDirectory
@@ -25,7 +30,7 @@ module.exports = {
 
   sass: {
     watch: sassSourceDirectory,
-    src: sassSourceDirectory,
+    src: sassSourceDirectory, 
     dest: publicAssets + '/styles',
     settings: {},
   }

@@ -4,18 +4,20 @@ var sass = require('gulp-sass');
 var sourcemaps = require('gulp-sourcemaps');
 var handleErrors = require('../lib/handleErrors');
 var sassConfig = require('../config').sass;
-var sassLintConfig = require('../config').sassLint;
-var bootstrapPath = './bootstrap-sass/assets/stylesheets/';
 var sasslint = require('gulp-scss-lint');
 var cache = require('gulp-cached');
+var filter = require('gulp-filter');
 
 gulp.task('sass', function() {
+  var lintFilter = filter([sassConfig.src ,'!' + sassConfig.src + '/bootstrap/**/*.scss']);
   return gulp.src(sassConfig.src)
     .pipe(sourcemaps.init())
-    .pipe(cache(sasslint)) // We cache the linter so only run it on changes
-    .pipe(sasslint(sassLintConfig))
+    // .pipe(cache(sasslint)) // We cache the linter so only run it on changes
+    // .pipe(lintFilter)
+    // .pipe(sasslint())
+    // .pipe(lintFilter.restore)
     .pipe(sass({
-            includePaths: ['styles'].concat(bootstrapPath)
+            includePaths: ['styles']
         }))
      .on('error', handleErrors)
     .pipe(sourcemaps.write())
