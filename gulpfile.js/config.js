@@ -26,11 +26,12 @@ module.exports = {
     watch: sourceDirectory + '/views/**/*.html',
     src: [sourceDirectory + '/views/**/*.html', '!**/{layouts,shared}/**'],
     dest: publicDirectory,
+    nunjucks: sourceDirectory + '/views/'
   },
 
   sass: {
     watch: sassSourceDirectory,
-    src: sassSourceDirectory, 
+    src: sassSourceDirectory,
     dest: publicAssets + '/styles',
     settings: {},
   }
