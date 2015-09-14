@@ -1,0 +1,23 @@
+{
+  "name": "elzar",
+  "version": "0.0.1",
+  "homepage": "https://github.com/resmio/elzar",
+  "authors": [
+    "resmio <developers@resmio.com>"
+  ],
+  "description": "resmio glamourous style guide",
+  "main": "build/assets/styles/main.css",
+  "keywords": [
+    "styleguide",
+    "css",
+    "resmio"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
