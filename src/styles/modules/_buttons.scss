@@ -1,0 +1,10 @@
+.btn-link {
+  background: none;
+  color: $medium-gray;
+  font-weight: 400;
+
+  &:hover {
+    background: none;
+    color: $dark-gray;
+  }
+}

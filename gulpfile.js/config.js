@@ -18,7 +18,7 @@ module.exports = {
   },
 
   sass: {
-    src: [sassSrc, '!src/styles/vendor/**/*'],
+    src: [sassSrc],
     dest: dest,
     settings: {},
   }
