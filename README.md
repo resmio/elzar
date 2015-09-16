@@ -36,7 +36,7 @@ elzar branch. [Here](https://help.github.com/articles/creating-a-pull-request/)
 is an explanation on how to create a pull request.   
 8. Celebrate!  
 
-##How to update the test your changes to elzar in the main app##
+##How to update to test your changes to elzar in the main app##
 Sometimes you will want to preview the changes on the app, before making the
 pull request, to do this you must have your branch pushed to the elzar github
 repo (do until step 6 from the previous section). Then:  
