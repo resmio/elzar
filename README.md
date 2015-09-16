@@ -8,6 +8,8 @@ don't have bower installed run `npm install bower -g` to install it, if you
 don't have npm install [Node](https://nodejs.org))  
 When we have changes that we want to push to the places where elzar is used we
 need to do some work. This is how it goes.  
+
+
 ![](http://futurama-madhouse.net/fanart/kylem/elzar2_091004.png)  
 
 ##How to work with elzar##
@@ -42,7 +44,7 @@ repo (do until step 6 from the previous section). Then:
 bower.json file.  
 2. Under dependencies look for elzar it should be something like:
 `"elzar": "0.0.9"`  
-3. Change the "0.0.9" part to `"git@github.com:resmio/elzar.git#your-branch"`
+3. Change the "0.0.9" part to `"git@github.com:resmio/elzar.git#your-branch"`  
 4. Run bower install from the terminal  
 5. Test your new stuff in the main app, after checking that everything is
 allright continue from step 6 in the previous section.  
@@ -53,7 +55,7 @@ master, but we can do it from any branch. Here's how to do it:
 1. In elzar open bower.json and look for the field called 'version', after it
 you will see a number (ie: 0.0.7), update that number (we use [semantic
 versioning](http://semver.org/))  
-2. Update that number in package.json too (to the same version number)
+2. Update that number in package.json too (to the same version number)  
 3. Add and commit the changes.   
 4. Tag the release by running `git tag -a v0.0.2`  
 5. Push the tags to github `git push origin master --tags`  
