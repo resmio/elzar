@@ -1,0 +1,5 @@
+.fake-test-component {
+  @include fill-parent();
+  background: $green;
+  height: 200px;
+}
