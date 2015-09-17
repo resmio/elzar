@@ -13,9 +13,30 @@ h4,
 h5,
 h6 {
   font-family: $heading-font-family;
-  font-size: $base-font-size;
+  font-weight: 300;
   line-height: $heading-line-height;
   margin: 0 0 $small-spacing;
+}
+
+h1 {
+  font-size: em(24, 14);
+  font-weight: 400;
+}
+
+h2 {
+  font-size: em(22, 14);
+}
+
+h3 {
+  font-size: em(18, 14);
+}
+
+h4 {
+  font-size: em(14, 14);
+}
+
+h5 {
+  font-size: em(12, 14);
 }
 
 p {
