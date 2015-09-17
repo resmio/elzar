@@ -1,6 +1,6 @@
 button, input[type="button"], input[type="reset"], input[type="submit"] {
   appearance: none;
-  background-color: #22ccaa;
+  background-color: #00a7c4;
   border: none;
   border-radius: 3px;
   color: #fff;
@@ -30,7 +30,7 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
     cursor: not-allowed;
     opacity: 0.5; }
     button:disabled:hover, input[type="button"]:disabled:hover, input[type="reset"]:disabled:hover, input[type="submit"]:disabled:hover {
-      background-color: #22ccaa; }
+      background-color: #00a7c4; }
 
 fieldset {
   background-color: #f7f7f7;
@@ -71,8 +71,8 @@ select[multiple=multiple] {
     border-color: #b1b1b1; }
   input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="email"]:focus, input[type="month"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="time"]:focus, input[type="url"]:focus, input[type="week"]:focus, input:not([type]):focus, textarea:focus,
   select[multiple=multiple]:focus {
-    border-color: #22ccaa;
-    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06), 0 0 5px rgba(30, 182, 152, 0.7);
+    border-color: #00a7c4;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06), 0 0 5px rgba(0, 145, 171, 0.7);
     outline: none; }
   input[type="color"]:disabled, input[type="date"]:disabled, input[type="datetime"]:disabled, input[type="datetime-local"]:disabled, input[type="email"]:disabled, input[type="month"]:disabled, input[type="number"]:disabled, input[type="password"]:disabled, input[type="search"]:disabled, input[type="tel"]:disabled, input[type="text"]:disabled, input[type="time"]:disabled, input[type="url"]:disabled, input[type="week"]:disabled, input:not([type]):disabled, textarea:disabled,
   select[multiple=multiple]:disabled {
@@ -185,13 +185,13 @@ small {
   font-weight: 100; }
 
 a {
-  color: #22ccaa;
+  color: #00a7c4;
   text-decoration: none;
   transition: color 150ms ease; }
   a:active,
   a:focus,
   a:hover {
-    color: #1a9980; }
+    color: #007d93; }
 
 hr {
   border-bottom: 1px solid #ddd;
@@ -223,8 +223,8 @@ html {
 
 .btn-light {
   background: #fff;
-  border: 1px solid #22ccaa;
-  color: #22ccaa;
+  border: 1px solid #00a7c4;
+  color: #00a7c4;
   font-weight: 400; }
 
 .btn-large {
