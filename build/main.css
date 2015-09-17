@@ -176,6 +176,12 @@ h5 {
 p {
   margin: 0 0 0.75em; }
 
+small {
+  font-size: 0.85714em; }
+
+.light-text {
+  font-weight: 100; }
+
 a {
   color: #22ccaa;
   text-decoration: none;
