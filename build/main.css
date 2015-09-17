@@ -11,6 +11,8 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
   -webkit-font-smoothing: antialiased;
   font-weight: 600;
   line-height: 1;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
   padding: 10px 33px;
   text-decoration: none;
   transition: background-color 150ms ease;
@@ -219,7 +221,11 @@ html {
     background: none;
     color: #555; }
 
-.fake-test-component {
-  width: 100%;
-  background: #22ccaa;
-  height: 200px; }
+.btn-light {
+  background: #fff;
+  border: 1px solid #22ccaa;
+  color: #22ccaa;
+  font-weight: 400; }
+
+.btn-large {
+  padding: 10px 47px; }
