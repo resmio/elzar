@@ -1,0 +1,16 @@
+$dropdown-background: red;
+
+.dropdown__button {
+  background: $dropdown-background;
+  border-bottom-right-radius: $base-border-radius;
+  border-top-right-radius: $base-border-radius;
+  // border: $dropdown-border;
+  // border-right: $dropdown-border;
+  // border-bottom: $dropdown-border;
+  cursor: pointer;
+  // font-size: 0.7em;
+  // line-height: $dropdown-height;
+  margin: 0;
+  // padding: 0 ($dropdown-padding * 2.5) 0 ($dropdown-padding / 2);
+  position: relative;
+}
