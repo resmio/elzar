@@ -3,17 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <title>Test Elzar</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/js/bootstrap.min.js"></script>
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="main.css">
 </head>
 <body>
 <div class="dropdown">
-  <p class="dropdown__button">More</p>
-  <ul class="dropdown-menu dropdown-select">
-    <li>1</li>
-    <li>2</li>
-    <li>3</li>
-    <li>4</li>
+  <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    More
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dLabel">
+    <li><a href="#">1</a></li>
+    <li><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li><a href="#">4</a></li>
   </ul>
 </div>
 

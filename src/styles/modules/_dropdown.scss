@@ -1,16 +1,126 @@
-$dropdown-background: red;
-
-.dropdown__button {
-  background: $dropdown-background;
-  border-bottom-right-radius: $base-border-radius;
-  border-top-right-radius: $base-border-radius;
-  // border: $dropdown-border;
-  // border-right: $dropdown-border;
-  // border-bottom: $dropdown-border;
-  cursor: pointer;
-  // font-size: 0.7em;
-  // line-height: $dropdown-height;
-  margin: 0;
-  // padding: 0 ($dropdown-padding * 2.5) 0 ($dropdown-padding / 2);
+// The dropdown wrapper (div)
+.dropup,
+.dropdown {
   position: relative;
 }
+
+.dropdown-toggle {
+  // Generate the caret automatically
+  &::after {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: .25rem;
+    vertical-align: middle;
+    content: "";
+    border-top: 10px solid;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+  }
+
+  // Prevent the focus on the dropdown toggle when closing dropdowns
+  &:focus {
+    outline: 0;
+  }
+}
+
+.dropup {
+  .dropdown-toggle {
+    &::after {
+      border-top: 0;
+      border-bottom: 10px solid;
+    }
+  }
+}
+
+// The dropdown menu (ul)
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 100;
+  display: none; // none by default, but block on "open" of the menu
+  float: left;
+  min-width: 160px;
+  padding: 5px 0;
+  margin: 2px 0 0; // override default ul
+  font-size: $base-font-size;
+  text-align: left; // Ensures proper alignment if parent has it changed (e.g., modal footer)
+  list-style: none;
+  background-color: $white;
+  background-clip: padding-box;
+  border: 1px solid $blue;
+}
+
+// Links, buttons, and more within the dropdown menu
+//
+// `<button>`-specific styles are denoted with `// for <button>s`
+.dropdown-item {
+  display: block;
+  width: 100%; // For `<button>`s
+  padding: 3px 20px;
+  clear: both;
+  font-weight: normal;
+  line-height: $base-line-height;
+  color: $action-color;
+  text-align: inherit; // For `<button>`s
+  white-space: nowrap; // prevent links from randomly breaking onto new lines
+  background: none; // For `<button>`s
+  border: 0; // For `<button>`s
+}
+
+  // Disabled state
+  //
+  // Gray out text and ensure the hover/focus state remains gray
+
+// Open state for the dropdown
+.open {
+  // Show the menu
+  > .dropdown-menu {
+    display: block;
+  }
+
+  // Remove the outline when :focus is triggered
+  > a {
+    outline: 0;
+  }
+}
+
+// // Menu positioning
+// //
+// // Add extra class to `.dropdown-menu` to flip the alignment of the dropdown
+// // menu with the parent.
+// .dropdown-menu-right {
+//   right: 0;
+//   left: auto; // Reset the default from `.dropdown-menu`
+// }
+// // With v3, we enabled auto-flipping if you have a dropdown within a right
+// // aligned nav component. To enable the undoing of that, we provide an override
+// // to restore the default dropdown menu alignment.
+// //
+// // This is only for left-aligning a dropdown menu within a `.navbar-right` or
+// // `.pull-right` nav component.
+// .dropdown-menu-left {
+//   right: auto;
+//   left: 0;
+// }
+//
+// // Dropdown section headers
+// .dropdown-header {
+//   display: block;
+//   padding: 3px 20px;
+//   // font-size: $font-size-sm;
+//   // line-height: $line-height;
+//   // color: $dropdown-header-color;
+//   white-space: nowrap; // as with > li > a
+// }
+//
+// // Backdrop to catch body clicks on mobile, etc.
+// .dropdown-backdrop {
+//   position: fixed;
+//   top: 0;
+//   right: 0;
+//   bottom: 0;
+//   left: 0;
+//   z-index: (100 - 10);
+// }
