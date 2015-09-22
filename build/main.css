@@ -250,14 +250,18 @@ html {
   position: relative;
   margin-bottom: 0.5em 0; }
 
-.btn-dropdown {
+.btn-dropdown--resmio {
   background: #fff;
-  border: 1px solid #00a7c4;
-  color: #00a7c4;
+  border: 1px solid #999;
+  color: #999;
   margin-bottom: 0;
   padding: 12px 10px; }
-  .btn-dropdown:focus {
+  .btn-dropdown--resmio:focus {
     outline: 0; }
+  .btn-dropdown--resmio:hover {
+    background: #fff;
+    border: 1px solid #00a7c4;
+    color: #00a7c4; }
 
 .caret {
   display: inline-block;
@@ -267,7 +271,7 @@ html {
   margin-right: 0.25rem;
   vertical-align: middle;
   content: "";
-  border-top: 5px solid #00a7c4;
+  border-top: 5px solid #999;
   border-right: 5px solid transparent;
   border-left: 5px solid transparent; }
 
