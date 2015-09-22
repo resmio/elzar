@@ -5,7 +5,9 @@ var handleErrors = require('../lib/handleErrors');
 var render = require('gulp-nunjucks-render');
 
 gulp.task('html', function() {
-  render.nunjucks.configure(config.nunjucks, {watch: false });
+  render.nunjucks.configure(config.nunjucks, {
+    watch: false
+  });
   return gulp.src(config.src)
     .pipe(render())
     .on('error', handleErrors)

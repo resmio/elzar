@@ -1,22 +1,17 @@
 // The dropdown wrapper (div)
-.dropup,
 .dropdown {
   position: relative;
+  // We remove the margin from the dropdown button to make the list append to it
+  // So we apply it here for the button to have margins when closed
+  margin-bottom: $button-margin;
 }
 
-.dropdown-toggle {
-  // Generate the caret automatically
-  &::after {
-    display: inline-block;
-    width: 0;
-    height: 0;
-    margin-left: .25rem;
-    vertical-align: middle;
-    content: "";
-    border-top: 10px solid;
-    border-right: 10px solid transparent;
-    border-left: 10px solid transparent;
-  }
+.btn-dropdown {
+  background: $white;
+  border: 1px solid $blue;
+  color: $blue;
+  margin-bottom: 0;
+  padding: $dropdown-padding;
 
   // Prevent the focus on the dropdown toggle when closing dropdowns
   &:focus {
@@ -24,14 +19,19 @@
   }
 }
 
-.dropup {
-  .dropdown-toggle {
-    &::after {
-      border-top: 0;
-      border-bottom: 10px solid;
-    }
-  }
+.caret {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+  vertical-align: middle;
+  content: "";
+  border-top: 5px  solid $blue;
+  border-right: 5px solid transparent;
+  border-left: 5px solid transparent;
 }
+
 
 // The dropdown menu (ul)
 .dropdown-menu {
@@ -43,7 +43,7 @@
   float: left;
   min-width: 160px;
   padding: 5px 0;
-  margin: 2px 0 0; // override default ul
+  margin: 0 0; // override default ul
   font-size: $base-font-size;
   text-align: left; // Ensures proper alignment if parent has it changed (e.g., modal footer)
   list-style: none;
@@ -62,16 +62,19 @@
   clear: both;
   font-weight: normal;
   line-height: $base-line-height;
-  color: $action-color;
   text-align: inherit; // For `<button>`s
   white-space: nowrap; // prevent links from randomly breaking onto new lines
   background: none; // For `<button>`s
   border: 0; // For `<button>`s
+
+  &:hover {
+    background: $dirty-white;
+  }
 }
 
-  // Disabled state
-  //
-  // Gray out text and ensure the hover/focus state remains gray
+.dropdown-link {
+  color: $dark-gray;
+}
 
 // Open state for the dropdown
 .open {

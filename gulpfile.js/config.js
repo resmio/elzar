@@ -12,9 +12,10 @@ module.exports = {
   },
 
   html: {
-    src: [src + '/views/**/*.html'],
+    src: [src + '/views/index.html'],
     dest: dest,
-    nunjucks: src + '/views/'
+    nunjucks: src + '/views/',
+    watch: [src + '/views/**/*.html'],
   },
 
   sass: {
