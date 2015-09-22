@@ -3,10 +3,39 @@
 <head>
   <meta charset="UTF-8">
   <title>Test Elzar</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/js/bootstrap.min.js"></script>
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="main.css">
 </head>
 <body>
+<div class="dropdown">
+  <button id="dLabel"
+          class="btn-dropdown"
+          type="button"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+  >
+    Dropdown
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dLabel">
+    <li class="dropdown-item">
+      <a class="dropdown-link" href="#">1</a>
+    </li>
+    <li class="dropdown-item">
+      <a class="dropdown-link" href="#">2</a>
+    </li>
+    <li class="dropdown-item">
+      <a class="dropdown-link" href="#">3</a>
+    </li>
+    <li class="dropdown-item">
+      <a class="dropdown-link" href="#">4</a>
+    </li>
+  </ul>
+</div>
+
 <div class="banner">
   <div class="banner__header">Thank you for using resmio.</div>
   <div class="banner__text">Are you looking for an even better experience with resmio?</div>
