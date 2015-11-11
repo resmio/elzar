@@ -1,7 +1,7 @@
 button, input[type="button"], input[type="reset"], input[type="submit"] {
   appearance: none;
   background-color: #22ccaa;
-  border: none;
+  border: 0;
   border-radius: 3px;
   color: #fff;
   cursor: pointer;
@@ -11,8 +11,7 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
   -webkit-font-smoothing: antialiased;
   font-weight: 600;
   line-height: 1;
-  margin: 0.5em 0;
-  padding: 10px 33px;
+  padding: 0.75em 1.5em;
   text-decoration: none;
   transition: background-color 150ms ease;
   user-select: none;
@@ -23,7 +22,7 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
   input[type="button"]:focus, input[type="reset"]:hover,
   input[type="reset"]:focus, input[type="submit"]:hover,
   input[type="submit"]:focus {
-    background-color: #21b498;
+    background-color: #1ba388;
     color: #fff; }
   button:disabled, input[type="button"]:disabled, input[type="reset"]:disabled, input[type="submit"]:disabled {
     cursor: not-allowed;
@@ -154,34 +153,12 @@ h4,
 h5,
 h6 {
   font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
-  font-weight: 300;
+  font-size: 14px;
   line-height: 1.2;
   margin: 0 0 0.75em; }
 
-h1 {
-  font-size: 1.71429em;
-  font-weight: 400; }
-
-h2 {
-  font-size: 1.57143em; }
-
-h3 {
-  font-size: 1.28571em; }
-
-h4 {
-  font-size: 1em; }
-
-h5 {
-  font-size: 0.85714em; }
-
 p {
   margin: 0 0 0.75em; }
-
-small {
-  font-size: 0.85714em; }
-
-.light-text {
-  font-weight: 100; }
 
 a {
   color: #22ccaa;

@@ -1,9 +1,7 @@
 #{$all-buttons} {
-  // This variable comes from bourbon, we can get rid of it if we want
-  // different styles for different types of buttons
   appearance: none;
   background-color: $action-color;
-  border: none;
+  border: 0;
   border-radius: $base-border-radius;
   color: #fff;
   cursor: pointer;
@@ -13,8 +11,7 @@
   -webkit-font-smoothing: antialiased;
   font-weight: 600;
   line-height: 1;
-  margin: $button-margin; 
-  padding: $button-padding;
+  padding: $small-spacing $base-spacing;
   text-decoration: none;
   transition: background-color $base-duration $base-timing;
   user-select: none;
@@ -23,7 +20,7 @@
 
   &:hover,
   &:focus {
-    background-color: $action-color-darker;
+    background-color: shade($action-color, 20%);
     color: #fff;
   }
 
