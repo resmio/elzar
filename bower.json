@@ -1,12 +1,12 @@
 {
   "name": "elzar",
-  "version": "0.0.4",
+  "version": "0.0.7",
   "homepage": "https://github.com/resmio/elzar",
   "authors": [
     "resmio <developers@resmio.com>"
   ],
   "description": "resmio glamourous style guide",
-  "main": "build/assets/styles/main.css",
+  "main": "build/main.css",
   "keywords": [
     "styleguide",
     "css",
@@ -14,12 +14,14 @@
   ],
   "license": "MIT",
   "ignore": [
-    "app",
-    "bootstrap-sass",
+    "src",
+    ".git",
+    "gulpfile.js",
     "**/.*",
     "node_modules",
     "bower_components",
     "test",
-    "tests"
+    "tests",
+    "scss-lint.yml"
   ]
 }

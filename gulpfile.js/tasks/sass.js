@@ -9,18 +9,16 @@ var cache = require('gulp-cached');
 var filter = require('gulp-filter');
 
 gulp.task('sass', function() {
-  var lintFilter = filter([sassConfig.src ,'!' + sassConfig.src + '/bootstrap/**/*.scss']);
+  var lintFilter = filter([sassConfig.src ,'!' + sassConfig.src + '/vendor/**/*.scss']);
   return gulp.src(sassConfig.src)
-    .pipe(sourcemaps.init())
+    // .pipe(sourcemaps.init())
     // .pipe(cache(sasslint)) // We cache the linter so only run it on changes
     // .pipe(lintFilter)
     // .pipe(sasslint())
     // .pipe(lintFilter.restore)
-    .pipe(sass({
-            includePaths: ['styles']
-        }))
+    .pipe(sass())
      .on('error', handleErrors)
-    .pipe(sourcemaps.write())
+    // .pipe(sourcemaps.write())
     .pipe(gulp.dest(sassConfig.dest))
     .pipe(browserSync.reload({stream:true}));
 });

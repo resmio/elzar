@@ -1,0 +1,19 @@
+.banner {
+  @include fill-parent();
+  background: $blue;
+  color: $white;
+  font-weight: 300;
+  margin-bottom: $base-spacing;
+  margin-top: $base-spacing;
+  padding: $banner-padding;
+}
+
+.banner__header {
+  font-size: em(22, 14);
+  line-height: em(30, 14);
+}
+
+.banner__text {
+  font-size: em(18, 14);
+  line-height: em(22, 14);
+}

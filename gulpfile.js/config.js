@@ -1,38 +1,26 @@
-var publicDirectory = './build';
-var publicAssets = publicDirectory + '/assets';
-var sourceDirectory = './app';
-var sourceAssets = sourceDirectory;
-var sassSourceDirectory = sourceAssets + '/styles/**/*.{sass,scss}';
+var dest= './build';
+var src = './src';
+var sassSrc = src + '/styles/**/*.{sass,scss}';
 
 module.exports = {
-  publicDirectory: publicDirectory,
-  sourceAssets: sourceAssets,
-  publicAssets: publicAssets,
-
-  bootstrap : {
-    src: './bootstrap-sass/assets/stylesheets/bootstrap/**',
-    dest: './app/styles/bootstrap'
-  },
-
   browserSync: {
     server: {
-      baseDir: publicDirectory
+      baseDir: dest
     },
     files: ['build/**/*.html'],
     browser: 'google chrome canary'
   },
 
   html: {
-    watch: sourceDirectory + '/views/**/*.html',
-    src: [sourceDirectory + '/views/**/*.html', '!**/{layouts,shared}/**'],
-    dest: publicDirectory,
-    nunjucks: sourceDirectory + '/views/'
+    src: [src + '/views/index.html'],
+    dest: dest,
+    nunjucks: src + '/views/',
+    watch: [src + '/views/**/*.html'],
   },
 
   sass: {
-    watch: sassSourceDirectory,
-    src: sassSourceDirectory,
-    dest: publicAssets + '/styles',
+    src: [sassSrc],
+    dest: dest,
     settings: {},
   }
 };

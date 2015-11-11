@@ -1,0 +1,135 @@
+// The dropdown wrapper (div)
+.dropdown {
+  position: relative;
+  // We remove the margin from the dropdown button to make the list append to it
+  // So we apply it here for the button to have margins when closed
+  margin-bottom: $button-margin;
+}
+
+.btn-dropdown {
+  background: $white;
+  border: 1px solid $medium-gray;
+  color: $medium-gray;
+  margin-bottom: 0;
+  padding: $dropdown-padding;
+
+  // Prevent the focus on the dropdown toggle when closing dropdowns
+  &:focus {
+    outline: 0;
+  }
+
+  &:hover {
+    background: $white;
+    border: 1px solid $blue;
+    color: $blue;
+  }
+}
+
+.caret {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+  vertical-align: middle;
+  content: "";
+  border-top: 5px  solid $medium-gray;
+  border-right: 5px solid transparent;
+  border-left: 5px solid transparent;
+}
+
+
+// The dropdown menu (ul)
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 100;
+  display: none; // none by default, but block on "open" of the menu
+  float: left;
+  min-width: 160px;
+  padding: 5px 0;
+  margin: 0 0; // override default ul
+  font-size: $base-font-size;
+  text-align: left; // Ensures proper alignment if parent has it changed (e.g., modal footer)
+  list-style: none;
+  background-color: $white;
+  background-clip: padding-box;
+  border: 1px solid $blue;
+}
+
+// Links, buttons, and more within the dropdown menu
+//
+// `<button>`-specific styles are denoted with `// for <button>s`
+.dropdown-item {
+  display: block;
+  width: 100%; // For `<button>`s
+  padding: 3px 20px;
+  clear: both;
+  font-weight: normal;
+  line-height: $base-line-height;
+  text-align: inherit; // For `<button>`s
+  white-space: nowrap; // prevent links from randomly breaking onto new lines
+  background: none; // For `<button>`s
+  border: 0; // For `<button>`s
+
+  &:hover {
+    background: $dirty-white;
+  }
+}
+
+.dropdown-link {
+  color: $dark-gray;
+}
+
+// Open state for the dropdown
+.open {
+  // Show the menu
+  > .dropdown-menu {
+    display: block;
+  }
+
+  // Remove the outline when :focus is triggered
+  > a {
+    outline: 0;
+  }
+}
+
+// // Menu positioning
+// //
+// // Add extra class to `.dropdown-menu` to flip the alignment of the dropdown
+// // menu with the parent.
+// .dropdown-menu-right {
+//   right: 0;
+//   left: auto; // Reset the default from `.dropdown-menu`
+// }
+// // With v3, we enabled auto-flipping if you have a dropdown within a right
+// // aligned nav component. To enable the undoing of that, we provide an override
+// // to restore the default dropdown menu alignment.
+// //
+// // This is only for left-aligning a dropdown menu within a `.navbar-right` or
+// // `.pull-right` nav component.
+// .dropdown-menu-left {
+//   right: auto;
+//   left: 0;
+// }
+//
+// // Dropdown section headers
+// .dropdown-header {
+//   display: block;
+//   padding: 3px 20px;
+//   // font-size: $font-size-sm;
+//   // line-height: $line-height;
+//   // color: $dropdown-header-color;
+//   white-space: nowrap; // as with > li > a
+// }
+//
+// // Backdrop to catch body clicks on mobile, etc.
+// .dropdown-backdrop {
+//   position: fixed;
+//   top: 0;
+//   right: 0;
+//   bottom: 0;
+//   left: 0;
+//   z-index: (100 - 10);
+// }

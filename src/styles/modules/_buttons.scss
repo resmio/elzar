@@ -1,0 +1,21 @@
+.btn-link {
+  background: none;
+  color: $medium-gray;
+  font-weight: 400;
+
+  &:hover {
+    background: none;
+    color: $dark-gray;
+  }
+}
+
+.btn-light {
+  background: $white;
+  border: 1px solid $action-color;
+  color: $action-color;
+  font-weight: 400;
+}
+
+.btn-large {
+  padding: $large-button-padding;
+}
