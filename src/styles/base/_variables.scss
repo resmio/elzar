@@ -1,3 +1,5 @@
+$visual-grid: true !default;
+
 // Typography
 $base-font-family: 'Open Sans', $helvetica;
 $heading-font-family: $base-font-family;
@@ -32,6 +34,7 @@ $dropdown-padding: 12px 10px;
 // Blues
 $pacific-blue:          #00A7C4;
 $deep-cerulean:         #018EA6;
+$ocean-blue:            #333B4F;
 // Greens
 $java:                  #22CCAA;
 $mountain-meadow:       #21B498;

@@ -1,0 +1,39 @@
+
+.comp1{
+  display: none;
+  height: 300px;
+  background-color: red;
+
+  @include media($large-screen-up) {
+    @include span-columns(3);
+  }
+  @include media($extra-large-screen-up) {
+      @include span-columns(5);
+    }
+}
+
+.comp2{
+  display: none;
+  height: 300px;
+  background-color: green;
+
+  @include media($large-screen-up) {
+    @include span-columns(3);
+  }
+  @include media($extra-large-screen-up) {
+      @include span-columns(5);
+    }
+}
+
+.comp3{
+  display: none;
+  height: 300px;
+  background-color: yellow;
+
+  @include media($large-screen-up) {
+    @include span-columns(3);
+  }
+  @include media($extra-large-screen-up) {
+      @include span-columns(5);
+    }
+}
