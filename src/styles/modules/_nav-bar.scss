@@ -5,12 +5,11 @@
   background-color: $ocean-blue;
 
   @include media($large-screen-up) {
-    @include span-columns(3);
+    width: 20%;
+    display: block;
+    float: left;
   }
-  @include media($extra-large-screen-up) {
-      @include span-columns(3);
-    }
-} 
+}
 
 ul,
 ol {
