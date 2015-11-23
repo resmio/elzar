@@ -5,25 +5,28 @@ $base-font-family: 'Open Sans', $helvetica;
 $heading-font-family: $base-font-family;
 
 // Font Sizes
-$base-font-size: 14px;
+$base-font-size: 16px;
+$headers-size: 20px;
+$medium-size: 14px;
+$small-size: 12px;
 
 // Line height
 $base-line-height: 1.5;
 $heading-line-height: 1.2;
 
 // Other Sizes
-$base-border-radius: 3px;
-$base-spacing: $base-line-height * 1em;
-$small-spacing: $base-spacing / 2;
 $base-z-index: 0;
 $button-margin: 0.5em 0;
-$button-padding: 10px 33px;
-$large-button-padding: 10px 47px;
+$large-button-padding: 0 1.7rem;
+$default-button-padding: 0.9rem 2.3rem;
+$small-spacing: 10px 10px;
+$base-spacing: 10px 30px;
 $banner-padding: 20px 15px;
 $dropdown-padding: 12px 10px;
+$content-padding: 0 3rem;
 
 
-// GLOBAL VALUES
+/// GLOBAL VALUES
 // --------------------------------------------------
 
 // Oct 2015 Styleguide colors
@@ -35,6 +38,10 @@ $dropdown-padding: 12px 10px;
 $pacific-blue:          #00A7C4;
 $deep-cerulean:         #018EA6;
 $ocean-blue:            #333B4F;
+$sidebar-blue:          #333B4F;
+$sidebar-dark-lue:      #293140;
+$sidebar-darker-lue:    #1E2532;
+
 // Greens
 $java:                  #22CCAA;
 $mountain-meadow:       #21B498;
@@ -56,17 +63,21 @@ $emperor:                  #555;
 $dusty-gray:               #999;
 $alto:                     #DDD;
 // Whites
-$wild-sand:             #F4F4F4;
+$wild-sand:             #F7F7F7;
 $white:                    #FFF;
 
 // Font Colors
-$base-font-color: $mine-shaft;
-$action-color: $java;
-$action-color-darker: $mountain-meadow;
+$base-font-color: $emperor;
+$action-color: $pacific-blue;
+$action-color-darker: $deep-cerulean;
+$hiperlink-color: $sidebar-blue;
+
 
 // Border
 $base-border-color: $alto;
+$base-border-radius: 3px;
 $base-border: 1px solid $base-border-color;
+$large-buttons-border: 1px solid $deep-cerulean;
 
 // Background Colors
 $base-background-color: #fff;
