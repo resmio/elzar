@@ -194,6 +194,9 @@ html {
   .btn-large:hover, .btn-large:focus {
     background-color: #01879e; }
 
+.add-symbol {
+  background-image: url(../views/svgs/add-symbol.svg); }
+
 .btn-light {
   background: none;
   border: 1px solid #00A7C4;
