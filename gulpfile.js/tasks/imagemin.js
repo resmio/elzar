@@ -8,7 +8,10 @@ gulp.task('imagemin', function() {
   return gulp.src(config.src)
     .pipe(imagemin({
         progressive: true,
-        svgoPlugins: [{removeViewBox: false}]
+        svgoPlugins: [{
+          removeViewBox: false,
+          removeDimensions: true,
+        }]
     }))
     .on('error', handleErrors)
     .pipe(gulp.dest(config.dest))
