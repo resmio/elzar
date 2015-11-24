@@ -18,6 +18,12 @@ module.exports = {
     watch: [src + '/views/**/*.html'],
   },
 
+  svg: {
+    src: [src + '/svg/'],
+    dest: dest,
+    watch: [src + '/svg/**/*.svg'],
+  },
+
   sass: {
     src: [sassSrc],
     dest: dest,
