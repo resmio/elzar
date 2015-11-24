@@ -19,8 +19,8 @@ module.exports = {
   },
 
   svg: {
-    src: [src + '/svg/'],
-    dest: dest,
+    src: [src + '/svg/**/*.svg'],
+    dest: dest + '/svg/' ,
     watch: [src + '/svg/**/*.svg'],
   },
 
