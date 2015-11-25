@@ -7,36 +7,43 @@
 }
 
 .btn-dropdown {
-  background: $white;
-  border: 1px solid $medium-gray;
-  color: $medium-gray;
+  background-color: $white;
+  border: $base-border;
+  color: $dusty-gray;
   margin-bottom: 0;
   padding: $dropdown-padding;
-
-  // Prevent the focus on the dropdown toggle when closing dropdowns
-  &:focus {
-    outline: 0;
-  }
+  height: $forms-height;
 
   &:hover {
     background: $white;
-    border: 1px solid $blue;
-    color: $blue;
+    border: 1px solid shade($dusty-gray, 10%);
+    color: $dusty-gray;
   }
+  // Prevent the focus on the dropdown toggle when closing dropdowns
+  &:focus {
+    outline: 0;
+    background-color: $white;
+    border-color: $action-color;
+    color: $dusty-gray;
+  }
+    //WE NEED TO CHANGE WHEN IT'S SELECTED - COLOR $EMPIRE
+
+    // ADD SOME ANIMATIONS LIKE THIS: http://semantic-ui.com/modules/dropdown.html
+
 }
 
-.caret {
-  display: inline-block;
-  width: 0;
-  height: 0;
-  margin-left: 0.25rem;
-  margin-right: 0.25rem;
-  vertical-align: middle;
-  content: "";
-  border-top: 5px  solid $medium-gray;
-  border-right: 5px solid transparent;
-  border-left: 5px solid transparent;
-}
+// .caret {
+//   display: inline-block;
+//   width: 0;
+//   height: 0;
+//   margin-left: 0.25rem;
+//   margin-right: 0.25rem;
+//   vertical-align: middle;
+//   content: "";
+//   border-top: 5px  solid $alto;
+//   border-right: 5px solid transparent;
+//   border-left: 5px solid transparent;
+// }
 
 
 // The dropdown menu (ul)
@@ -55,7 +62,7 @@
   list-style: none;
   background-color: $white;
   background-clip: padding-box;
-  border: 1px solid $blue;
+  border: 1px solid $pacific-blue;
 }
 
 // Links, buttons, and more within the dropdown menu
@@ -64,7 +71,7 @@
 .dropdown-item {
   display: block;
   width: 100%; // For `<button>`s
-  padding: 3px 20px;
+  padding: 0.2rem 1rem;
   clear: both;
   font-weight: normal;
   line-height: $base-line-height;
@@ -74,12 +81,12 @@
   border: 0; // For `<button>`s
 
   &:hover {
-    background: $dirty-white;
+    background: $wild-sand;
   }
 }
 
 .dropdown-link {
-  color: $dark-gray;
+  color: $mine-shaft;
 }
 
 // Open state for the dropdown
@@ -87,6 +94,7 @@
   // Show the menu
   > .dropdown-menu {
     display: block;
+    margin-top: -0.2rem;
   }
 
   // Remove the outline when :focus is triggered
@@ -94,42 +102,3 @@
     outline: 0;
   }
 }
-
-// // Menu positioning
-// //
-// // Add extra class to `.dropdown-menu` to flip the alignment of the dropdown
-// // menu with the parent.
-// .dropdown-menu-right {
-//   right: 0;
-//   left: auto; // Reset the default from `.dropdown-menu`
-// }
-// // With v3, we enabled auto-flipping if you have a dropdown within a right
-// // aligned nav component. To enable the undoing of that, we provide an override
-// // to restore the default dropdown menu alignment.
-// //
-// // This is only for left-aligning a dropdown menu within a `.navbar-right` or
-// // `.pull-right` nav component.
-// .dropdown-menu-left {
-//   right: auto;
-//   left: 0;
-// }
-//
-// // Dropdown section headers
-// .dropdown-header {
-//   display: block;
-//   padding: 3px 20px;
-//   // font-size: $font-size-sm;
-//   // line-height: $line-height;
-//   // color: $dropdown-header-color;
-//   white-space: nowrap; // as with > li > a
-// }
-//
-// // Backdrop to catch body clicks on mobile, etc.
-// .dropdown-backdrop {
-//   position: fixed;
-//   top: 0;
-//   right: 0;
-//   bottom: 0;
-//   left: 0;
-//   z-index: (100 - 10);
-// }

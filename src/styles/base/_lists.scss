@@ -15,6 +15,13 @@ ol {
     margin-bottom: $small-spacing;
     padding-left: $base-spacing;
   }
+  &.form-list{
+    li{
+       margin-bottom: 1rem;
+       margin-top: -0.12rem;
+       border-radius: none;
+     }
+  }
 }
 
 dl {
