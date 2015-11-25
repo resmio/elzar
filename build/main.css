@@ -194,8 +194,13 @@ html {
   .btn-large:hover, .btn-large:focus {
     background-color: #01879e; }
 
-.symbol-walkin {
-  background-image: url(../views/svgs/add-symbol.svg); }
+.icon {
+  display: inline-block;
+  vertical-align: middle;
+  height: 33px; }
+
+.symbol-add {
+  margin-right: 6px; }
 
 .btn-light {
   background: none;

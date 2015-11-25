@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="35px" height="35px" viewBox="0 0 35 35" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="symbol-warning">
+            <path d="M16.3701172,21.9473877 L17.673584,21.9473873 L17.673584,13.0684807 L16.3701172,13.0684811 L16.3701172,21.9473877 Z M17.0054932,26.1102295 C17.6958491,26.1102295 18.2554932,25.5505854 18.2554932,24.8602295 C18.2554932,24.1698736 17.6958491,23.6102295 17.0054932,23.6102295 C16.3151372,23.6102295 15.7554932,24.1698736 15.7554932,24.8602295 C15.7554932,25.5505854 16.3151372,26.1102295 17.0054932,26.1102295 Z" id="Shape" fill="#FFFFFF"></path>
+            <path d="M17.0178834,4 L32.0357667,31 L2,31 L17.0178834,4 Z" id="Rectangle-75" stroke="#FFFFFF" stroke-width="1.3"></path>
+        </g>
+    </g>
+</svg>
