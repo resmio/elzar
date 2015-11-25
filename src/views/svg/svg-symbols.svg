@@ -1,15 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Test Elzar</title>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/js/bootstrap.min.js"></script>
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="main.css">
-</head>
-<body>
-  <svg xmlns="http://www.w3.org/2000/svg" style="width:0; height:0; visibility:hidden;">
+<svg xmlns="http://www.w3.org/2000/svg" style="width:0; height:0; visibility:hidden;">
     <symbol id="symbol-account" viewBox="0 0 35 35">
       <path d="M17.5 31C24.956 31 31 24.956 31 17.5S24.956 4 17.5 4 4 10.044 4 17.5 10.044 31 17.5 31zm-8.31-2.742s.91-.974 1.733-1.35c.824-.376 2.468-.91 2.878-1.087.412-.176 1.355-.75 1.355-1.192 0-.44.097-2.518.097-2.518s-.567-.683-.8-1.165c-.232-.483-.432-1.21-.432-1.21s-.55-.286-.775-.687c-.225-.402-.25-1.392-.25-1.392l.37-.337-.002-4.172s.025-1.367.623-1.918c.598-.55.938-1.182 1.86-1.398.922-.215 2.366-.12 2.656-.12.29 0 .76.246 1.137.415.377.17 1.256-.088 1.47.233.217.32 1.375.797 1.375 2.093 0 1.296.01 2.807-.206 3.43-.216.623-.584 1.31-.584 1.31l.64.183s.288.594-.024 1.133c-.313.538-.755 1.225-1.03 1.225-.273 0-.332.6-.332.8 0 .2-.55 1.293-.72 1.293-.17 0-.193 2.567-.193 2.567s.463 1.27 1.246 1.47c.783.2 2.955.8 3.523 1.183.568.383 1.143 1.133 1.143 1.133" fill-rule="evenodd"/>
     </symbol>
@@ -112,62 +101,3 @@
     <symbol id="symbol-warning" viewBox="0 0 35 35">
       <g fill-rule="evenodd"><path d="M16.37 21.947h1.304v-8.88H16.37v8.88zm.635 4.163c.69 0 1.25-.56 1.25-1.25s-.56-1.25-1.25-1.25-1.25.56-1.25 1.25.56 1.25 1.25 1.25z"/><path d="M17.018 4l15.018 27H2L17.018 4z"/></g>
     </symbol></svg>
-  <svg viewBox="0 0 100 100" class="icon">
-    <use xlink:href="#symbol-booking"></use>
-  </svg>
-<!-- <div class="nav-bar">
-  <ul>
-    <li>Bookings</li>
-    <li>Guests</li>
-    <li>Feedback</li>
-    <li>Reports</li>
-    <li>Promote</li>
-    <li>Settings</li>
-    <li>Restaurant name</li>
-  <ul>
-</div>
-
-
-<div class="container">
-  <div class="comp1">
-  comp 1
-</div>
-
-  <div class="comp2">
-  comp2
-</div>
-
-  <div class="comp3">
-  comp 3 teste
-</div>
-
-</div>  -->
-
-<h1><u>Buttons</u></h1>
-<!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-<button type="button">Default Button</button>
-<!-- Deemphasize a button by making it look like a link while maintaining button behavior -->
-<button type="button" class="btn-light">Light Button</button>
-<button type="button" class="btn-link">Link Button</button>
-
-<div class="header">
-  <button type="button" class="btn-large"><img class="icon symbol-add" src="svg/symbol-add.svg"></img><span>Add Booking</span></button>
-  <button type="button" class="btn-large"><img class="icon" src="svg/symbol-walkin.svg"></img><span>Add Walkin</span></button>
-  <button type="button" class="btn-large">Large Button</button>
-
-</div>
-
-<hr/>
-<pre>
-  &lt;button type="button"&gt;Default&lt;/button&gt;
-  &lt;button type="button" class="btn-light"&gt;Light Button&lt;/button&gt;
-  &lt;button type="button" class="btn-link"&gt;Link Button&lt;/button&gt;
-  &lt;button type="button" class="btn-large"&gt;Large&lt;/button&gt;
-
-</pre>
-<hr/>
-
-
-
-</body>
-</html>

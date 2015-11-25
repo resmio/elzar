@@ -1,3 +1,3 @@
 var gulp = require('gulp');
 
-gulp.task('default', ['html', 'sass', 'imagemin']);
+gulp.task('default', ['html', 'sass', 'svgsymbol']);
