@@ -1,7 +1,7 @@
 .messages-all{
-  margin-bottom: 2px;
-  padding: 0.2rem 0.5rem;
   opacity:0.9;
+  margin-bottom: rem(2);
+  padding: rem(3) rem(10);
 }
 
 .success-messages{
@@ -16,7 +16,7 @@
   background-color: $warning-color;
 }
 
-span.message{
-  font-size: $small-size;
+.message{
   color: $white;
+  font-size: $small-size;
 }

@@ -1,23 +1,18 @@
 .icon {
   display: inline-block;
   vertical-align: middle;
-  height: 2rem;
+  height: rem(30);
   fill: none;
-  stroke: $casablanca;
+  stroke: $white;
   stroke-width: 1.5px;
 }
 
-.icon-light {
-  stroke: $white;
+.icon-arrows{
+  stroke:$dusty-gray;
+  height: rem(23);
+  margin: 0 rem(5) 0 rem(12);
 }
 
 .symbol-add{
   margin-right: rem(6px);
-}
-
-
-.symbol-arrow-down{
-  height: 1.6rem;
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
 }

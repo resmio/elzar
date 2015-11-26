@@ -112,35 +112,7 @@
     <symbol id="symbol-warning" viewBox="0 0 35 35">
       <g fill-rule="evenodd"><path d="M16.37 21.947h1.304v-8.88H16.37v8.88zm.635 4.163c.69 0 1.25-.56 1.25-1.25s-.56-1.25-1.25-1.25-1.25.56-1.25 1.25.56 1.25 1.25 1.25z"/><path d="M17.018 4l15.018 27H2L17.018 4z"/></g>
     </symbol></svg>
-<!-- <div class="nav-bar">
-  <ul>
-    <li>Bookings</li>
-    <li>Guests</li>
-    <li>Feedback</li>
-    <li>Reports</li>
-    <li>Promote</li>
-    <li>Settings</li>
-    <li>Restaurant name</li>
-  <ul>
-</div>
-
-
-<div class="container">
-  <div class="comp1">
-  comp 1
-</div>
-
-  <div class="comp2">
-  comp2
-</div>
-
-  <div class="comp3">
-  comp 3 teste
-</div>
-
-</div>  -->
-
-<h1><u>Buttons</u></h1>
+  <h1><u>Buttons</u></h1>
 <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
 <button type="button">Default Button</button>
 <!-- Deemphasize a button by making it look like a link while maintaining button behavior -->
@@ -149,13 +121,13 @@
 
 <div class="header">
   <button type="button" class="btn-large">
-    <svg viewBox="0 0 100 100" class="icon icon-light">
+    <svg viewBox="0 0 100 100" class="icon">
       <use xlink:href="#symbol-add"></use>
     </svg>
     <span>Add Booking</span>
   </button>
   <button type="button" class="btn-large">
-    <svg viewBox="0 0 100 100" class="icon icon-light">
+    <svg viewBox="0 0 100 100" class="icon">
       <use xlink:href="#symbol-walkin"></use>
     </svg>
     <span>Add Walkin</span>
@@ -166,16 +138,9 @@
 </div>
 
 <hr/>
-<pre>
-  &lt;button type="button"&gt;Default&lt;/button&gt;
-  &lt;button type="button" class="btn-light"&gt;Light Button&lt;/button&gt;
-  &lt;button type="button" class="btn-link"&gt;Link Button&lt;/button&gt;
-  &lt;button type="button" class="btn-large"&gt;Large&lt;/button&gt;
+<br/>
 
-</pre>
-<hr/>
-
-<h1><u>Forms</u></h1>
+  <h1><u>Forms</u></h1>
 <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
 <div class="forms-div">
   <ul class="form-list">
@@ -210,12 +175,9 @@
 </div>
 
 <hr/>
-<pre>
-  &lt;input type="text"&gt;Default Button&lt;/input&gt;
-</pre>
-<hr/>
+<br/>
 
-<h1><u>Dropdowns</u></h1>
+  <h1><u>Dropdowns</u></h1>
 
 <div class="dropdown">
   <button id="dLabel"
@@ -226,7 +188,9 @@
           aria-expanded="false"
   >
     <span>Dropdown</span>
-    <img class="icon symbol-arrow-down" src="svg/symbol-arrow-down.svg"></img>
+    <svg viewBox="0 0 100 100" class="icon icon-arrows">
+      <use xlink:href="#symbol-arrow-down"></use>
+    </svg>
   </button>
   <ul class="dropdown-menu" aria-labelledby="dLabel">
     <li class="dropdown-item">
@@ -243,39 +207,9 @@
     </li>
   </ul>
 </div>
-<hr/>
-<pre>
-  &lt;div class="dropdown"&gt;
-    &lt;button id="dLabel"
-            class="btn-dropdown"
-            type="button"
-            data-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
-    &gt;
-    
-    &lt;span&gt;Dropdown&lt;/span&gt;
-    &lt;img class="icon symbol-arrow-down" src="svg/symbol-arrow-down.svg"&gt;&lt;/img&gt;
-      &lt;span class="caret"&gt;&lt;/span&gt;
-    &lt;/button&gt;
-    &lt;ul class="dropdown-menu" aria-labelledby="dLabel"&gt;
-      &lt;li class="dropdown-item"&gt;
-        &lt;a class="dropdown-link" href="#"&gt;1&lt;/a&gt;
-      &lt;/li&gt;
-      &lt;li class="dropdown-item"&gt;
-        &lt;a class="dropdown-link" href="#"&gt;2&lt;/a&gt;
-      &lt;/li&gt;
-      &lt;li class="dropdown-item"&gt;
-        &lt;a class="dropdown-link" href="#"&gt;3&lt;/a&gt;
-      &lt;/li&gt;
-      &lt;li class="dropdown-item"&gt;
-        &lt;a class="dropdown-link" href="#"&gt;4&lt;/a&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/div&gt;
-</pre>
-<hr/>
 
+<hr/>
+<br/>
 
 </body>
 </html>

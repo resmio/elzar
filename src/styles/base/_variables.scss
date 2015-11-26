@@ -5,10 +5,10 @@ $base-font-family: 'Open Sans', $helvetica;
 $heading-font-family: $base-font-family;
 
 // Font Sizes
-$base-font-size: 1rem;
-$headers-size: 1.25rem;
-$medium-size: 0.875rem;
-$small-size: 0.75rem;
+$base-font-size: rem(16);
+$headers-size: rem(24);
+$medium-size: rem(14);
+$small-size: rem(12);
 
 // Line height
 $base-line-height: 1.5;
@@ -16,14 +16,14 @@ $heading-line-height: 1.2;
 
 // Other Sizes
 $base-z-index: 0;
-$button-margin: 0.5rem 0;
-$large-button-padding: 0 1.7rem;
-$default-button-padding: 0.9rem 2.3rem;
-$small-spacing: 0.625rem 0.625rem;
-$base-spacing: 0.625rem 1.875rem;
-$banner-padding: 1.25rem 0.9375rem;
-$dropdown-padding: 0.1rem 0 0 0.5rem;
-$content-padding: 0 3rem;
+$button-margin: rem(8) 0;
+$large-button-padding: 0 rem(27);
+$default-button-padding: rem(14) rem(38);
+$small-spacing: rem(10) rem(10);
+$base-spacing: rem(10) rem(30);
+$banner-padding: rem(20) rem(15);
+$dropdown-padding: rem(1) 0 0 rem(8);
+$content-padding: 0 rem(48);
 
 
 /// GLOBAL VALUES
@@ -80,12 +80,12 @@ $hiperlink-color: $sidebar-blue;
 
 // Border
 $base-border-color: $alto;
-$base-border-radius: 0.2rem;
-$base-border: 0.1rem solid $base-border-color;
+$base-border-radius: rem(3);
+$base-border: 1px solid $base-border-color;
 $large-buttons-border: 1px solid $deep-cerulean;
-$error-border: 0.12rem solid $error-color;
-$success-border: 0.12rem solid $success-color;
-$warning-border: 0.12rem solid $warning-color;
+$error-border: rem(1) solid $error-color;
+$success-border: rem(1) solid $success-color;
+$warning-border: rem(1) solid $warning-color;
 
 
 // Background Colors
@@ -95,9 +95,9 @@ $secondary-background-color: tint($base-border-color, 75%);
 // Forms
 $form-box-shadow: inset 0 1px 3px rgba(#000, 0.06);
 $form-box-shadow-focus: $form-box-shadow, 0 0 5px adjust-color($action-color, $lightness: -5%, $alpha: -0.3);
-$forms-spacing: 1.4rem;
-$forms-padding: 0.5rem;
-$forms-height: 2.5rem;
+$forms-spacing: rem(22);
+$forms-padding: rem(8);
+$forms-height: rem(40);
 
 // Animations
 $base-duration: 150ms;

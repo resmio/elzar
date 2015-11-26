@@ -1,1 +1,9 @@
-<svg width="35" height="35" viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg"><path d="M5 12.117l12.3 13.08L29.515 12" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd"/></svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="35px" height="35px" viewBox="0 0 35 35" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="symbol-arrow-down" stroke="#999999" stroke-width="1.5">
+            <path d="M5,12.1174624 L17.2987231,25.1973988 L29.5156948,12" id="arrow-down"></path>
+        </g>
+    </g>
+</svg>

@@ -32,20 +32,6 @@
 
 }
 
-// .caret {
-//   display: inline-block;
-//   width: 0;
-//   height: 0;
-//   margin-left: 0.25rem;
-//   margin-right: 0.25rem;
-//   vertical-align: middle;
-//   content: "";
-//   border-top: 5px  solid $alto;
-//   border-right: 5px solid transparent;
-//   border-left: 5px solid transparent;
-// }
-
-
 // The dropdown menu (ul)
 .dropdown-menu {
   position: absolute;
@@ -54,8 +40,8 @@
   z-index: 100;
   display: none; // none by default, but block on "open" of the menu
   float: left;
-  min-width: 160px;
-  padding: 5px 0;
+  min-width: rem(160);
+  padding: rem(5) rem(0);
   margin: 0 0; // override default ul
   font-size: $base-font-size;
   text-align: left; // Ensures proper alignment if parent has it changed (e.g., modal footer)
@@ -71,7 +57,7 @@
 .dropdown-item {
   display: block;
   width: 100%; // For `<button>`s
-  padding: 0.2rem 1rem;
+  padding: rem(4) rem(16);
   clear: both;
   font-weight: normal;
   line-height: $base-line-height;
@@ -94,7 +80,8 @@
   // Show the menu
   > .dropdown-menu {
     display: block;
-    margin-top: -0.2rem;
+    //margin to remove white space between dropdown button and dropdown list
+    margin-top: rem(-3);
   }
 
   // Remove the outline when :focus is triggered
