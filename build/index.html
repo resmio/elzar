@@ -73,7 +73,7 @@
     <symbol id="symbol-logout" viewBox="0 0 35 35">
       <path d="M5.652 17.563l5.203 5.187m4.822 8h13.178M15.6 23.4v7.333m-4.934-18.878l-4.98 5.59m17.83.305l-17.41-.117m22.75 13.117V5.796m-13.07-.046h13.07m-13.157-.01v7.07" fill-rule="evenodd" stroke-linecap="square"/>
     </symbol>
-    <symbol id="symbol-no-Show" viewBox="0 0 35 35">
+    <symbol id="symbol-no-show" viewBox="0 0 35 35">
       <g transform="translate(3 8)" fill-rule="evenodd"><path d="M14.806 16.59c8.686 0 14.807-7.332 14.807-7.332s-6.12-7.28-14.807-7.28C6.12 1.98 0 9.26 0 9.26s6.12 7.33 14.806 7.33zm.194-.026c4.01 0 7.258-3.272 7.258-7.308S19.008 1.95 15 1.95c-4.01 0-7.258 3.27-7.258 7.306s3.25 7.308 7.258 7.308zm-9.92 2.192L24.92.244"/><ellipse cx="14.758" cy="9.5" rx="3.629" ry="3.654"/></g>
     </symbol>
     <symbol id="symbol-password" viewBox="0 0 35 35">
@@ -112,6 +112,7 @@
     <symbol id="symbol-warning" viewBox="0 0 35 35">
       <g fill-rule="evenodd"><path d="M16.37 21.947h1.304v-8.88H16.37v8.88zm.635 4.163c.69 0 1.25-.56 1.25-1.25s-.56-1.25-1.25-1.25-1.25.56-1.25 1.25.56 1.25 1.25 1.25z"/><path d="M17.018 4l15.018 27H2L17.018 4z"/></g>
     </symbol></svg>
+
   <h1><u>Buttons</u></h1>
 <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
 <button type="button">Default Button</button>
@@ -208,6 +209,362 @@
   </ul>
 </div>
 
+<hr/>
+<br/>
+
+  <h1><u>Status buttons</u></h1>
+
+
+<div class="status-container">
+  <ul>
+    <li class="space-between">
+        <div class="status">
+        <button id="dLabel"
+                class="btn-status"
+                type="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+        >
+          <svg viewBox="0 0 100 100" class="icon symbol-scheduled">
+            <use xlink:href="#symbol-scheduled"></use>
+          </svg>
+          <svg viewBox="0 0 100 100" class="icon icon-arrows">
+            <use xlink:href="#symbol-arrow-down"></use>
+          </svg>
+        </button>
+        <ul class="status-list" aria-labelledby="dLabel">
+          <li class="status-item">
+            <svg viewBox="0 0 100 100" class="icon status-list-icon symbol-scheduled">
+              <use xlink:href="#symbol-scheduled"></use>
+            </svg>
+            <a class="status-link" href="#">Scheduled</a>
+          </li>
+          <li class="status-item">
+            <svg viewBox="0 0 100 100" class="icon status-list-icon symbol-arrived">
+              <use xlink:href="#symbol-arrived"></use>
+            </svg>
+            <a class="status-link" href="#">Arrived</a>
+          </li>
+          <li class="status-item">
+            <svg viewBox="0 0 100 100" class="icon status-list-icon symbol-seated">
+              <use xlink:href="#symbol-seated"></use>
+            </svg>
+            <a class="status-link" href="#">Seated</a>
+          </li>
+          <li class="status-item">
+            <svg viewBox="0 0 100 100" class="icon status-list-icon symbol-finished">
+              <use xlink:href="#symbol-finished"></use>
+            </svg>
+            <a class="status-link" href="#">Finished</a>
+          </li>
+          <li class="status-item">
+            <svg viewBox="0 0 100 100" class="icon status-list-icon symbol-close">
+              <use xlink:href="#symbol-close"></use>
+            </svg>
+            <a class="status-link" href="#">Cancelled</a>
+          </li>
+          <li class="status-item">
+            <svg viewBox="0 0 100 100" class="icon status-list-icon symbol-no-show">
+              <use xlink:href="#symbol-no-show"></use>
+            </svg>
+            <a class="status-link" href="#">No Show</a>
+          </li>
+        </ul>
+      </div>
+    </li>
+  </ul>
+  <ul>
+    <li class="space-between">
+      <div class="status">
+      <button id="dLabel"
+              class="btn-status status-active"
+              type="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+      >
+        <svg viewBox="0 0 100 100" class="icon symbol-arrived">
+          <use xlink:href="#symbol-arrived"></use>
+        </svg>
+        <svg viewBox="0 0 100 100" class="icon icon-arrows">
+          <use xlink:href="#symbol-arrow-down"></use>
+        </svg>
+      </button>
+      <ul class="status-list" aria-labelledby="dLabel">
+        <li class="status-item">
+          <svg viewBox="0 0 100 100" class="icon status-list-icon symbol-scheduled">
+            <use xlink:href="#symbol-scheduled"></use>
+          </svg>
+          <a class="status-link" href="#">Scheduled</a>
+        </li>
+        <li class="status-item">
+          <svg viewBox="0 0 100 100" class="icon status-list-icon symbol-arrived">
+            <use xlink:href="#symbol-arrived"></use>
+          </svg>
+          <a class="status-link" href="#">Arrived</a>
+        </li>
+        <li class="status-item">
+          <svg viewBox="0 0 100 100" class="icon status-list-icon symbol-seated">
+            <use xlink:href="#symbol-seated"></use>
+          </svg>
+          <a class="status-link" href="#">Seated</a>
+        </li>
+        <li class="status-item">
+          <svg viewBox="0 0 100 100" class="icon status-list-icon symbol-finished">
+            <use xlink:href="#symbol-finished"></use>
+          </svg>
+          <a class="status-link" href="#">Finished</a>
+        </li>
+        <li class="status-item">
+          <svg viewBox="0 0 100 100" class="icon status-list-icon symbol-close">
+            <use xlink:href="#symbol-close"></use>
+          </svg>
+          <a class="status-link" href="#">Cancelled</a>
+        </li>
+        <li class="status-item">
+          <svg viewBox="0 0 100 100" class="icon status-list-icon symbol-no-show">
+            <use xlink:href="#symbol-no-show"></use>
+          </svg>
+          <a class="status-link" href="#">No Show</a>
+        </li>
+      </ul>
+    </div>
+    </li>
+  </ul>
+  <ul>
+    <li class="space-between">
+      <div class="status">
+      <button id="dLabel"
+              class="btn-status status-active"
+              type="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+      >
+        <svg viewBox="0 0 100 100" class="icon symbol-seated">
+          <use xlink:href="#symbol-seated"></use>
+        </svg>
+        <svg viewBox="0 0 100 100" class="icon icon-arrows">
+          <use xlink:href="#symbol-arrow-down"></use>
+        </svg>
+      </button>
+      <ul class="status-list" aria-labelledby="dLabel">
+        <li class="status-item">
+          <svg viewBox="0 0 100 100" class="icon status-list-icon symbol-scheduled">
+            <use xlink:href="#symbol-scheduled"></use>
+          </svg>
+          <a class="status-link" href="#">Scheduled</a>
+        </li>
+        <li class="status-item">
+          <svg viewBox="0 0 100 100" class="icon status-list-icon symbol-arrived">
+            <use xlink:href="#symbol-arrived"></use>
+          </svg>
+          <a class="status-link" href="#">Arrived</a>
+        </li>
+        <li class="status-item">
+          <svg viewBox="0 0 100 100" class="icon status-list-icon symbol-seated">
+            <use xlink:href="#symbol-seated"></use>
+          </svg>
+          <a class="status-link" href="#">Seated</a>
+        </li>
+        <li class="status-item">
+          <svg viewBox="0 0 100 100" class="icon status-list-icon symbol-finished">
+            <use xlink:href="#symbol-finished"></use>
+          </svg>
+          <a class="status-link" href="#">Finished</a>
+        </li>
+        <li class="status-item">
+          <svg viewBox="0 0 100 100" class="icon status-list-icon symbol-close">
+            <use xlink:href="#symbol-close"></use>
+          </svg>
+          <a class="status-link" href="#">Cancelled</a>
+        </li>
+        <li class="status-item">
+          <svg viewBox="0 0 100 100" class="icon status-list-icon symbol-no-show">
+            <use xlink:href="#symbol-no-show"></use>
+          </svg>
+          <a class="status-link" href="#">No Show</a>
+        </li>
+      </ul>
+    </div>
+    </li>
+  </ul>
+  <ul>
+    <li class="space-between">
+      <div class="status">
+      <button id="dLabel"
+              class="btn-status"
+              type="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+      >
+        <svg viewBox="0 0 100 100" class="icon symbol-finished">
+          <use xlink:href="#symbol-finished"></use>
+        </svg>
+        <svg viewBox="0 0 100 100" class="icon icon-arrows">
+          <use xlink:href="#symbol-arrow-down"></use>
+        </svg>
+      </button>
+      <ul class="status-list" aria-labelledby="dLabel">
+        <li class="status-item">
+          <svg viewBox="0 0 100 100" class="icon status-list-icon symbol-scheduled">
+            <use xlink:href="#symbol-scheduled"></use>
+          </svg>
+          <a class="status-link" href="#">Scheduled</a>
+        </li>
+        <li class="status-item">
+          <svg viewBox="0 0 100 100" class="icon status-list-icon symbol-arrived">
+            <use xlink:href="#symbol-arrived"></use>
+          </svg>
+          <a class="status-link" href="#">Arrived</a>
+        </li>
+        <li class="status-item">
+          <svg viewBox="0 0 100 100" class="icon status-list-icon symbol-seated">
+            <use xlink:href="#symbol-seated"></use>
+          </svg>
+          <a class="status-link" href="#">Seated</a>
+        </li>
+        <li class="status-item">
+          <svg viewBox="0 0 100 100" class="icon status-list-icon symbol-finished">
+            <use xlink:href="#symbol-finished"></use>
+          </svg>
+          <a class="status-link" href="#">Finished</a>
+        </li>
+        <li class="status-item">
+          <svg viewBox="0 0 100 100" class="icon status-list-icon symbol-close">
+            <use xlink:href="#symbol-close"></use>
+          </svg>
+          <a class="status-link" href="#">Cancelled</a>
+        </li>
+        <li class="status-item">
+          <svg viewBox="0 0 100 100" class="icon status-list-icon symbol-no-show">
+            <use xlink:href="#symbol-no-show"></use>
+          </svg>
+          <a class="status-link" href="#">No Show</a>
+        </li>
+      </ul>
+    </div>
+    </li>
+  </ul>
+  <ul>
+    <li class="space-between">
+      <div class="status">
+      <button id="dLabel"
+              class="btn-status status-cancelled"
+              type="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+      >
+        <svg viewBox="0 0 100 100" class="icon symbol-close">
+          <use xlink:href="#symbol-close"></use>
+        </svg>
+        <svg viewBox="0 0 100 100" class="icon icon-arrows">
+          <use xlink:href="#symbol-arrow-down"></use>
+        </svg>
+      </button>
+      <ul class="status-list" aria-labelledby="dLabel">
+        <li class="status-item">
+          <svg viewBox="0 0 100 100" class="icon status-list-icon symbol-scheduled">
+            <use xlink:href="#symbol-scheduled"></use>
+          </svg>
+          <a class="status-link" href="#">Scheduled</a>
+        </li>
+        <li class="status-item">
+          <svg viewBox="0 0 100 100" class="icon status-list-icon symbol-arrived">
+            <use xlink:href="#symbol-arrived"></use>
+          </svg>
+          <a class="status-link" href="#">Arrived</a>
+        </li>
+        <li class="status-item">
+          <svg viewBox="0 0 100 100" class="icon status-list-icon symbol-seated">
+            <use xlink:href="#symbol-seated"></use>
+          </svg>
+          <a class="status-link" href="#">Seated</a>
+        </li>
+        <li class="status-item">
+          <svg viewBox="0 0 100 100" class="icon status-list-icon symbol-finished">
+            <use xlink:href="#symbol-finished"></use>
+          </svg>
+          <a class="status-link" href="#">Finished</a>
+        </li>
+        <li class="status-item">
+          <svg viewBox="0 0 100 100" class="icon status-list-icon symbol-close">
+            <use xlink:href="#symbol-close"></use>
+          </svg>
+          <a class="status-link" href="#">Cancelled</a>
+        </li>
+        <li class="status-item">
+          <svg viewBox="0 0 100 100" class="icon status-list-icon symbol-no-show">
+            <use xlink:href="#symbol-no-show"></use>
+          </svg>
+          <a class="status-link" href="#">No Show</a>
+        </li>
+      </ul>
+    </div>
+    </li>
+  </ul>
+  <ul>
+    <li class="space-between">
+      <div class="status">
+      <button id="dLabel"
+              class="btn-status status-no-show"
+              type="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+      >
+        <svg viewBox="0 0 100 100" class="icon symbol-no-show">
+          <use xlink:href="#symbol-no-show"></use>
+        </svg>
+        <svg viewBox="0 0 100 100" class="icon icon-arrows">
+          <use xlink:href="#symbol-arrow-down"></use>
+        </svg>
+      </button>
+      <ul class="status-list" aria-labelledby="dLabel">
+        <li class="status-item">
+          <svg viewBox="0 0 100 100" class="icon status-list-icon symbol-scheduled">
+            <use xlink:href="#symbol-scheduled"></use>
+          </svg>
+          <a class="status-link" href="#">Scheduled</a>
+        </li>
+        <li class="status-item">
+          <svg viewBox="0 0 100 100" class="icon status-list-icon symbol-arrived">
+            <use xlink:href="#symbol-arrived"></use>
+          </svg>
+          <a class="status-link" href="#">Arrived</a>
+        </li>
+        <li class="status-item">
+          <svg viewBox="0 0 100 100" class="icon status-list-icon symbol-seated">
+            <use xlink:href="#symbol-seated"></use>
+          </svg>
+          <a class="status-link" href="#">Seated</a>
+        </li>
+        <li class="status-item">
+          <svg viewBox="0 0 100 100" class="icon status-list-icon symbol-finished">
+            <use xlink:href="#symbol-finished"></use>
+          </svg>
+          <a class="status-link" href="#">Finished</a>
+        </li>
+        <li class="status-item">
+          <svg viewBox="0 0 100 100" class="icon status-list-icon symbol-close">
+            <use xlink:href="#symbol-close"></use>
+          </svg>
+          <a class="status-link" href="#">Cancelled</a>
+        </li>
+        <li class="status-item">
+          <svg viewBox="0 0 100 100" class="icon status-list-icon symbol-no-show">
+            <use xlink:href="#symbol-no-show"></use>
+          </svg>
+          <a class="status-link" href="#">No Show</a>
+        </li>
+      </ul>
+    </div>
+    </li>
+  </ul>
+</div>
 <hr/>
 <br/>
 

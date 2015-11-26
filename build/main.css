@@ -202,6 +202,77 @@ picture {
   color: #FFF;
   font-size: 0.75rem; }
 
+.status {
+  position: relative;
+  margin-bottom: 0.5rem 0; }
+
+.btn-status {
+  background-color: #CCC;
+  margin-bottom: 0;
+  padding: 0 0;
+  height: 3.0625rem;
+  width: 2.9375rem;
+  border-radius: 0; }
+  .btn-status .icon-arrows {
+    float: right;
+    stroke: #FFF;
+    margin: -2px 13px;
+    padding-bottom: 2px; }
+  .btn-status:hover {
+    background-color: rgba(153, 153, 153, 0.9); }
+  .btn-status:focus {
+    background-color: #999; }
+    .btn-status:focus .icon-arrows {
+      stroke: #FFF; }
+
+.status-list {
+  position: absolute;
+  z-index: 100;
+  display: none;
+  float: left;
+  min-width: 2.9375rem;
+  padding: 0.3125rem 0rem;
+  margin: 0 0;
+  font-size: 0.75rem;
+  text-align: left;
+  list-style: none;
+  background-color: #FFF;
+  background-clip: padding-box;
+  border: 1px solid #00A7C4;
+  right: 0; }
+
+.status-item {
+  display: block;
+  width: 100%;
+  padding: 0.4375rem 0.4375rem 0.4375rem 0.3125rem;
+  clear: both;
+  font-weight: normal;
+  line-height: 1.5;
+  text-align: inherit;
+  white-space: nowrap;
+  background: none;
+  border: 0; }
+  .status-item:hover {
+    background: #F7F7F7;
+    cursor: pointer; }
+
+.status-link {
+  color: #222; }
+
+.open > .status-list {
+  display: block; }
+
+.open > a {
+  outline: 0; }
+
+@media screen and (min-width: 450px) {
+  .btn-status {
+    width: 3.4375rem; }
+    .btn-status .icon-arrows {
+      float: right;
+      margin: 0.3125rem 0 0 0;
+      padding: 0 0.0625rem 0 0; } }
+
 html {
   box-sizing: border-box; }
 
@@ -326,6 +397,15 @@ html {
   width: 25%;
   margin-left: 0.65rem; }
 
+.status-container {
+  display: flex;
+  position: absolute;
+  float: right;
+  margin-left: 40px; }
+
+.space-between {
+  padding-right: 10px; }
+
 .icon {
   display: inline-block;
   vertical-align: middle;
@@ -333,6 +413,10 @@ html {
   fill: none;
   stroke: #FFF;
   stroke-width: 1.5px; }
+
+.status-list-icon {
+  stroke: #555;
+  height: 1.5625rem; }
 
 .icon-arrows {
   stroke: #999;
@@ -403,3 +487,24 @@ html {
 
 .open > a {
   outline: 0; }
+
+.status-active {
+  background-color: #22CCAA; }
+  .status-active:hover {
+    background-color: rgba(33, 180, 152, 0.9); }
+  .status-active:focus {
+    background-color: #21B498; }
+
+.status-cancelled {
+  background-color: #E62C4F; }
+  .status-cancelled:hover {
+    background-color: rgba(188, 33, 63, 0.9); }
+  .status-cancelled:focus {
+    background-color: #BC213F; }
+
+.status-no-show {
+  background-color: #FF910A; }
+  .status-no-show:hover {
+    background-color: rgba(217, 123, 8, 0.9); }
+  .status-no-show:focus {
+    background-color: #D97B08; }

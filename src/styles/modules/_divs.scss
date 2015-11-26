@@ -2,3 +2,14 @@
   width: 25%;
   margin-left: 0.65rem;
 }
+
+.status-container{
+  display: flex;
+  position: absolute;
+  float: right;
+  margin-left: 40px;
+}
+
+.space-between{
+  padding-right: 10px;
+}

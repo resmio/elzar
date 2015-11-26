@@ -1,0 +1,102 @@
+// The dropdown wrapper (div)
+.status {
+  position: relative;
+  // We remove the margin from the dropdown button to make the list append to it
+  // So we apply it here for the button to have margins when closed
+  margin-bottom: $button-margin;
+}
+
+.btn-status {
+  background-color: $silver;
+  margin-bottom: 0;
+  padding: 0 0 ;
+  height: $status-height;
+  width: $status-widht;
+  border-radius: 0;
+
+    .icon-arrows{
+      float: right;
+      stroke: $white;
+      //only way to be aligned – maybe we should have a better way?
+      margin: -2px 13px;
+      padding-bottom: 2px;
+    }
+    &:hover{
+      background-color: rgba(153, 153, 153, 0.90);
+    }
+    &:focus{
+      background-color: $dusty-gray ;
+      .icon-arrows{
+        stroke: $white;
+      }
+    }
+}
+
+
+// The status button menu (ul)
+.status-list {
+  position: absolute;
+  z-index: 100;
+  display: none; // none by default, but block on "open" of the menu
+  float: left;
+  min-width: rem(47);
+  padding: rem(5) rem(0);
+  margin: 0 0; // override default ul
+  font-size: $small-size;
+  text-align: left; // Ensures proper alignment if parent has it changed (e.g., modal footer)
+  list-style: none;
+  background-color: $white;
+  background-clip: padding-box;
+  border: 1px solid $pacific-blue;
+  right: 0;
+}
+
+// Links, buttons, and more within the dropdown menu
+//
+// `<button>`-specific styles are denoted with `// for <button>s`
+.status-item {
+  display: block;
+  width: 100%; // For `<button>`s
+  padding: $status-list-padding;
+  clear: both;
+  font-weight: normal;
+  line-height: $base-line-height;
+  text-align: inherit; // For `<button>`s
+  white-space: nowrap; // prevent links from randomly breaking onto new lines
+  background: none; // For `<button>`s
+  border: 0; // For `<button>`s
+
+  &:hover {
+    background: $wild-sand;
+    cursor:pointer;
+  }
+}
+
+.status-link {
+  color: $mine-shaft;
+}
+
+// Open state for the dropdown
+.open {
+  // Show the menu
+  > .status-list {
+    display: block;
+  }
+
+  // Remove the outline when :focus is triggered
+  > a {
+    outline: 0;
+  }
+}
+
+// media querie for desktopsize -- NEED TO CHANGE 450 FOR 320 --
+@media screen and (min-width: 450px){
+  .btn-status {
+    width: $status-bigger-widht;
+    .icon-arrows{
+      float: right;
+      margin: rem(5) 0 0 0 ;
+      padding: 0 rem(1) 0 0;
+    }
+  }
+}

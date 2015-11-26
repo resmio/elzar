@@ -1,0 +1,28 @@
+.status-active{
+  background-color: $java;
+  &:hover{
+    background-color: rgba(33, 180, 152, 0.90);
+  }
+  &:focus{
+    background-color: $mountain-meadow;
+  }
+}
+
+.status-cancelled{
+  background-color: $amaranth;
+  &:hover{
+    background-color: rgba(188, 33, 63, 0.90);
+  }
+  &:focus{
+    background-color: $maroon-flush ;
+  }
+}
+.status-no-show{
+  background-color: $west-side;
+  &:hover{
+    background-color: rgba(217, 123, 8, 0.90);
+  }
+  &:focus{
+    background-color: $tahiti-gold ;
+  }
+}

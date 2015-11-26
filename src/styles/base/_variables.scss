@@ -61,6 +61,7 @@ $tahiti-gold:           #D97B08;
 $mine-shaft:               #222;
 $emperor:                  #555;
 $dusty-gray:               #999;
+$silver:                   #CCC;
 $alto:                     #DDD;
 // Whites
 $wild-sand:             #F7F7F7;
@@ -98,6 +99,13 @@ $form-box-shadow-focus: $form-box-shadow, 0 0 5px adjust-color($action-color, $l
 $forms-spacing: rem(22);
 $forms-padding: rem(8);
 $forms-height: rem(40);
+
+//Status buttons
+$status-widht: rem(47);
+$status-height: rem(49);
+$status-bigger-widht: rem(55);
+$status-list-padding: rem(7) rem(7) rem(7) rem(5);
+
 
 // Animations
 $base-duration: 150ms;
