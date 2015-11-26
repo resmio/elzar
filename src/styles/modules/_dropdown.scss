@@ -37,8 +37,6 @@
 // The dropdown menu (ul)
 .dropdown-menu {
   position: absolute;
-  // top: 100%;
-  // left: 0;
   z-index: 100;
   display: none; // none by default, but block on "open" of the menu
   float: left;
