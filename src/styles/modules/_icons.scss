@@ -2,10 +2,17 @@
   display: inline-block;
   vertical-align: middle;
   height: 2rem;
+  fill: none;
+  stroke: $casablanca;
+  stroke-width: 1.5px;
+}
+
+.icon-light {
+  stroke: $white;
 }
 
 .symbol-add{
-  margin-right: 6px;
+  margin-right: rem(6px);
 }
 
 
