@@ -1,21 +1,37 @@
-.btn-link {
-  background: none;
-  color: $medium-gray;
-  font-weight: 400;
-
-  &:hover {
-    background: none;
-    color: $dark-gray;
-  }
-}
-
-.btn-light {
-  background: $white;
-  border: 1px solid $action-color;
-  color: $action-color;
-  font-weight: 400;
-}
-
 .btn-large {
-  padding: $large-button-padding;
-}
+    background: $pacific-blue;
+    padding: $large-button-padding;
+    height: 100%;
+    border-left: $large-buttons-border;
+    border-right: $large-buttons-border;
+    border-radius: 0;
+    margin-right: rem(-1);
+    float: right;
+
+    &:hover,
+    &:focus {
+      background-color: shade($action-color-darker, 5%);
+    }
+  }
+
+  .btn-light {
+    background: none;
+    border: 1px solid $action-color;
+    color: $action-color;
+
+    &:hover{
+      background-color: $pacific-blue;
+    }
+  }
+
+  .btn-link {
+    background: none;
+    color: $hiperlink-color;
+    text-decoration: underline;
+    padding: 0;
+
+    &:hover {
+      background: none;
+      color: $action-color-darker;
+    }
+  }

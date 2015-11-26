@@ -1,6 +1,6 @@
 #{$all-buttons} {
   appearance: none;
-  background-color: $action-color;
+  background-color: $java;
   border: 0;
   border-radius: $base-border-radius;
   color: #fff;
@@ -11,7 +11,7 @@
   -webkit-font-smoothing: antialiased;
   font-weight: 600;
   line-height: 1;
-  padding: $small-spacing $base-spacing;
+  padding: $default-button-padding;
   text-decoration: none;
   transition: background-color $base-duration $base-timing;
   user-select: none;
@@ -20,7 +20,8 @@
 
   &:hover,
   &:focus {
-    background-color: shade($action-color, 20%);
+    background-color: shade($mountain-meadow, 5%);
+    outline:0;
     color: #fff;
   }
 

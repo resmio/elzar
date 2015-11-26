@@ -1,0 +1,22 @@
+.messages-all{
+  opacity:0.9;
+  margin-bottom: rem(2);
+  padding: rem(3) rem(10);
+}
+
+.success-messages{
+  background-color: $success-color;
+}
+
+.error-messages{
+  background-color: $error-color;
+}
+
+.warning-messages{
+  background-color: $warning-color;
+}
+
+.message{
+  color: $white;
+  font-size: $small-size;
+}

@@ -1,0 +1,18 @@
+.icon {
+  display: inline-block;
+  vertical-align: middle;
+  height: rem(30);
+  fill: none;
+  stroke: $white;
+  stroke-width: 1.5px;
+}
+
+.icon-arrows{
+  stroke:$dusty-gray;
+  height: rem(23);
+  margin: 0 rem(5) 0 rem(12);
+}
+
+.symbol-add{
+  margin-right: rem(6px);
+}
