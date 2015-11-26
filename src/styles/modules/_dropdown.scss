@@ -15,8 +15,7 @@
   height: $forms-height;
 
   &:hover {
-    background: $white;
-    border: 1px solid shade($dusty-gray, 10%);
+    background: $wild-sand;
     color: $dusty-gray;
   }
   // Prevent the focus on the dropdown toggle when closing dropdowns
@@ -25,6 +24,9 @@
     background-color: $white;
     border-color: $action-color;
     color: $dusty-gray;
+    .icon-arrows{
+      stroke:$pacific-blue;
+    }
   }
     //WE NEED TO CHANGE WHEN IT'S SELECTED - COLOR $EMPIRE
 
@@ -35,8 +37,8 @@
 // The dropdown menu (ul)
 .dropdown-menu {
   position: absolute;
-  top: 100%;
-  left: 0;
+  // top: 100%;
+  // left: 0;
   z-index: 100;
   display: none; // none by default, but block on "open" of the menu
   float: left;
@@ -88,4 +90,28 @@
   > a {
     outline: 0;
   }
+}
+
+.dropdown-colored{
+    .btn-dropdown {
+      background-color: $pacific-blue;
+      border: $large-buttons-border;
+      color: $white;
+        &:hover{
+          background-color: $deep-cerulean;
+        }
+        &:focus{
+          background-color: $white;
+          color: $dusty-gray;
+          .icon-arrows{
+            stroke:$pacific-blue;
+          }
+        }
+        .icon-arrows{
+          stroke:$white;
+        }
+    }
+    .dropdown-menu{
+      width: rem(250);
+    }
 }
