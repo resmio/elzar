@@ -334,7 +334,7 @@ html {
   stroke: #FFF;
   stroke-width: 1.5px; }
 
-.icon-arrows {
+.arrows_icon {
   stroke: #999;
   height: 1.4375rem;
   margin: 0 0.3125rem 0 0.75rem; }
@@ -346,25 +346,23 @@ html {
   position: relative;
   margin-bottom: 0.5rem 0; }
 
-.btn-dropdown {
+.dropdown_btn {
   background-color: #FFF;
   border: 1px solid #DDD;
   color: #999;
   margin-bottom: 0;
   padding: 0.0625rem 0 0 0.5rem;
   height: 2.5rem; }
-  .btn-dropdown:hover {
+  .dropdown_btn:hover {
     background: #F7F7F7;
     color: #999; }
-  .btn-dropdown:focus {
+  .dropdown_btn:focus {
     outline: 0;
     background-color: #FFF;
     border-color: #00A7C4;
     color: #999; }
-    .btn-dropdown:focus .icon-arrows {
-      stroke: #00A7C4; }
 
-.dropdown-menu {
+.dropdown_list {
   position: absolute;
   z-index: 100;
   display: none;
@@ -379,7 +377,7 @@ html {
   background-clip: padding-box;
   border: 1px solid #00A7C4; }
 
-.dropdown-item {
+.dropdown_item {
   display: block;
   width: 100%;
   padding: 0.25rem 1rem;
@@ -390,32 +388,36 @@ html {
   white-space: nowrap;
   background: none;
   border: 0; }
-  .dropdown-item:hover {
+  .dropdown_item:hover {
     background: #F7F7F7; }
 
-.dropdown-link {
+.dropdown_link {
   color: #222; }
 
-.open > .dropdown-menu {
+.open > .dropdown_list {
   display: block;
   margin-top: -0.1875rem; }
 
 .open > a {
   outline: 0; }
 
-.dropdown-colored .btn-dropdown {
+.dropdown_colored .dropdown_btn {
   background-color: #00A7C4;
   border: 1px solid #018EA6;
   color: #FFF; }
-  .dropdown-colored .btn-dropdown:hover {
+  .dropdown_colored .dropdown_btn:hover {
     background-color: #018EA6; }
-  .dropdown-colored .btn-dropdown:focus {
+  .dropdown_colored .dropdown_btn:focus {
     background-color: #FFF;
     color: #999; }
-    .dropdown-colored .btn-dropdown:focus .icon-arrows {
-      stroke: #00A7C4; }
-  .dropdown-colored .btn-dropdown .icon-arrows {
-    stroke: #FFF; }
 
-.dropdown-colored .dropdown-menu {
+.dropdown_colored .dropdown_list {
   width: 15.625rem; }
+
+.dropdown_btn:focus .dropdown_icon {
+  stroke: #00A7C4; }
+
+.dropdown_colored .dropdown_icon {
+  stroke: #FFF; }
+  .dropdown_colored .dropdown_icon:focus .dropdown_colored .dropdown_icon {
+    stroke: #00A7C4; }
