@@ -210,13 +210,15 @@ html {
 
 .btn-large {
   background: #00A7C4;
-  padding: 0 1.6875rem;
+  padding: 0 0.9375rem;
   height: 100%;
   border-left: 1px solid #018EA6;
   border-right: 1px solid #018EA6;
   border-radius: 0;
-  margin-right: -0.0625rem;
+  margin-right: -0.1875rem;
   float: right; }
+  .btn-large .text_btn {
+    display: none; }
   .btn-large:hover, .btn-large:focus {
     background-color: #01879e; }
 
@@ -235,6 +237,12 @@ html {
   .btn-link:hover {
     background: none;
     color: #018EA6; }
+
+@media screen and (min-width: 720px) {
+  .btn-large {
+    padding: 0 1.6875rem; }
+    .btn-large .text_btn {
+      display: inline; } }
 
 .container {
   display: block;
@@ -291,7 +299,11 @@ html {
   background: #00A7C4;
   height: 60px;
   margin: 10px 0;
-  padding: 0 3rem; }
+  padding: 0;
+  width: 100%; }
+  @media screen and (min-width: 720px) {
+    .header {
+      padding: 0 3rem; } }
 
 .form-error {
   background: url(/svg/symbol-close.svg) no-repeat;

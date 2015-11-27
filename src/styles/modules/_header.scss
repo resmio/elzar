@@ -2,5 +2,9 @@
   background: $pacific-blue;
   height: 60px;
   margin: 10px 0;
-  padding: $content-padding;
+  padding: 0;
+  width: 100%;
+  @media screen and (min-width: 720px){
+    padding: $content-padding;
+  }
 }

@@ -1,20 +1,22 @@
 .btn-large {
     background: $pacific-blue;
-    padding: $large-button-padding;
+    padding: $large-button-padding--mobile;
     height: 100%;
     border-left: $large-buttons-border;
     border-right: $large-buttons-border;
     border-radius: 0;
-    margin-right: rem(-1);
+    margin-right: rem(-3);
     float: right;
-
+    .text_btn{
+      display: none;
+    }
     &:hover,
     &:focus {
       background-color: shade($action-color-darker, 5%);
     }
   }
 
-  .btn-light {
+.btn-light {
     background: none;
     border: 1px solid $action-color;
     color: $action-color;
@@ -24,7 +26,7 @@
     }
   }
 
-  .btn-link {
+.btn-link {
     background: none;
     color: $hiperlink-color;
     text-decoration: underline;
@@ -35,3 +37,13 @@
       color: $action-color-darker;
     }
   }
+
+
+@media screen and (min-width:720px){
+  .btn-large {
+      padding: $large-button-padding;
+      .text_btn{
+        display: inline;
+      }
+  }
+}
