@@ -206,26 +206,24 @@ picture {
   position: relative;
   margin-bottom: 0.5rem 0; }
 
-.btn-status {
+.status_btn {
   background-color: #CCC;
   margin-bottom: 0;
   padding: 0 0;
   height: 3.0625rem;
   width: 2.9375rem;
   border-radius: 0; }
-  .btn-status .icon-arrows {
+  .status_btn .arrow_icon {
     float: right;
     stroke: #FFF;
     margin: -2px 13px;
     padding-bottom: 2px; }
-  .btn-status:hover {
+  .status_btn:hover {
     background-color: rgba(153, 153, 153, 0.9); }
-  .btn-status:focus {
+  .status_btn:focus {
     background-color: #999; }
-    .btn-status:focus .icon-arrows {
-      stroke: #FFF; }
 
-.status-list {
+.status_list {
   position: absolute;
   z-index: 100;
   display: none;
@@ -238,10 +236,10 @@ picture {
   list-style: none;
   background-color: #FFF;
   background-clip: padding-box;
-  border: 1px solid #00A7C4;
+  border: 1px solid #DDD;
   right: 0; }
 
-.status-item {
+.status_item {
   display: block;
   width: 100%;
   padding: 0.4375rem 0.4375rem 0.4375rem 0.3125rem;
@@ -252,23 +250,31 @@ picture {
   white-space: nowrap;
   background: none;
   border: 0; }
-  .status-item:hover {
+  .status_item:hover {
     background: #F7F7F7;
     cursor: pointer; }
 
-.status-link {
-  color: #222; }
+.status_item--selected {
+  opacity: 0.4; }
 
-.open > .status-list {
+.status_link {
+  color: #555; }
+  .status_link:hover {
+    color: #555; }
+
+.status_btn .status_icon {
+  stroke: white; }
+
+.open > .status_list {
   display: block; }
 
 .open > a {
   outline: 0; }
 
 @media screen and (min-width: 450px) {
-  .btn-status {
+  .status_btn {
     width: 3.4375rem; }
-    .btn-status .icon-arrows {
+    .status_btn .arrow_icon {
       float: right;
       margin: 0.3125rem 0 0 0;
       padding: 0 0.0625rem 0 0; } }
@@ -397,13 +403,13 @@ html {
   width: 25%;
   margin-left: 0.65rem; }
 
-.status-container {
+.status_container {
   display: flex;
   position: absolute;
   float: right;
   margin-left: 40px; }
 
-.space-between {
+.space_between {
   padding-right: 10px; }
 
 .icon {
@@ -414,11 +420,11 @@ html {
   stroke: #FFF;
   stroke-width: 1.5px; }
 
-.status-list-icon {
+.status_list--icon {
   stroke: #555;
   height: 1.5625rem; }
 
-.icon-arrows {
+.arrow_icon {
   stroke: #999;
   height: 1.4375rem;
   margin: 0 0.3125rem 0 0.75rem; }
@@ -488,23 +494,23 @@ html {
 .open > a {
   outline: 0; }
 
-.status-active {
+.status_active {
   background-color: #22CCAA; }
-  .status-active:hover {
+  .status_active:hover {
     background-color: rgba(33, 180, 152, 0.9); }
-  .status-active:focus {
+  .status_active:focus {
     background-color: #21B498; }
 
-.status-cancelled {
+.status_cancelled {
   background-color: #E62C4F; }
-  .status-cancelled:hover {
+  .status_cancelled:hover {
     background-color: rgba(188, 33, 63, 0.9); }
-  .status-cancelled:focus {
+  .status_cancelled:focus {
     background-color: #BC213F; }
 
-.status-no-show {
+.status_no-show {
   background-color: #FF910A; }
-  .status-no-show:hover {
+  .status_no-show:hover {
     background-color: rgba(217, 123, 8, 0.9); }
-  .status-no-show:focus {
+  .status_no-show:focus {
     background-color: #D97B08; }

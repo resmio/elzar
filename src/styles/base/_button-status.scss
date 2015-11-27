@@ -6,15 +6,14 @@
   margin-bottom: $button-margin;
 }
 
-.btn-status {
+.status_btn {
   background-color: $silver;
   margin-bottom: 0;
   padding: 0 0 ;
   height: $status-height;
   width: $status-widht;
   border-radius: 0;
-
-    .icon-arrows{
+    .arrow_icon{
       float: right;
       stroke: $white;
       //only way to be aligned – maybe we should have a better way?
@@ -26,15 +25,11 @@
     }
     &:focus{
       background-color: $dusty-gray ;
-      .icon-arrows{
-        stroke: $white;
-      }
     }
 }
 
-
 // The status button menu (ul)
-.status-list {
+.status_list {
   position: absolute;
   z-index: 100;
   display: none; // none by default, but block on "open" of the menu
@@ -47,14 +42,14 @@
   list-style: none;
   background-color: $white;
   background-clip: padding-box;
-  border: 1px solid $pacific-blue;
+  border: 1px solid $alto;
   right: 0;
 }
 
 // Links, buttons, and more within the dropdown menu
 //
 // `<button>`-specific styles are denoted with `// for <button>s`
-.status-item {
+.status_item {
   display: block;
   width: 100%; // For `<button>`s
   padding: $status-list-padding;
@@ -72,14 +67,28 @@
   }
 }
 
-.status-link {
-  color: $mine-shaft;
+.status_item--selected{
+  opacity: 0.4;
 }
+
+.status_link{
+  color: $emperor;
+    &:hover{
+      color: $emperor;
+    }
+}
+
+.status_icon{
+    .status_btn &{
+      stroke:white;
+    }
+}
+
 
 // Open state for the dropdown
 .open {
   // Show the menu
-  > .status-list {
+  > .status_list {
     display: block;
   }
 
@@ -91,9 +100,9 @@
 
 // media querie for desktopsize -- NEED TO CHANGE 450 FOR 320 --
 @media screen and (min-width: 450px){
-  .btn-status {
+  .status_btn {
     width: $status-bigger-widht;
-    .icon-arrows{
+    .arrow_icon{
       float: right;
       margin: rem(5) 0 0 0 ;
       padding: 0 rem(1) 0 0;
