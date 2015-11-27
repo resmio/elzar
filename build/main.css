@@ -389,10 +389,11 @@ html {
   background: none;
   border: 0; }
   .dropdown_item:hover {
-    background: #F7F7F7; }
+    background: #F7F7F7;
+    cursor: pointer; }
 
 .dropdown_link {
-  color: #222; }
+  color: #555; }
 
 .open > .dropdown_list {
   display: block;
