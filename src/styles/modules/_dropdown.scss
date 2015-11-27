@@ -63,11 +63,12 @@
   border: 0; // For `<button>`s
   &:hover {
     background: $wild-sand;
+    cursor: pointer;
   }
 }
 
 .dropdown_link {
-  color: $mine-shaft;
+  color: $emperor;
 }
 
 // Open state for the dropdown
