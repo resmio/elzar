@@ -7,11 +7,17 @@ linters:
     space_after_bang: false
 
   BorderZero:
-    enabled: false
+    enabled: true
+
+  ChainedClasses:
+    enabled: true
 
   ColorKeyword:
     enabled: true
     severity: warning
+
+  ColorVariable:
+    enabled: true
 
   Comment:
     enabled: true
@@ -51,7 +57,13 @@ linters:
   HexValidation:
     enabled: true
 
+  IdSelector:
+    enabled: true
+
   IdWithExtraneousSelector:
+    enabled: true
+
+  ImportantRule:
     enabled: true
 
   ImportPath:
@@ -78,11 +90,15 @@ linters:
 
   NestingDepth:
     enabled: true
-    max_depth: 4
+    max_depth: 3
     severity: warning
 
   PlaceholderInExtend:
     enabled: false
+
+  PropertyCount:
+    enabed: true
+    max_properties: 12
 
   PropertySortOrder:
     enabled: true
@@ -92,6 +108,9 @@ linters:
   PropertySpelling:
     enabled: true
     extra_properties: []
+
+  PseudoElement:
+    enabled: true
 
   QualifyingElement:
     enabled: true
@@ -130,6 +149,12 @@ linters:
   SpaceAfterPropertyName:
     enabled: true
 
+  SpaceAfterVariableName:
+    enabled: true
+
+  SpaceAroundOperator:
+    enabled: true
+
   SpaceBeforeBrace:
     enabled: true
     style: space
@@ -141,9 +166,12 @@ linters:
 
   StringQuotes:
     enabled: true
-    style: double_quotes
+    style: single_quotes
 
   TrailingSemicolon:
+    enabled: true
+
+  TrailingWhitespace:
     enabled: true
 
   TrailingZero:
@@ -160,6 +188,12 @@ linters:
 
   UrlQuotes:
     enabled: true
+
+  VariableForProperty:
+    enabled: true
+    properties:
+      - color
+      - font
 
   VendorPrefixes:
     enabled: true
