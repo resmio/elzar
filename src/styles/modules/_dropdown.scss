@@ -6,7 +6,7 @@
   margin-bottom: $button-margin;
 }
 
-.btn-dropdown {
+.dropdown_btn {
   background-color: $white;
   border: $base-border;
   color: $dusty-gray;
@@ -15,8 +15,7 @@
   height: $forms-height;
 
   &:hover {
-    background: $white;
-    border: 1px solid shade($dusty-gray, 10%);
+    background: $wild-sand;
     color: $dusty-gray;
   }
   // Prevent the focus on the dropdown toggle when closing dropdowns
@@ -27,16 +26,13 @@
     color: $dusty-gray;
   }
     //WE NEED TO CHANGE WHEN IT'S SELECTED - COLOR $EMPIRE
-
     // ADD SOME ANIMATIONS LIKE THIS: http://semantic-ui.com/modules/dropdown.html
-
 }
 
+
 // The dropdown menu (ul)
-.dropdown-menu {
+.dropdown_list {
   position: absolute;
-  top: 100%;
-  left: 0;
   z-index: 100;
   display: none; // none by default, but block on "open" of the menu
   float: left;
@@ -54,7 +50,7 @@
 // Links, buttons, and more within the dropdown menu
 //
 // `<button>`-specific styles are denoted with `// for <button>s`
-.dropdown-item {
+.dropdown_item {
   display: block;
   width: 100%; // For `<button>`s
   padding: rem(4) rem(16);
@@ -65,20 +61,19 @@
   white-space: nowrap; // prevent links from randomly breaking onto new lines
   background: none; // For `<button>`s
   border: 0; // For `<button>`s
-
   &:hover {
     background: $wild-sand;
   }
 }
 
-.dropdown-link {
+.dropdown_link {
   color: $mine-shaft;
 }
 
 // Open state for the dropdown
 .open {
   // Show the menu
-  > .dropdown-menu {
+  > .dropdown_list {
     display: block;
     //margin to remove white space between dropdown button and dropdown list
     margin-top: rem(-3);
@@ -87,5 +82,35 @@
   // Remove the outline when :focus is triggered
   > a {
     outline: 0;
+  }
+}
+
+.dropdown_colored{
+    .dropdown_btn {
+      background-color: $pacific-blue;
+      border: $large-buttons-border;
+      color: $white;
+        &:hover{
+          background-color: $deep-cerulean;
+        }
+        &:focus{
+          background-color: $white;
+          color: $dusty-gray;
+        }
+    }
+    .dropdown_list{
+      width: rem(250);
+    }
+}
+
+.dropdown_icon {
+  .dropdown_btn:focus & {
+      stroke:$pacific-blue;
+  }
+  .dropdown_colored & {
+      stroke:$white;
+    &:focus & {
+        stroke:$pacific-blue;
+      }
   }
 }
