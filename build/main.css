@@ -40,7 +40,9 @@ select {
   font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
   font-size: 1rem;
   height: 2.5rem;
-  border: 1px solid #DDD; }
+  border: 1px solid #DDD;
+  min-width: 11.25rem;
+  padding-right: 0.625rem; }
   input:hover,
   label:hover,
   select:hover {
@@ -231,7 +233,7 @@ picture {
   min-width: 2.9375rem;
   padding: 0.3125rem 0rem;
   margin: 0 0;
-  font-size: 0.75rem;
+  font-size: 1rem;
   text-align: left;
   list-style: none;
   background-color: #FFF;
@@ -277,7 +279,9 @@ picture {
     .status_btn .arrow_icon {
       float: right;
       margin: 0.3125rem 0 0 0;
-      padding: 0 0.0625rem 0 0; } }
+      padding: 0 0.0625rem 0 0; }
+  .status_list {
+    font-size: 0.875rem; } }
 
 html {
   box-sizing: border-box; }
@@ -374,7 +378,8 @@ html {
   background: url(/svg/symbol-close.svg) no-repeat;
   background-position: 98%;
   background-size: 1.5625rem;
-  border: 0.0625rem solid #E62C4F; }
+  border: 0.0625rem solid #E62C4F;
+  padding-right: 2rem; }
   .form-error:hover, .form-error :focus {
     border-color: #E62C4F; }
 
@@ -382,7 +387,8 @@ html {
   background: url(/svg/symbol-check.svg) no-repeat;
   background-position: 98%;
   background-size: 1.5625rem;
-  border: 0.0625rem solid #22CCAA; }
+  border: 0.0625rem solid #22CCAA;
+  padding-right: 2rem; }
   .form-success:hover, .form-success :focus {
     border-color: #22CCAA; }
 
@@ -390,13 +396,15 @@ html {
   background: url(/svg/symbol-warning.svg) no-repeat;
   background-position: 98%;
   background-size: 1.5625rem;
-  border: 0.0625rem solid #F8C150; }
+  border: 0.0625rem solid #F8C150;
+  padding-right: 2rem; }
   .form-warning:hover, .form-warning :focus {
     border-color: #F8C150; }
 
 .form-list li {
   border-radius: none;
   margin-bottom: 1rem;
+  min-width: 11.25rem;
   margin-top: -0.125rem; }
 
 .forms-div {
