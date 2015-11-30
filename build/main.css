@@ -204,85 +204,6 @@ picture {
   color: #FFF;
   font-size: 0.75rem; }
 
-.status {
-  position: relative;
-  margin-bottom: 0.5rem 0; }
-
-.status_btn {
-  background-color: #CCC;
-  margin-bottom: 0;
-  padding: 0 0;
-  height: 3.0625rem;
-  width: 2.9375rem;
-  border-radius: 0; }
-  .status_btn .arrow_icon {
-    float: right;
-    stroke: #FFF;
-    margin: -2px 13px;
-    padding-bottom: 2px; }
-  .status_btn:hover {
-    background-color: rgba(153, 153, 153, 0.9); }
-  .status_btn:focus {
-    background-color: #999; }
-
-.status_list {
-  position: absolute;
-  z-index: 100;
-  display: none;
-  float: left;
-  min-width: 2.9375rem;
-  padding: 0.3125rem 0rem;
-  margin: 0 0;
-  font-size: 1rem;
-  text-align: left;
-  list-style: none;
-  background-color: #FFF;
-  background-clip: padding-box;
-  border: 1px solid #DDD;
-  right: 0; }
-
-.status_item {
-  display: block;
-  width: 100%;
-  padding: 0.4375rem 0.4375rem 0.4375rem 0.3125rem;
-  clear: both;
-  font-weight: normal;
-  line-height: 1.5;
-  text-align: inherit;
-  white-space: nowrap;
-  background: none;
-  border: 0; }
-  .status_item:hover {
-    background: #F7F7F7;
-    cursor: pointer; }
-
-.status_item--selected {
-  opacity: 0.4; }
-
-.status_link {
-  color: #555; }
-  .status_link:hover {
-    color: #555; }
-
-.status_btn .status_icon {
-  stroke: white; }
-
-.open > .status_list {
-  display: block; }
-
-.open > a {
-  outline: 0; }
-
-@media screen and (min-width: 450px) {
-  .status_btn {
-    width: 3.4375rem; }
-    .status_btn .arrow_icon {
-      float: right;
-      margin: 0.3125rem 0 0 0;
-      padding: 0 0.0625rem 0 0; }
-  .status_list {
-    font-size: 0.875rem; } }
-
 html {
   box-sizing: border-box; }
 
@@ -319,7 +240,7 @@ html {
 
 .container {
   display: block;
-  background: blue; }
+  background: #00A7C4; }
   .container::after {
     clear: both;
     content: "";
@@ -332,7 +253,7 @@ html {
 .comp1 {
   display: none;
   height: 300px;
-  background-color: red; }
+  background-color: #E62C4F; }
   @media screen and (min-width: 900px) {
     .comp1 {
       float: left;
@@ -345,7 +266,7 @@ html {
 .comp2 {
   display: none;
   height: 300px;
-  background-color: green; }
+  background-color: #22CCAA; }
   @media screen and (min-width: 900px) {
     .comp2 {
       float: left;
@@ -358,7 +279,7 @@ html {
 .comp3 {
   display: none;
   height: 300px;
-  background-color: yellow; }
+  background-color: #F8C150; }
   @media screen and (min-width: 900px) {
     .comp3 {
       float: left;
@@ -373,6 +294,15 @@ html {
   height: 60px;
   margin: 10px 0;
   padding: 0 3rem; }
+
+.form-list .form-list_element {
+  border-radius: none;
+  margin-bottom: 1rem;
+  min-width: 11.25rem;
+  margin-top: -0.125rem; }
+
+.form-list .messages_feedback {
+  margin-top: -0.125rem; }
 
 .form-error {
   background: url(/svg/symbol-close.svg) no-repeat;
@@ -401,12 +331,6 @@ html {
   .form-warning:hover, .form-warning :focus {
     border-color: #F8C150; }
 
-.form-list li {
-  border-radius: none;
-  margin-bottom: 1rem;
-  min-width: 11.25rem;
-  margin-top: -0.125rem; }
-
 .forms-div {
   width: 25%;
   margin-left: 0.65rem; }
@@ -420,6 +344,9 @@ html {
 .space_between {
   padding-right: 10px; }
 
+.styleguide-separator {
+  margin-bottom: 50px; }
+
 .icon {
   display: inline-block;
   vertical-align: middle;
@@ -428,7 +355,7 @@ html {
   stroke: #FFF;
   stroke-width: 1.5px; }
 
-.status_list--icon {
+.status_list_icon {
   stroke: #555;
   height: 1.5625rem; }
 
@@ -502,23 +429,102 @@ html {
 .open > a {
   outline: 0; }
 
-.status_active {
+.status {
+  position: relative;
+  margin-bottom: 0.5rem 0; }
+
+.status_btn {
+  background-color: #CCC;
+  margin-bottom: 0;
+  padding: 0 0;
+  height: 3.0625rem;
+  width: 2.9375rem;
+  border-radius: 0; }
+  .status_btn:hover {
+    background-color: rgba(153, 153, 153, 0.9); }
+  .status_btn:focus {
+    background-color: #999; }
+  @media screen and (min-width: 450px) {
+    .status_btn {
+      width: 3.4375rem; } }
+
+.status_list {
+  position: absolute;
+  z-index: 100;
+  display: none;
+  float: left;
+  min-width: 2.9375rem;
+  padding: 0.3125rem 0rem;
+  margin: 0 0;
+  font-size: 1rem;
+  text-align: left;
+  list-style: none;
+  background-color: #FFF;
+  background-clip: padding-box;
+  border: 1px solid #DDD;
+  right: 0; }
+  .open .status_list {
+    display: block; }
+    .open .status_list a {
+      outline: 0; }
+  @media screen and (min-width: 450px) {
+    .status_list {
+      font-size: 0.875rem; } }
+
+.status_item {
+  display: block;
+  width: 100%;
+  padding: 0.4375rem 0.4375rem 0.4375rem 0.3125rem;
+  clear: both;
+  font-weight: normal;
+  line-height: 1.5;
+  text-align: inherit;
+  white-space: nowrap;
+  background: none;
+  border: 0; }
+  .status_item:hover {
+    background: #F7F7F7;
+    cursor: pointer; }
+
+.status_item--selected {
+  opacity: 0.4; }
+
+.status_link {
+  color: #555; }
+  .status_link:hover {
+    color: #555; }
+
+.status_btn .status_icon {
+  stroke: white; }
+
+.status_btn .arrow_icon {
+  float: right;
+  stroke: #FFF;
+  margin: -2px 13px;
+  padding-bottom: 2px; }
+  @media screen and (min-width: 450px) {
+    .status_btn .arrow_icon {
+      float: right;
+      margin: 0.3125rem 0 0 0;
+      padding: 0 0.0625rem 0 0; } }
+
+.status--active {
   background-color: #22CCAA; }
-  .status_active:hover {
-    background-color: rgba(33, 180, 152, 0.9); }
-  .status_active:focus {
+  .status--active:hover {
+    background-color: rgba(33, 180, 152, 0.8); }
+  .status--active:focus {
     background-color: #21B498; }
 
-.status_cancelled {
+.status--cancelled {
   background-color: #E62C4F; }
-  .status_cancelled:hover {
-    background-color: rgba(188, 33, 63, 0.9); }
-  .status_cancelled:focus {
+  .status--cancelled:hover {
+    background-color: rgba(188, 33, 63, 0.8); }
+  .status--cancelled:focus {
     background-color: #BC213F; }
 
-.status_no-show {
+.status--no-show {
   background-color: #FF910A; }
-  .status_no-show:hover {
-    background-color: rgba(217, 123, 8, 0.9); }
-  .status_no-show:focus {
+  .status--no-show:hover {
+    background-color: rgba(217, 123, 8, 0.8); }
+  .status--no-show:focus {
     background-color: #D97B08; }

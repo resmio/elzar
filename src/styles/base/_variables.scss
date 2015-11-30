@@ -24,7 +24,7 @@ $base-spacing: rem(10) rem(30);
 $banner-padding: rem(20) rem(15);
 $dropdown-padding: rem(1) 0 0 rem(8);
 $content-padding: 0 rem(48);
-
+$min-component-width: rem(180);
 
 /// GLOBAL VALUES
 // --------------------------------------------------
@@ -102,10 +102,15 @@ $forms-height: rem(40);
 $padding_forms--errors: rem(32);
 
 //Status buttons
-$status-widht: rem(47);
+$status-width: rem(47);
 $status-height: rem(49);
-$status-bigger-widht: rem(55);
+$status-bigger-width: rem(55);
 $status-list-padding: rem(7) rem(7) rem(7) rem(5);
+
+
+// Breakpoints
+$breakpoint-a: 450px;
+$breakpoint-b: 750px;
 
 
 // Animations

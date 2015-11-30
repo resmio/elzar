@@ -1,3 +1,16 @@
+.form-list{
+  .form-list_element{
+     border-radius: none;
+     margin-bottom: rem(16);
+     min-width: $min-component-width;
+     //remove white space between input field and error box.
+     margin-top: rem(-2);
+   }
+   .messages_feedback{
+     margin-top: rem(-2);
+   }
+}
+
 .form-error {
   background: url(/svg/symbol-close.svg) no-repeat;
   background-position: 98%;
@@ -29,14 +42,4 @@
     &:hover,:focus{
     border-color: $warning-color;
   }
-}
-
-.form-list{
-  li{
-     border-radius: none;
-     margin-bottom: rem(16);
-     min-width: rem(180);
-     //remove white space between input field and error box.
-     margin-top: rem(-2);
-   }
 }

@@ -13,7 +13,7 @@ select {
   font-size: $base-font-size;
   height: $forms-height;
   border: $base-border;
-  min-width: rem(180);
+  min-width: $min-component-width;
   padding-right: rem(10);
 
     &:hover {
