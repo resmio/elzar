@@ -1,37 +1,37 @@
 .btn-large {
-    background: $pacific-blue;
-    padding: $large-button-padding;
-    height: 100%;
-    border-left: $large-buttons-border;
-    border-right: $large-buttons-border;
-    border-radius: 0;
-    margin-right: rem(-1);
-    float: right;
+  background: $pacific-blue;
+  border-left: $large-buttons-border;
+  border-radius: 0;
+  border-right: $large-buttons-border;
+  float: right;
+  height: 100%;
+  margin-right: rem(-1);
+  padding: $large-button-padding;
 
-    &:hover,
-    &:focus {
-      background-color: shade($action-color-darker, 5%);
-    }
+  &:hover,
+  &:focus {
+    background-color: shade($action-color-darker, 5%);
   }
+}
 
-  .btn-light {
+.btn-light {
+  background: none;
+  border: 1px solid $action-color;
+  color: $action-color;
+
+  &:hover {
+    background-color: $pacific-blue;
+  }
+}
+
+.btn-link {
+  background: none;
+  color: $hiperlink-color;
+  padding: 0;
+  text-decoration: underline;
+
+  &:hover {
     background: none;
-    border: 1px solid $action-color;
-    color: $action-color;
-
-    &:hover{
-      background-color: $pacific-blue;
-    }
+    color: $action-color-darker;
   }
-
-  .btn-link {
-    background: none;
-    color: $hiperlink-color;
-    text-decoration: underline;
-    padding: 0;
-
-    &:hover {
-      background: none;
-      color: $action-color-darker;
-    }
-  }
+}

@@ -93,14 +93,14 @@
     border: $large-buttons-border;
     color: $white;
 
-      &:hover {
-        background-color: $deep-cerulean;
-      }
+    &:hover {
+      background-color: $deep-cerulean;
+    }
 
-      &:focus {
-        background-color: $white;
-        color: $dusty-gray;
-      }
+    &:focus {
+      background-color: $white;
+      color: $dusty-gray;
+    }
   }
 
   .dropdown_list {

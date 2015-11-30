@@ -5,7 +5,6 @@ var sourcemaps = require('gulp-sourcemaps');
 var handleErrors = require('../lib/handleErrors');
 var sassConfig = require('../config').sass;
 var sasslint = require('gulp-scss-lint');
-var cache = require('gulp-cached');
 var gulpFilter = require('gulp-filter');
 
 gulp.task('sass', function() {
@@ -14,11 +13,9 @@ gulp.task('sass', function() {
   );
   return gulp.src(sassConfig.src)
     .pipe(sourcemaps.init())
-    .pipe(cache(sasslint)) // We cache the linter so only run it on changes
     .pipe(lintFilter)
     .pipe(sasslint({
-      'config': 'scss-lint.yml',
-      'endless': 'true'
+      'config': 'scss-lint.yml'
     }))
     .pipe(lintFilter.restore)
     .pipe(sass())
