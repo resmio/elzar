@@ -4,7 +4,8 @@
   margin: 10px 0;
   padding: 0;
   width: 100%;
-  @media screen and (min-width: 720px){
+
+  @include media(min-width 720px) {
     padding: $content-padding;
   }
 }

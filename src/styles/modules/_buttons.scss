@@ -1,49 +1,49 @@
 .btn-large {
-    background: $pacific-blue;
-    padding: $large-button-padding--mobile;
-    height: 100%;
-    border-left: $large-buttons-border;
-    border-right: $large-buttons-border;
-    border-radius: 0;
-    margin-right: rem(-3);
-    float: right;
-    .text_btn{
-      display: none;
-    }
-    &:hover,
-    &:focus {
-      background-color: shade($action-color-darker, 5%);
+  background: $pacific-blue;
+  padding: $large-button-padding--mobile;
+  height: 100%;
+  border-left: $large-buttons-border;
+  border-right: $large-buttons-border;
+  border-radius: 0;
+  margin-right: rem(-3);
+  float: right;
+
+  .btn_text{
+    display: none;
+
+    @include media(min-width 720px) {
+      display: inline;
     }
   }
+  &:hover,
+  &:focus {
+    background-color: shade($action-color-darker, 5%);
+  }
+
+  @include media(min-width 720px) {
+    padding: $large-button-padding;
+  }
+
+}
 
 .btn-light {
-    background: none;
-    border: 1px solid $action-color;
-    color: $action-color;
+  background: none;
+  border: 1px solid $action-color;
+  color: $action-color;
 
-    &:hover{
-      background-color: $pacific-blue;
-    }
+  &:hover{
+    background-color: $pacific-blue;
   }
+}
 
 .btn-link {
+  background: none;
+  color: $hiperlink-color;
+  text-decoration: underline;
+  padding: 0;
+
+  &:hover {
     background: none;
-    color: $hiperlink-color;
-    text-decoration: underline;
-    padding: 0;
-
-    &:hover {
-      background: none;
-      color: $action-color-darker;
-    }
-  }
-
-
-@media screen and (min-width:720px){
-  .btn-large {
-      padding: $large-button-padding;
-      .text_btn{
-        display: inline;
-      }
+    color: $action-color-darker;
   }
 }

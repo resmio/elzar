@@ -217,10 +217,16 @@ html {
   border-radius: 0;
   margin-right: -0.1875rem;
   float: right; }
-  .btn-large .text_btn {
+  .btn-large .btn_text {
     display: none; }
+    @media screen and (min-width: 720px) {
+      .btn-large .btn_text {
+        display: inline; } }
   .btn-large:hover, .btn-large:focus {
     background-color: #01879e; }
+  @media screen and (min-width: 720px) {
+    .btn-large {
+      padding: 0 1.6875rem; } }
 
 .btn-light {
   background: none;
@@ -237,12 +243,6 @@ html {
   .btn-link:hover {
     background: none;
     color: #018EA6; }
-
-@media screen and (min-width: 720px) {
-  .btn-large {
-    padding: 0 1.6875rem; }
-    .btn-large .text_btn {
-      display: inline; } }
 
 .container {
   display: block;
