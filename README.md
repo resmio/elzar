@@ -85,7 +85,8 @@ versioning](http://semver.org/))
 
 
 ##The ten commandments of sane style sheets##
-These are extracted from the great book [Enduring CSS](https://leanpub.com/enduringcss)  
+These are extracted from the great book [Enduring CSS](https://leanpub.com/enduringcss)
+For more info on stylesheets check [this other readme](https://github.com/resmio/elzar/blob/master/src/styles/README.md)  
 
 1. **Have a single source of truth for all key selectors.**  
  Overrides, media queries and all the rules modifying an element are in the same declaration.  
@@ -106,6 +107,7 @@ We will add them later using a post-processor.
 
 5. **Use variables for colors, sizing, z-index and breakpoints**  
 It helps us maintain consistency, to find the colors please use [name that color](http://chir.ag/projects/name-that-color/) to avoid things like `$red-darker-than-darkest`.  
+For breakpoints we use the $breakpoint-a $breakpoint-b scheme, a being the smallest one.   
 
 6. **Write rules mobile first, avoid max-width**  
 It's easier and allows us to get into a mobile-first mentality, the only time we are allowed to use max-width is when we want to isolate some style to a middle range viewport.  
