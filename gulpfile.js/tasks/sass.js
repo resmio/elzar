@@ -5,20 +5,22 @@ var sourcemaps = require('gulp-sourcemaps');
 var handleErrors = require('../lib/handleErrors');
 var sassConfig = require('../config').sass;
 var sasslint = require('gulp-scss-lint');
-var cache = require('gulp-cached');
-var filter = require('gulp-filter');
+var gulpFilter = require('gulp-filter');
 
 gulp.task('sass', function() {
-  var lintFilter = filter([sassConfig.src ,'!' + sassConfig.src + '/vendor/**/*.scss']);
+  var lintFilter = gulpFilter(
+    ['**/*.scss', '!base/**/*', '!vendor/**/*'], {restore: true}
+  );
   return gulp.src(sassConfig.src)
-    // .pipe(sourcemaps.init())
-    // .pipe(cache(sasslint)) // We cache the linter so only run it on changes
-    // .pipe(lintFilter)
-    // .pipe(sasslint())
-    // .pipe(lintFilter.restore)
+    .pipe(sourcemaps.init())
+    .pipe(lintFilter)
+    .pipe(sasslint({
+      'config': 'scss-lint.yml'
+    }))
+    .pipe(lintFilter.restore)
     .pipe(sass())
-     .on('error', handleErrors)
-    // .pipe(sourcemaps.write())
+    .on('error', handleErrors)
+    .pipe(sourcemaps.write())
     .pipe(gulp.dest(sassConfig.dest))
     .pipe(browserSync.reload({stream:true}));
 });
