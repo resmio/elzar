@@ -16,7 +16,10 @@ gulp.task('sass', function() {
     .pipe(sourcemaps.init())
     .pipe(cache(sasslint)) // We cache the linter so only run it on changes
     .pipe(lintFilter)
-    .pipe(sasslint())
+    .pipe(sasslint({
+      'config': 'scss-lint.yml',
+      'endless': 'true'
+    }))
     .pipe(lintFilter.restore)
     .pipe(sass())
     .on('error', handleErrors)

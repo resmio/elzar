@@ -85,8 +85,7 @@ linters:
     force_nesting: true
 
   NameFormat:
-    enabled: true
-    convention: hyphenated_lowercase
+    enabled: false
 
   NestingDepth:
     enabled: true
@@ -121,12 +120,11 @@ linters:
 
   SelectorDepth:
     enabled: true
-    max_depth: 2
+    max_depth: 4
     severity: warning
 
   SelectorFormat:
-    enabled: true
-    convention: hyphenated_lowercase
+    enabled: false
 
   Shorthand:
     enabled: true

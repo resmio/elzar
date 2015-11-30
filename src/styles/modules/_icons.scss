@@ -1,18 +1,18 @@
 .icon {
   display: inline-block;
-  vertical-align: middle;
-  height: rem(30);
   fill: none;
+  height: rem(30);
   stroke: $white;
   stroke-width: 1.5px;
+  vertical-align: middle;
 }
 
-.arrows_icon{
-  stroke:$dusty-gray;
+.arrows_icon {
   height: rem(23);
   margin: 0 rem(5) 0 rem(12);
+  stroke: $dusty-gray;
 }
 
-.symbol-add{
+.symbol-add {
   margin-right: rem(6px);
 }
