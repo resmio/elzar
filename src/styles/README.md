@@ -50,9 +50,9 @@ We use BEM for naming our scss [here's](http://csswizardry.com/2013/01/mindbemdi
 The naming convention follows this pattern:
 
 `.block {}
-.block__element {}
+.block_element {}
 .block--modifier {}`
 
 .block represents the higher level of an abstraction or component.
-.block__element represents a descendent of .block that helps form .block as a whole.
+.block_element represents a descendent of .block that helps form .block as a whole.
 .block--modifier represents a different state or version of .block.
