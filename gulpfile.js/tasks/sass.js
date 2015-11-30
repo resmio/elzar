@@ -6,6 +6,7 @@ var handleErrors = require('../lib/handleErrors');
 var sassConfig = require('../config').sass;
 var sasslint = require('gulp-scss-lint');
 var gulpFilter = require('gulp-filter');
+var base64 = require('gulp-base64');
 
 gulp.task('sass', function() {
   var lintFilter = gulpFilter(
@@ -21,6 +22,11 @@ gulp.task('sass', function() {
     .pipe(sass())
     .on('error', handleErrors)
     .pipe(sourcemaps.write())
+    .pipe(base64({
+      extensions: ['svg'],
+      baseDir: './src',
+      debug: true
+     }))
     .pipe(gulp.dest(sassConfig.dest))
     .pipe(browserSync.reload({stream:true}));
 });
