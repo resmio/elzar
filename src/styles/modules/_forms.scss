@@ -1,5 +1,5 @@
 .form-error {
-  background: url('/svg/symbol-close.svg') no-repeat;
+  background: url('svg/symbol-close.svg') no-repeat;
   background-position: 98%;
   background-size: rem(25);
   border: $error-border;
@@ -11,7 +11,7 @@
 }
 
 .form-success {
-  background: url('/svg/symbol-check.svg') no-repeat;
+  background: url('svg/symbol-check.svg') no-repeat;
   background-position: 98%;
   background-size: rem(25);
   border: $success-border;
@@ -23,7 +23,7 @@
 }
 
 .form-warning {
-  background: url('/svg/symbol-warning.svg') no-repeat;
+  background: url('svg/symbol-warning.svg') no-repeat;
   background-position: 98%;
   background-size: rem(25);
   border: $warning-border;
