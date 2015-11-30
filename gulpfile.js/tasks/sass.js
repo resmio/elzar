@@ -24,8 +24,7 @@ gulp.task('sass', function() {
     .pipe(sourcemaps.write())
     .pipe(base64({
       extensions: ['svg'],
-      baseDir: './src',
-      debug: true
+      baseDir: './src'
      }))
     .pipe(gulp.dest(sassConfig.dest))
     .pipe(browserSync.reload({stream:true}));
