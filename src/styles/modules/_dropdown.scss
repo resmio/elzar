@@ -45,10 +45,19 @@
   position: absolute;
   text-align: left; // Ensures proper alignment if parent has it changed (e.g., modal footer)
   z-index: 100;
+  // Open state for the dropdown
+  .open & {
+    // Show the menu
+    display: block;
+    //margin to remove white space between dropdown button and dropdown list
+    margin-top: rem(-3);
+    // Remove the outline when :focus is triggered
+    a {
+      outline: 0;
+    }
+  }
 }
 
-// Links, buttons, and more within the dropdown menu
-//
 // `<button>`-specific styles are denoted with `// for <button>s`
 .dropdown_item {
   background: none; // For `<button>`s
@@ -70,21 +79,6 @@
 
 .dropdown_link {
   color: $emperor;
-}
-
-// Open state for the dropdown
-.open {
-  // Show the menu
-  > .dropdown_list {
-    display: block;
-    //margin to remove white space between dropdown button and dropdown list
-    margin-top: rem(-3);
-  }
-
-  // Remove the outline when :focus is triggered
-  > a {
-    outline: 0;
-  }
 }
 
 .dropdown_colored {
@@ -110,6 +104,9 @@
 }
 
 .dropdown_icon {
+  height: rem(23);
+  margin-left: rem(5);
+  stroke: $dusty-gray;
 
   .dropdown_btn:focus & {
     stroke: $pacific-blue;

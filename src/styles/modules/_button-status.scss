@@ -7,7 +7,7 @@
 }
 
 
-.status_btn {
+.btn_status {
   background-color: $silver;
   border-radius: 0;
   height: $status-height;
@@ -93,15 +93,14 @@
 }
 
 .status_icon {
-
-  .status_btn & {
+  .btn_status & {
     stroke: $white;
   }
 }
 
 .arrow_icon {
 
-  .status_btn & {
+  .btn_status & {
     float: right;
     //only way to be aligned – maybe we should have a better way?
     margin: -2px 13px;

@@ -1,33 +1,77 @@
-.message_alert{
+.message_container {
+  min-width: $min-component-width;
   width: 80%;
-  min-width: rem(240);
-  margin: 0 auto;
-  .alert_box{
-    background-color: $success-color;
-    width: 100%;
-    padding: rem(20) 0;
-    text-align: center;
-  }
-  .close_alert{
-    text-align: right;
-    .close_icon{
-    }
+}
+
+.alert-box--success {
+  background: url('svg/symbol-success.svg') no-repeat;
+  background-color: $success-color;
+  background-position: center;
+  background-size: rem(140);
+  height: 200px;
+  position: relative;
+  width: 100%;
+}
+
+.alert-box--warning {
+  background: url('svg/symbol-alert-warning.svg') no-repeat;
+  background-color: $warning-color;
+  background-position: center;
+  background-size: rem(140);
+  height: 200px;
+  position: relative;
+  width: 100%;
+}
+
+.alert-box--error {
+  background: url('svg/symbol-alert-error.svg') no-repeat;
+  background-color: $error-color;
+  background-position: center;
+  background-size: rem(140);
+  height: 200px;
+  position: relative;
+  width: 100%;
+}
+
+.close_alert {
+  text-align: right;
+
+  .close_icon {
+    position: absolute;
+    right: rem(7);
+    top: rem(7);
   }
 }
 
-.alert_content{
+.alert_content {
   border: $base-border;
   border-radius: $base-border-radius;
   margin: 0 auto;
   padding: $small-spacing;
-}
-
-.alert_content{
   text-align: center;
-  .line_title{
+
+  .line_title {
     padding-bottom: 10px;
-    .line_title--success{
+
+    .line_title--success {
       color: $success-color;
     }
+
+    .line_title--warning {
+      color: $warning-color;
+    }
+
+    .line_title--error {
+      color: $error-color;
+    }
+  }
+}
+
+.alert_btn {
+  color: $dusty-gray;
+  padding-left: 60px;
+
+  &:hover {
+    color: $pacific-blue;
   }
 }

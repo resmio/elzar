@@ -5,6 +5,12 @@
     <symbol id="symbol-add" viewBox="0 0 35 35">
       <path d="M18 32c7.732 0 14-6.268 14-14S25.732 4 18 4 4 10.268 4 18s6.268 14 14 14zm7.513-14H11m7-7v15" fill-rule="evenodd"/>
     </symbol>
+    <symbol id="symbol-alert-error" viewBox="0 0 35 35">
+      <path d="M7.5 7.5l20 20M27 8L7 28" fill-rule="evenodd" stroke-linecap="square"/>
+    </symbol>
+    <symbol id="symbol-alert-warning" viewBox="0 0 35 35">
+      <g fill-rule="evenodd"><path d="M16.37 21.947h1.304v-8.88H16.37v8.88zm.635 4.163c.69 0 1.25-.56 1.25-1.25s-.56-1.25-1.25-1.25-1.25.56-1.25 1.25.56 1.25 1.25 1.25z"/><path d="M17.018 4l15.018 27H2L17.018 4z"/></g>
+    </symbol>
     <symbol id="symbol-arrived" viewBox="0 0 35 35">
       <path d="M17.224 32s9.926-10.595 9.926-17.26c0-6.664-4.078-9.74-9.926-9.74C11.377 5 8 8.43 8 14.74 8 21.05 17.224 32 17.224 32zM13 17.094l3.05 3.1L22.13 14" fill-rule="evenodd"/>
     </symbol>
@@ -62,7 +68,7 @@
     <symbol id="symbol-logout" viewBox="0 0 35 35">
       <path d="M5.652 17.563l5.203 5.187m4.822 8h13.178M15.6 23.4v7.333m-4.934-18.878l-4.98 5.59m17.83.305l-17.41-.117m22.75 13.117V5.796m-13.07-.046h13.07m-13.157-.01v7.07" fill-rule="evenodd" stroke-linecap="square"/>
     </symbol>
-    <symbol id="symbol-no-Show" viewBox="0 0 35 35">
+    <symbol id="symbol-no-show" viewBox="0 0 35 35">
       <g transform="translate(3 8)" fill-rule="evenodd"><path d="M14.806 16.59c8.686 0 14.807-7.332 14.807-7.332s-6.12-7.28-14.807-7.28C6.12 1.98 0 9.26 0 9.26s6.12 7.33 14.806 7.33zm.194-.026c4.01 0 7.258-3.272 7.258-7.308S19.008 1.95 15 1.95c-4.01 0-7.258 3.27-7.258 7.306s3.25 7.308 7.258 7.308zm-9.92 2.192L24.92.244"/><ellipse cx="14.758" cy="9.5" rx="3.629" ry="3.654"/></g>
     </symbol>
     <symbol id="symbol-password" viewBox="0 0 35 35">

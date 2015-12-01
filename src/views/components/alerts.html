@@ -1,12 +1,13 @@
 <h1><u>Messages alerts</u></h1>
 <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-<div class="message_alert">
+
+<!-- <div class="message_alert">
     <div class="alert_box">
-      <div class="close_alert">
+      <span class="close_alert">
         <svg viewBox="0 0 100 100" class="icon close_icon">
           <use xlink:href="#symbol-close"></use>
         </svg>
-      </div>
+      </span>
       <svg viewBox="0 0 100 100" class="icon alert_icon">
         <use xlink:href="#symbol-success"></use>
       </svg>
@@ -20,3 +21,106 @@
     </li>
   </ul>
 </div>
+
+<div class="message_alert">
+    <div class="alert_box alert--warning">
+      <span class="close_alert">
+        <svg viewBox="0 0 100 100" class="icon close_icon">
+          <use xlink:href="#symbol-close"></use>
+        </svg>
+      </span>
+      <svg viewBox="0 0 100 100" class="icon alert_icon">
+        <use xlink:href="#symbol-warning"></use>
+      </svg>
+    </div>
+    <ul class="alert_content">
+    <li class="line_title">
+      <span class="line_title--success">Success!!</span>
+    </li>
+    <li class="line_message">
+      <span class="">You did it right ! </span>
+    </li>
+  </ul>
+</div>
+
+<div class="message_alert">
+    <div class="alert_box alert--error">
+      <span class="close_alert">
+        <svg viewBox="0 0 100 100" class="icon close_icon">
+          <use xlink:href="#symbol-close"></use>
+        </svg>
+      </span>
+      <svg viewBox="0 0 100 100" class="icon alert_icon">
+        <use xlink:href="#symbol-close"></use>
+      </svg>
+    </div>
+    <ul class="alert_content">
+    <li class="line_title">
+      <span class="line_title--success">Success!!</span>
+    </li>
+    <li class="line_message">
+      <span class="">You did it right ! </span>
+    </li>
+  </ul>
+</div> -->
+
+<div class="message_container">
+    <div class="alert-box--success">
+      <span class="close_alert">
+        <svg viewBox="0 0 100 100" class="icon close_icon">
+          <use xlink:href="#symbol-close"></use>
+        </svg>
+      </span>
+    </div>
+    <ul class="alert_content">
+    <li class="line_title">
+      <span class="line_title--success">Success!!</span>
+    </li>
+    <li class="line_message">
+      <span>You did it right!</span>
+    </li>
+  </ul>
+</div>
+<br/>
+
+<div class="message_container">
+    <div class="alert-box--warning">
+      <span class="close_alert">
+        <svg viewBox="0 0 100 100" class="icon close_icon">
+          <use xlink:href="#symbol-close"></use>
+        </svg>
+      </span>
+    </div>
+    <ul class="alert_content">
+    <li class="line_title">
+      <span class="line_title--warning">Warning!!</span>
+    </li>
+    <li class="line_message">
+      <span>Be careful, you can't revert this action.</span>
+      <br/>
+      <br/>
+      <button type="button" class="btn-link">Do it anyway</button>
+      <button type="button" class="btn-link alert_btn">Cancel</button>
+    </li>
+  </ul>
+</div>
+<br/>
+
+<div class="message_container">
+    <div class="alert-box--error">
+      <span class="close_alert">
+        <svg viewBox="0 0 100 100" class="icon close_icon">
+          <use xlink:href="#symbol-close"></use>
+        </svg>
+      </span>
+    </div>
+    <ul class="alert_content">
+    <li class="line_title">
+      <span class="line_title--error">Error</span>
+    </li>
+    <li class="line_message">
+      <span>Oups, something got wrong! Can you try again?</span>
+    </li>
+  </ul>
+</div>
+<br/>

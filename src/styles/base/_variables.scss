@@ -23,7 +23,7 @@ $default-button-padding: rem(14) rem(38);
 $small-spacing: rem(10) rem(10);
 $base-spacing: rem(10) rem(30);
 $banner-padding: rem(20) rem(15);
-$dropdown-padding: rem(1) 0 0 rem(8);
+$dropdown-padding: rem(1) rem(8) 0 rem(8);
 $content-padding: 0 rem(48);
 $min-component-width: rem(180);
 
@@ -110,8 +110,8 @@ $status-list-padding: rem(7) rem(7) rem(7) rem(5);
 
 
 // Breakpoints
-$breakpoint-a: 450px;
-$breakpoint-b: 750px;
+$breakpoint-a: rem(450);
+$breakpoint-b: rem(750);
 
 
 // Animations
