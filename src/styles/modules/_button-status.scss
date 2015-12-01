@@ -1,0 +1,154 @@
+// The dropdown wrapper (div)
+.status {
+  // We remove the margin from the dropdown button to make the list append to it
+  // So we apply it here for the button to have margins when closed
+  margin-bottom: $button-margin;
+  position: relative;
+}
+
+
+.status_btn {
+  background-color: $silver;
+  border-radius: 0;
+  height: $status-height;
+  margin-bottom: 0;
+  padding: 0;
+  width: $status-width;
+
+  @include media(min-width $breakpoint-a) {
+    width: $status-bigger-width;
+  }
+
+  &:hover {
+    background-color: rgba($dusty-gray, 0.90);
+  }
+
+  &:focus {
+    background-color: $dusty-gray;
+  }
+}
+
+// The status button menu (ul)
+.status_list {
+  background-clip: padding-box;
+  background-color: $white;
+  border: 1px solid $alto;
+  display: none; // none by default, but block on "open" of the menu
+  float: left;
+  font-size: $base-font-size;
+  list-style: none;
+  margin: 0; // override default ul
+  min-width: rem(47);
+  padding: rem(5) 0;
+  position: absolute;
+  right: 0;
+  text-align: left; // Ensures proper alignment if parent has it changed (e.g., modal footer)
+  z-index: 100;
+
+  @include media(min-width $breakpoint-a) {
+    font-size: $medium-size;
+   }
+
+  // Show the menu
+  .open & {
+    display: block;
+    // Remove the outline when :focus is triggered
+    a {
+      outline: 0;
+    }
+  }
+}
+
+// Links, buttons, and more within the dropdown menu
+//
+// `<button>`-specific styles are denoted with `// for <button>s`
+.status_item {
+  background: none; // For `<button>`s
+  border: 0; // For `<button>`s
+  clear: both;
+  display: block;
+  font-weight: normal;
+  line-height: $base-line-height;
+  padding: $status-list-padding;
+  text-align: inherit; // For `<button>`s
+  white-space: nowrap; // prevent links from randomly breaking onto new lines
+  width: 100%; // For `<button>`s
+
+  &:hover {
+    background: $wild-sand;
+    cursor: pointer;
+  }
+}
+
+.status_item--selected {
+  opacity: 0.4;
+}
+
+.status_link {
+  color: $emperor;
+
+  &:hover {
+    color: $emperor;
+  }
+}
+
+.status_icon {
+
+  .status_btn & {
+    stroke: $white;
+  }
+}
+
+.arrow_icon {
+
+  .status_btn & {
+    float: right;
+    //only way to be aligned – maybe we should have a better way?
+    margin: -2px 13px;
+    padding-bottom: 2px;
+    stroke: $white;
+
+    @include media(min-width $breakpoint-a) {
+      float: right;
+      margin: rem(5) 0 0;
+      padding: 0 rem(1) 0 0;
+    }
+  }
+}
+
+//Diferente states:
+.status--active {
+  background-color: $java;
+
+  &:hover {
+    background-color: rgba($mountain-meadow, 0.80);
+  }
+
+  &:focus {
+    background-color: $mountain-meadow;
+  }
+}
+
+.status--cancelled {
+  background-color: $amaranth;
+
+  &:hover {
+    background-color: rgba($maroon-flush, 0.80);
+  }
+
+  &:focus {
+    background-color: $maroon-flush;
+  }
+}
+
+.status--no-show {
+  background-color: $west-side;
+
+  &:hover {
+    background-color: rgba($tahiti-gold, 0.80);
+  }
+
+  &:focus {
+    background-color: $tahiti-gold;
+  }
+}

@@ -1,37 +1,37 @@
 .container {
   @include row;
-  background: blue;
+  background: $pacific-blue;
 
   @include media($large-screen-up) {
-    width: 80%;
     float: left;
+    width: 80%;
   }
 }
 
-.comp1{
+.comp1 {
+  background-color: $amaranth;
   display: none;
   height: 300px;
-  background-color: red;
 
   @include media($large-screen-up) {
     @include span-columns(4);
   }
 }
 
-.comp2{
+.comp2 {
+  background-color: $java;
   display: none;
   height: 300px;
-  background-color: green;
 
   @include media($large-screen-up) {
     @include span-columns(4);
   }
 }
 
-.comp3{
+.comp3 {
+  background-color: $casablanca;
   display: none;
   height: 300px;
-  background-color: yellow;
 
   @include media($large-screen-up) {
     @include span-columns(4);

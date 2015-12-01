@@ -2,3 +2,18 @@
   margin-left: 0.65rem;
   width: 25%;
 }
+
+.status_container {
+  display: flex;
+  float: right;
+  margin-left: 40px;
+  position: absolute;
+}
+
+.space_between {
+  padding-right: 10px;
+}
+
+.styleguide-separator {
+  margin-bottom: 50px;
+}

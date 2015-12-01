@@ -1,8 +1,24 @@
+.messages_feedback {
+
+  .form-list & {
+    margin-top: rem(-2);
+  }
+}
+
+.form-list_element {
+  border-radius: none;
+  margin-bottom: rem(16);
+  //remove white space between input field and error box.
+  margin-top: rem(-2);
+  min-width: $min-component-width;
+}
+
 .form-error {
   background: url('svg/symbol-close.svg') no-repeat;
   background-position: 98%;
   background-size: rem(25);
   border: $error-border;
+  padding-right: $padding_forms--errors;
 
   &:hover,
   &:focus {
@@ -15,6 +31,7 @@
   background-position: 98%;
   background-size: rem(25);
   border: $success-border;
+  padding-right: $padding_forms--errors;
 
   &:hover,
   &:focus {
@@ -27,18 +44,10 @@
   background-position: 98%;
   background-size: rem(25);
   border: $warning-border;
+  padding-right: $padding_forms--errors;
 
   &:hover,
   &:focus {
     border-color: $warning-color;
   }
-}
-
-.form-list {
-  li {
-    border-radius: none;
-    margin-bottom: rem(16);
-    //remove white space between input field and error box.
-    margin-top: rem(-2);
-   }
 }
