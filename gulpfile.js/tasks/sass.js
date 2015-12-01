@@ -7,6 +7,7 @@ var sassConfig = require('../config').sass;
 var sasslint = require('gulp-scss-lint');
 var gulpFilter = require('gulp-filter');
 var base64 = require('gulp-base64');
+var autoprefixer = require('gulp-autoprefixer');
 
 gulp.task('sass', function() {
   var lintFilter = gulpFilter(
@@ -20,6 +21,10 @@ gulp.task('sass', function() {
     }))
     .pipe(lintFilter.restore)
     .pipe(sass())
+    .on('error', handleErrors)
+    .pipe(autoprefixer({
+      browsers: ['> 1%', 'ie 9']
+    }))
     .on('error', handleErrors)
     .pipe(sourcemaps.write())
     .pipe(base64({
