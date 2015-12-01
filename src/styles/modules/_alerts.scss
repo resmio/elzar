@@ -1,0 +1,33 @@
+.message_alert{
+  width: 80%;
+  min-width: rem(240);
+  margin: 0 auto;
+  .alert_box{
+    background-color: $success-color;
+    width: 100%;
+    padding: rem(20) 0;
+    text-align: center;
+  }
+  .close_alert{
+    text-align: right;
+    .close_icon{
+    }
+  }
+}
+
+.alert_content{
+  border: $base-border;
+  border-radius: $base-border-radius;
+  margin: 0 auto;
+  padding: $small-spacing;
+}
+
+.alert_content{
+  text-align: center;
+  .line_title{
+    padding-bottom: 10px;
+    .line_title--success{
+      color: $success-color;
+    }
+  }
+}
