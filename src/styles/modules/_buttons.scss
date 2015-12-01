@@ -1,37 +1,41 @@
 .btn-large {
   background: $pacific-blue;
-  padding: $large-button-padding--mobile;
-  height: 100%;
   border-left: $large-buttons-border;
-  border-right: $large-buttons-border;
   border-radius: 0;
-  margin-right: rem(-3);
+  border-right: $large-buttons-border;
   float: right;
+  height: 100%;
+  margin-right: rem(-3);
+  padding: $large-button-padding--mobile;
 
-  .btn_text{
+  @include media(min-width 720px) {
+    padding: $large-button-padding;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: shade($action-color-darker, 5%);
+  }
+}
+
+.btn_text {
+
+  .btn-large & {
     display: none;
 
     @include media(min-width 720px) {
       display: inline;
     }
   }
-  &:hover,
-  &:focus {
-    background-color: shade($action-color-darker, 5%);
-  }
-
-  @include media(min-width 720px) {
-    padding: $large-button-padding;
-  }
-
 }
+
 
 .btn-light {
   background: none;
   border: 1px solid $action-color;
   color: $action-color;
 
-  &:hover{
+  &:hover {
     background-color: $pacific-blue;
   }
 }
@@ -39,8 +43,8 @@
 .btn-link {
   background: none;
   color: $hiperlink-color;
-  text-decoration: underline;
   padding: 0;
+  text-decoration: underline;
 
   &:hover {
     background: none;
