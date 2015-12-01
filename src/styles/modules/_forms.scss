@@ -1,14 +1,16 @@
-.form-list{
-  .form-list_element{
-     border-radius: none;
-     margin-bottom: rem(16);
-     min-width: $min-component-width;
-     //remove white space between input field and error box.
-     margin-top: rem(-2);
-   }
-   .messages_feedback{
-     margin-top: rem(-2);
-   }
+.messages_feedback {
+
+  .form-list & {
+    margin-top: rem(-2);
+  }
+}
+
+.form-list_element {
+  border-radius: none;
+  margin-bottom: rem(16);
+  //remove white space between input field and error box.
+  margin-top: rem(-2);
+  min-width: $min-component-width;
 }
 
 .form-error {

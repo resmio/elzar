@@ -3,35 +3,35 @@
   background: $pacific-blue;
 
   @include media($large-screen-up) {
-    width: 80%;
     float: left;
+    width: 80%;
   }
 }
 
-.comp1{
-  display: none;
-  height: 300px;
+.comp1 {
   background-color: $amaranth;
+  display: none;
+  height: 300px;
 
   @include media($large-screen-up) {
     @include span-columns(4);
   }
 }
 
-.comp2{
-  display: none;
-  height: 300px;
+.comp2 {
   background-color: $java;
+  display: none;
+  height: 300px;
 
   @include media($large-screen-up) {
     @include span-columns(4);
   }
 }
 
-.comp3{
+.comp3 {
+  background-color: $casablanca;
   display: none;
   height: 300px;
-  background-color: $casablanca;
 
   @include media($large-screen-up) {
     @include span-columns(4);

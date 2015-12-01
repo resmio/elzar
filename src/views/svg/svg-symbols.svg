@@ -62,7 +62,7 @@
     <symbol id="symbol-logout" viewBox="0 0 35 35">
       <path d="M5.652 17.563l5.203 5.187m4.822 8h13.178M15.6 23.4v7.333m-4.934-18.878l-4.98 5.59m17.83.305l-17.41-.117m22.75 13.117V5.796m-13.07-.046h13.07m-13.157-.01v7.07" fill-rule="evenodd" stroke-linecap="square"/>
     </symbol>
-    <symbol id="symbol-no-show" viewBox="0 0 35 35">
+    <symbol id="symbol-no-Show" viewBox="0 0 35 35">
       <g transform="translate(3 8)" fill-rule="evenodd"><path d="M14.806 16.59c8.686 0 14.807-7.332 14.807-7.332s-6.12-7.28-14.807-7.28C6.12 1.98 0 9.26 0 9.26s6.12 7.33 14.806 7.33zm.194-.026c4.01 0 7.258-3.272 7.258-7.308S19.008 1.95 15 1.95c-4.01 0-7.258 3.27-7.258 7.306s3.25 7.308 7.258 7.308zm-9.92 2.192L24.92.244"/><ellipse cx="14.758" cy="9.5" rx="3.629" ry="3.654"/></g>
     </symbol>
     <symbol id="symbol-password" viewBox="0 0 35 35">
