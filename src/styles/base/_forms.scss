@@ -13,6 +13,8 @@ select {
   font-size: $base-font-size;
   height: $forms-height;
   border: $base-border;
+  min-width: $min-component-width;
+  padding-right: rem(10);
 
     &:hover {
       border-color: shade($silver, 10%);
@@ -56,6 +58,7 @@ select[multiple=multiple] {
   width: 100%;
   padding-left: $forms-padding;
   color: $emperor;
+
 
   &:disabled {
     background-color: shade($base-background-color, 5%);

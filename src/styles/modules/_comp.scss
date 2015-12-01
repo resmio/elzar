@@ -1,6 +1,6 @@
 .container {
   @include row;
-  background: blue;
+  background: $pacific-blue;
 
   @include media($large-screen-up) {
     width: 80%;
@@ -11,7 +11,7 @@
 .comp1{
   display: none;
   height: 300px;
-  background-color: red;
+  background-color: $amaranth;
 
   @include media($large-screen-up) {
     @include span-columns(4);
@@ -21,7 +21,7 @@
 .comp2{
   display: none;
   height: 300px;
-  background-color: green;
+  background-color: $java;
 
   @include media($large-screen-up) {
     @include span-columns(4);
@@ -31,7 +31,7 @@
 .comp3{
   display: none;
   height: 300px;
-  background-color: yellow;
+  background-color: $casablanca;
 
   @include media($large-screen-up) {
     @include span-columns(4);
