@@ -5,14 +5,30 @@
   border-right: $large-buttons-border;
   float: right;
   height: 100%;
-  margin-right: rem(-1);
-  padding: $large-button-padding;
+  margin-right: rem(-3);
+  padding: $large-button-padding--mobile;
+
+  @include media(min-width 720px) {
+    padding: $large-button-padding;
+  }
 
   &:hover,
   &:focus {
     background-color: shade($action-color-darker, 5%);
   }
 }
+
+.btn_text {
+
+  .btn-large & {
+    display: none;
+
+    @include media(min-width 720px) {
+      display: inline;
+    }
+  }
+}
+
 
 .btn-light {
   background: none;
