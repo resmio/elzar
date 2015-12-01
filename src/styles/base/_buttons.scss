@@ -18,11 +18,11 @@
   vertical-align: middle;
   white-space: nowrap;
 
-  &:hover,
-  &:focus {
-    background-color: shade($mountain-meadow, 5%);
-    outline:0;
+  &:hover {
     color: #fff;
+  }
+  &:focus {
+    outline:0;
   }
 
   &:disabled {

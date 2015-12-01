@@ -1,6 +1,15 @@
 .message_container {
   min-width: $min-component-width;
   width: 80%;
+  margin: 0 auto;
+
+  @include media(min-width $breakpoint-b) {
+    width: 50%;
+   }
+
+  @include media(min-width $breakpoint-c) {
+    width: 35%;
+   }
 }
 
 .alert-box--success {
@@ -35,6 +44,10 @@
 
 .close_alert {
   text-align: right;
+
+  &:hover {
+    cursor: pointer;
+  }
 
   .close_icon {
     position: absolute;
