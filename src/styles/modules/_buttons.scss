@@ -1,17 +1,29 @@
 .btn-large {
   background: $pacific-blue;
-  border-left: $large-buttons-border;
-  border-radius: 0;
-  border-right: $large-buttons-border;
-  float: right;
+  padding: $large-button-padding--mobile;
   height: 100%;
-  margin-right: rem(-1);
-  padding: $large-button-padding;
+  border-left: $large-buttons-border;
+  border-right: $large-buttons-border;
+  border-radius: 0;
+  margin-right: rem(-3);
+  float: right;
 
+  .btn_text{
+    display: none;
+
+    @include media(min-width 720px) {
+      display: inline;
+    }
+  }
   &:hover,
   &:focus {
     background-color: shade($action-color-darker, 5%);
   }
+
+  @include media(min-width 720px) {
+    padding: $large-button-padding;
+  }
+
 }
 
 .btn-light {
@@ -19,7 +31,7 @@
   border: 1px solid $action-color;
   color: $action-color;
 
-  &:hover {
+  &:hover{
     background-color: $pacific-blue;
   }
 }
@@ -27,8 +39,8 @@
 .btn-link {
   background: none;
   color: $hiperlink-color;
-  padding: 0;
   text-decoration: underline;
+  padding: 0;
 
   &:hover {
     background: none;
