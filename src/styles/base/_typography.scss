@@ -13,7 +13,7 @@ h4,
 h5,
 h6 {
   font-family: $heading-font-family;
-  font-size: $headers-size;
+  font-size: $font-headers-size;
   line-height: $heading-line-height;
   margin: 0 0 $small-spacing;
   font-weight: normal;
@@ -21,7 +21,6 @@ h6 {
 
 p {
   margin: 0 0 $small-spacing;
-
 }
 
 a {
@@ -51,14 +50,14 @@ picture {
 }
 
 .big_text{
-    font-size: $big-size;
+    font-size: $font-big-size;
 }
 
 .medium_text{
-  font-size: $medium-size;
+  font-size: $font-medium-size;
   font-weight: 100;
 }
 
 .small_text{
-  font-size: $small-size;
+  font-size: $font-small-size;
 }

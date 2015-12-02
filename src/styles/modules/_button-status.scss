@@ -46,7 +46,7 @@
   z-index: 100;
 
   @include media(min-width $breakpoint-a) {
-    font-size: $medium-size;
+    font-size: $font-medium-size;
    }
 
   // Show the menu

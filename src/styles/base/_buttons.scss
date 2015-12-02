@@ -3,7 +3,7 @@
   background-color: $java;
   border: 0;
   border-radius: $base-border-radius;
-  color: #fff;
+  color: $white;
   cursor: pointer;
   display: inline-block;
   font-family: $base-font-family;
@@ -19,7 +19,8 @@
   white-space: nowrap;
 
   &:hover {
-    color: #fff;
+    background-color: $mountain-meadow;
+    color: $white;
   }
   &:focus {
     outline:0;
