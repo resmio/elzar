@@ -11,6 +11,12 @@ module.exports = {
     browser: 'google chrome canary'
   },
 
+  js: {
+    src: [src + '/javascripts/'],
+    dest: dest,
+    watch: [src + '/javascripts/**/*.html'],
+  },
+
   html: {
     src: [src + '/views/index.html'],
     dest: dest,
