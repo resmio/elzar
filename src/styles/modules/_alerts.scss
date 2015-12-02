@@ -65,20 +65,20 @@
   text-align: center;
 }
 
-.line_title {
+.alert_text {
   padding-bottom: 10px;
+}
 
-  .line_title--success {
-    color: $success-color;
-  }
+.alert_text--success {
+  color: $success-color;
+}
 
-  .line_title--warning {
-    color: $warning-color;
-  }
+.alert_text--warning {
+  color: $warning-color;
+}
 
-  .line_title--error {
-    color: $error-color;
-  }
+.alert_text--error {
+  color: $error-color;
 }
 
 .alert_btn {
