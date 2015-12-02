@@ -17,6 +17,12 @@
     <symbol id="symbol-add" viewBox="0 0 35 35">
       <path d="M18 32c7.732 0 14-6.268 14-14S25.732 4 18 4 4 10.268 4 18s6.268 14 14 14zm7.513-14H11m7-7v15" fill-rule="evenodd"/>
     </symbol>
+    <symbol id="symbol-alert-error" viewBox="0 0 35 35">
+      <path d="M7.5 7.5l20 20M27 8L7 28" fill-rule="evenodd" stroke-linecap="square"/>
+    </symbol>
+    <symbol id="symbol-alert-warning" viewBox="0 0 35 35">
+      <g fill-rule="evenodd"><path d="M16.37 21.947h1.304v-8.88H16.37v8.88zm.635 4.163c.69 0 1.25-.56 1.25-1.25s-.56-1.25-1.25-1.25-1.25.56-1.25 1.25.56 1.25 1.25 1.25z"/><path d="M17.018 4l15.018 27H2L17.018 4z"/></g>
+    </symbol>
     <symbol id="symbol-arrived" viewBox="0 0 35 35">
       <path d="M17.224 32s9.926-10.595 9.926-17.26c0-6.664-4.078-9.74-9.926-9.74C11.377 5 8 8.43 8 14.74 8 21.05 17.224 32 17.224 32zM13 17.094l3.05 3.1L22.13 14" fill-rule="evenodd"/>
     </symbol>
@@ -245,7 +251,7 @@
     <li class="space_between">
         <div class="status">
           <button id="dLabel"
-                  class="status_btn"
+                  class="btn_status"
                   type="button"
                   data-toggle="dropdown"
                   aria-haspopup="true"
@@ -303,7 +309,7 @@
     <li class="space_between">
       <div class="status">
       <button id="dLabel"
-              class="status_btn status--active"
+              class="btn_status status--active"
               type="button"
               data-toggle="dropdown"
               aria-haspopup="true"
@@ -361,7 +367,7 @@
     <li class="space_between">
       <div class="status">
       <button id="dLabel"
-              class="status_btn status--active"
+              class="btn_status status--active"
               type="button"
               data-toggle="dropdown"
               aria-haspopup="true"
@@ -419,7 +425,7 @@
     <li class="space_between">
       <div class="status">
       <button id="dLabel"
-              class="status_btn"
+              class="btn_status"
               type="button"
               data-toggle="dropdown"
               aria-haspopup="true"
@@ -477,7 +483,7 @@
     <li class="space_between">
       <div class="status">
       <button id="dLabel"
-              class="status_btn status--cancelled"
+              class="btn_status status--cancelled"
               type="button"
               data-toggle="dropdown"
               aria-haspopup="true"
@@ -535,7 +541,7 @@
     <li class="space_between">
       <div class="status">
       <button id="dLabel"
-              class="status_btn status--no-show"
+              class="btn_status status--no-show"
               type="button"
               data-toggle="dropdown"
               aria-haspopup="true"
@@ -592,6 +598,85 @@
 </div>
 
 <hr class="styleguide-separator"/>
+
+  <h1>Messages alerts</h1>
+
+<div class="message_container">
+    <div class="alert-box--success">
+      <span class="close_alert">
+        <svg viewBox="0 0 100 100" class="icon close_icon">
+          <use xlink:href="#symbol-close"></use>
+        </svg>
+      </span>
+    </div>
+    <ul class="alert_content">
+    <li class="alert_text">
+      <span class="alert_text--success">Success!!</span>
+    </li>
+    <li class="line_message">
+      <span>You did it right!</span>
+    </li>
+  </ul>
+</div>
+
+<hr class="styleguide-separator"/>
+
+<div class="message_container">
+    <div class="alert-box--warning">
+      <span class="close_alert">
+        <svg viewBox="0 0 100 100" class="icon close_icon">
+          <use xlink:href="#symbol-close"></use>
+        </svg>
+      </span>
+    </div>
+    <ul class="alert_content">
+    <li class="alert_text">
+      <span class="alert_text--warning">Warning!!</span>
+    </li>
+    <li class="line_message">
+      <span>Be careful, you can't revert this action.</span>
+      <br/>
+      <br/>
+      <button type="button" class="btn-link">Do it anyway</button>
+      <button type="button" class="btn-link alert_btn">Cancel</button>
+    </li>
+  </ul>
+</div>
+
+<hr class="styleguide-separator"/>
+
+<div class="message_container">
+    <div class="alert-box--error">
+      <span class="close_alert">
+        <svg viewBox="0 0 100 100" class="icon close_icon">
+          <use xlink:href="#symbol-close"></use>
+        </svg>
+      </span>
+    </div>
+    <ul class="alert_content">
+    <li class="alert_text">
+      <span class="alert_text--error">Error</span>
+    </li>
+    <li class="line_message">
+      <span>Oups, something got wrong! Can you try again?</span>
+    </li>
+  </ul>
+</div>
+
+<hr class="styleguide-separator"/>
+
+  <h1><u>Typography</u></h1>
+<!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+
+<p class="big_text">Big Header info</p>
+<h1>Headers size</h1>
+<p>Buttons text size</p>
+<p class="medium_text">Text for menus on Sub-Sidebar</p>
+<p class="small_text">Text for payments or messages</p>
+<br/>
+<br/>
+<p>Paragraph</p>
+<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
 
 </body>
 </html>
