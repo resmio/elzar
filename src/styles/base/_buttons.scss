@@ -3,7 +3,7 @@
   background-color: $java;
   border: 0;
   border-radius: $base-border-radius;
-  color: #fff;
+  color: $white;
   cursor: pointer;
   display: inline-block;
   font-family: $base-font-family;
@@ -18,11 +18,12 @@
   vertical-align: middle;
   white-space: nowrap;
 
-  &:hover,
+  &:hover {
+    background-color: $mountain-meadow;
+    color: $white;
+  }
   &:focus {
-    background-color: shade($mountain-meadow, 5%);
     outline:0;
-    color: #fff;
   }
 
   &:disabled {

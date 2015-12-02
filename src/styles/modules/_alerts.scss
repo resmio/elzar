@@ -1,0 +1,91 @@
+@mixin alert-box ($background-img, $background-color) {
+  background: url($background-img) no-repeat;
+  background-color: $background-color;
+  background-position: center;
+  background-size: rem(140);
+  height: 200px;
+  position: relative;
+  width: 100%;
+}
+
+.message_container {
+  margin: 0 auto;
+  min-width: $min-component-width;
+  width: 80%;
+
+  @include media(min-width $breakpoint-b) {
+    width: 50%;
+   }
+
+  @include media(min-width $breakpoint-c) {
+    width: 35%;
+   }
+}
+
+.alert-box--success {
+  @include alert-box (
+    'svg/symbol-success.svg',
+    $success-color
+  );
+}
+
+.alert-box--warning {
+  @include alert-box (
+    'svg/symbol-alert-warning.svg',
+    $warning-color
+  );
+}
+
+.alert-box--error {
+  @include alert-box (
+    'svg/symbol-alert-error.svg',
+    $error-color
+  );
+}
+
+.close_alert {
+  text-align: right;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  .close_icon {
+    position: absolute;
+    right: rem(7);
+    top: rem(7);
+  }
+}
+
+.alert_content {
+  border: $base-border;
+  border-radius: $base-border-radius;
+  margin: 0 auto;
+  padding: $small-spacing;
+  text-align: center;
+}
+
+.alert_text {
+  padding-bottom: 10px;
+}
+
+.alert_text--success {
+  color: $success-color;
+}
+
+.alert_text--warning {
+  color: $warning-color;
+}
+
+.alert_text--error {
+  color: $error-color;
+}
+
+.alert_btn {
+  color: $dusty-gray;
+  padding-left: 60px;
+
+  &:hover {
+    color: $pacific-blue;
+  }
+}

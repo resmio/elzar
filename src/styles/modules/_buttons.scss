@@ -8,7 +8,7 @@
   margin-right: rem(-3);
   padding: $large-button-padding--mobile;
 
-  @include media(min-width 720px) {
+  @include media(min-width $breakpoint-b) {
     padding: $large-button-padding;
   }
 

@@ -6,9 +6,10 @@ $heading-font-family: $base-font-family;
 
 // Font Sizes
 $base-font-size: rem(16);
-$headers-size: rem(24);
-$medium-size: rem(14);
-$small-size: rem(12);
+$font-big-size: rem(33);
+$font-headers-size: rem(24);
+$font-medium-size: rem(14);
+$font-small-size: rem(12);
 
 // Line height
 $base-line-height: 1.5;
@@ -23,7 +24,7 @@ $default-button-padding: rem(14) rem(38);
 $small-spacing: rem(10) rem(10);
 $base-spacing: rem(10) rem(30);
 $banner-padding: rem(20) rem(15);
-$dropdown-padding: rem(1) 0 0 rem(8);
+$dropdown-padding: rem(1) rem(8) 0 rem(8);
 $content-padding: 0 rem(48);
 $min-component-width: rem(180);
 
@@ -106,8 +107,9 @@ $status-list-padding: rem(7) rem(7) rem(7) rem(5);
 
 
 // Breakpoints
-$breakpoint-a: 450px;
-$breakpoint-b: 750px;
+$breakpoint-a: rem(450);
+$breakpoint-b: rem(720);
+$breakpoint-c: rem(1200);
 
 
 // Animations
