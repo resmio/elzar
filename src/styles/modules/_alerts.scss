@@ -1,7 +1,7 @@
 .message_container {
+  margin: 0 auto;
   min-width: $min-component-width;
   width: 80%;
-  margin: 0 auto;
 
   @include media(min-width $breakpoint-b) {
     width: 50%;
