@@ -6,7 +6,6 @@
   position: relative;
 }
 
-
 .btn_status {
   background-color: $silver;
   border-radius: 0;
@@ -94,6 +93,7 @@
 
 .status_icon {
   .btn_status & {
+    height: rem(30);
     stroke: $white;
   }
 }
@@ -103,14 +103,13 @@
   .btn_status & {
     float: right;
     //only way to be aligned – maybe we should have a better way?
-    margin: -2px 13px;
-    padding-bottom: 2px;
+    margin: rem(5) rem(16) rem(0) rem(0);
     stroke: $white;
 
     @include media(min-width $breakpoint-a) {
       float: right;
-      margin: rem(5) 0 0;
-      padding: 0 rem(1) 0 0;
+      margin: rem(8) rem(0);
+      padding-right: rem(7);
     }
   }
 }
