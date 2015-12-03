@@ -14,7 +14,7 @@ module.exports = {
   js: {
     src: [src + '/javascripts/'],
     dest: dest,
-    watch: [src + '/javascripts/**/*.html'],
+    watch: [src + '/javascripts/**/*.js'],
   },
 
   html: {

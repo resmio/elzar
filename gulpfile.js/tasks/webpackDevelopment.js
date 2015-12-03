@@ -1,13 +1,15 @@
 var path = require('path');
 var webpack = require('webpack');
 
-module.exports = {
+var gulp = require('gulp');
+var gutil = require('gulp-util');;
+
+var config = {
   entry: [
-    'babel-polyfill',
     './src/javascripts/app'
   ],
   output: {
-    publicPath: './build/',
+    path: path.join(__dirname, '../../build/'),
     filename: 'main.js'
   },
   devtool: 'source-map',
@@ -25,3 +27,14 @@ module.exports = {
   },
   debug: true
 };
+
+var webpackDevelopmentTask = function(callback) {
+  webpack(
+    config,
+    function(err, stats) {
+      if(err) throw new gutil.PluginError("webpack", err);
+      callback();
+    });
+}
+
+gulp.task('webpack:development', webpackDevelopmentTask)
