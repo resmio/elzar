@@ -1,3 +1,4 @@
-(function() {
+var react = require('React');
 
+(function() {
 })();
