@@ -3,10 +3,9 @@
   display: none;
   height: auto;
 
-  @include media(min-width 320px) {
-    display: block;
-    width: 50%;
-
+  @include media($large-screen-up) {
+    @include span-columns(2);
+    margin-right: 0;
   }
 }
 

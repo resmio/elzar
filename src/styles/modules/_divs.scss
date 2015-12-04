@@ -22,3 +22,9 @@
 .styleguide-separator2 {
   margin-bottom: 100px;
 }
+
+.everything {
+  @include media($large-screen-up) {
+    @include span-columns(10);
+  }
+}

@@ -5,6 +5,7 @@
   height: 400px;
   align-items: center;
   display: flex;
+  margin-top: 50px;
   @include media(min-width $breakpoint-b) {
     width: 80%;
   }
