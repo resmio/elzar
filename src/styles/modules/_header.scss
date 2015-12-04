@@ -1,0 +1,44 @@
+.header {
+  background: $white;
+  box-shadow: 0 1px 2px $alto;
+  min-width: 320px;
+  padding: rem(15);
+  position: relative;
+  width: 100%;
+
+  @include media (min-width $breakpoint-b) {
+    align-items: center;
+    display: flex;
+    height: $header_height;
+    padding: $content_padding;
+  }
+}
+
+.text_container {
+  @include media (min-width $breakpoint-b) {
+    width: 75%;
+  }
+  
+  .header & {
+    width: 100%;
+  }
+}
+
+.btn_container {
+  width: 25%;
+}
+
+.btn-secondary {
+
+  .header & {
+    float: none;
+    margin-top: rem(15);
+  }
+
+  .btn_container & {
+    @include media (min-width $breakpoint-b) {
+      float: right;
+      margin-left: rem(30);
+    }
+  }
+}
