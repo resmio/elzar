@@ -1,7 +1,13 @@
 .sidebar {
   background-color: $sidebar-blue;
+  display: none;
   height: auto;
-  width: 50%;
+
+  @include media(min-width 320px) {
+    display: block;
+    width: 50%;
+
+  }
 }
 
 .sidebar_menu {
