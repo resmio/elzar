@@ -25,7 +25,8 @@ $small-spacing: rem(10) rem(10);
 $base-spacing: rem(10) rem(30);
 $banner-padding: rem(20) rem(15);
 $dropdown-padding: rem(1) rem(8) 0 rem(8);
-$content-padding: 0 rem(48);
+$content-padding: 0 rem(50);
+$content_padding--mobile: rem(15) rem(15);
 $min-component-width: rem(180);
 $sidebar-padding: rem(20) rem(15);
 $sidebar-logo-padding: rem(15) rem(15);
@@ -107,6 +108,10 @@ $status-height: rem(60);
 $status-bigger-width: rem(75);
 $status-list-padding: rem(7) rem(7) rem(7) rem(5);
 
+
+// Header and nav-bar
+$navbar_height: rem(60);
+$header_height: rem(120);
 
 // Breakpoints
 $breakpoint-a: rem(450);
