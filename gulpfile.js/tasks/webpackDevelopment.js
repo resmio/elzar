@@ -19,10 +19,10 @@ var config = {
   module: {
     loaders: [
       {
-        loader: 'babel',
+        loader: 'babel?cacheDirectory',
         // Exclude files outside source to speed things up
         include: [
-          path.resolve(__dirname, 'src'),
+          path.resolve(__dirname, 'src/javascripts/'),
         ],
         // Run .js and .jsx files through Babel
         test: /\.jsx?$/,
