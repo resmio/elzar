@@ -1,4 +1,1 @@
-var react = require('React');
-
-(function() {
-})();
+exports.Dropdown = require('./components/Dropdown');
