@@ -19,16 +19,18 @@ var config = {
   module: {
     loaders: [
       {
-        loader: 'babel?cacheDirectory',
+        loaders: 'babel?cacheDirectory',
         // Exclude files outside source to speed things up
         include: [
           path.resolve(__dirname, 'src/javascripts/'),
         ],
+        exclude: /(node_modules|bower_components)/,
         // Run .js and .jsx files through Babel
         test: /\.jsx?$/,
         // Options to configure Babel
         query: {
-          presets: ['es2015', 'react'],
+          'presets': ['es2015', 'react'],
+          'plugins': ['transform-es2015-modules-commonjs']
         }
       }
     ]

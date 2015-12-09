@@ -1,7 +1,20 @@
 const React = require('react');
+const ReactDOM = require('react-dom');
+console.log('Dropdown');
 
-const Dropdown = () => {
-  console.log('hello');
-}
+const Dropdown = React.createClass({
+  render: function() {
+    return (
+      <div className="dropdown">
+        Hello, world! I am a Dropdown.
+      </div>
+    );
+  }
+});
 
-module.exports = Dropdown;
+ReactDOM.render(
+  <Dropdown />,
+  document.getElementById('root')
+);
+
+export default Dropdown;
