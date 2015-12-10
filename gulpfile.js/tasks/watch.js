@@ -5,6 +5,6 @@ var watch  = require('gulp-watch');
 gulp.task('watch', ['default', 'browserSync'], function(callback) {
   watch(config.sass.src, function() { gulp.start('sass'); });
   watch(config.html.watch, function() { gulp.start('html'); });
-  watch(config.js.watch, function() { gulp.start('webpack:development'); });
+  // watch(config.js.watch, function() { gulp.start('webpack:development'); });
   watch(config.svg.src, function() { gulp.start('svgsymbol'); });
 });

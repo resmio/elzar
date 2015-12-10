@@ -8,7 +8,7 @@ module.exports = {
       baseDir: dest
     },
     files: ['build/**/*.html'],
-    browser: 'google chrome canary'
+    browser: 'google-chrome'
   },
 
   js: {

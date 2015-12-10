@@ -1,3 +1,4 @@
+/*
 const React = require('react');
 const ReactDOM = require('react-dom');
 
@@ -12,3 +13,6 @@ const Dropdown = React.createClass({
 });
 
 export default Dropdown;
+*/
+const whatever = "boomboombang"
+module.exports = whatever;

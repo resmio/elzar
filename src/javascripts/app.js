@@ -1,5 +1,6 @@
 // exports.Dropdown = require('./components/Dropdown');
 // import Dropdown from ('./components/Dropdown');
+/*
 var Dropdown = require('./components/Dropdown');
 
 
@@ -10,3 +11,6 @@ export default function(){
   );
 
 };
+*/
+import Dropdown from './components/Dropdown.js';
+document.write(Dropdown);
