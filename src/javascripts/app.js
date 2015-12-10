@@ -13,4 +13,4 @@ export default function(){
 };
 */
 import Dropdown from './components/Dropdown.js';
-document.write(Dropdown);
+console.log(Dropdown);
