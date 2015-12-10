@@ -12,5 +12,11 @@ export default function(){
 
 };
 */
+import React from "react";
+import ReactDOM from "react-dom";
 import Dropdown from './components/Dropdown.js';
-console.log(Dropdown);
+
+ReactDOM.render(
+  <Dropdown />,
+  document.getElementById('root')
+);
