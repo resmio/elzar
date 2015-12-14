@@ -2,7 +2,7 @@
   background-color: $wild-sand;
   width: 100%;
   margin: 0 auto;
-  height: 400px;
+  height: rem(400);
   align-items: center;
   display: flex;
   @include media(min-width $breakpoint-b) {
@@ -10,7 +10,7 @@
   }
 }
 
-.content_centred {
+.content--centered {
 
   .container & {
       margin: 0 auto;
