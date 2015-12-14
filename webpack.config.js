@@ -7,14 +7,14 @@ module.exports = {
       filename: 'main.js'
     },
     module: {
-        loaders: [
-          {
-            test: /\.jsx?$/,
-            loader: "babel",
-            query: {
-              'presets': ['es2015', 'react']
-            }
+      loaders: [
+        {
+          test: /\.jsx?$/,
+          loader: "babel",
+          query: {
+            'presets': ['es2015', 'react']
           }
-        ]
+        }
+      ]
     }
 };

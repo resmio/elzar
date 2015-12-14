@@ -3,6 +3,7 @@ var webpack = require('webpack');
 
 var gulp = require('gulp');
 var gutil = require('gulp-util');
+var config = 
 
 var webpackDevelopmentTask = function(callback) {
   webpack(
