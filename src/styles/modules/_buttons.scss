@@ -1,5 +1,5 @@
 .btn-large {
-  background: $pacific-blue;
+  background: $action-color;
   border-left: $large-buttons-border;
   border-radius: 0;
   border-right: $large-buttons-border;
@@ -36,7 +36,7 @@
   color: $action-color;
 
   &:hover {
-    background-color: $pacific-blue;
+    background: $action-color;
   }
 }
 
@@ -45,6 +45,7 @@
   color: $hiperlink-color;
   padding: 0;
   text-decoration: underline;
+  //this is to have the button align with the text. Otherwise will be in another line
   vertical-align: inherit;
 
   &:hover {
@@ -54,9 +55,9 @@
 }
 
 .btn-secondary {
-  background-color: $silver;
+  background: $silver;
 
   &:hover {
-    background-color: $dusty-gray;
+    background: $dusty-gray;
   }
 }
