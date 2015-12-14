@@ -1,11 +1,25 @@
 .navbar {
   background: $pacific-blue;
-  height: 60px;
-  margin: 10px 0;
-  padding: 0;
+  height: $navbar_height;
+  min-width: rem(320);
+  padding-left: rem(15);
+  position: relative;
   width: 100%;
 
-  @include media(min-width 720px) {
-    padding: $content-padding;
+  @include media(min-width $breakpoint-b) {
+    padding: $content_padding;
+  }
+}
+
+.navbar_title {
+
+  .navbar & {
+    color: $white;
+    display: inline;
+    font-size: $font-headers-size;
+    position: absolute;
+    //height of nav-bar is 60px font header size is 20px.
+    //12 it works to center the title.
+    top: rem(12);
   }
 }
