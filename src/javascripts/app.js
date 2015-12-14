@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import Dropdown from './components/Dropdown.js';
+import Dropdown from './components/Dropdown.jsx';
 
 ReactDOM.render(
   <Dropdown />,
