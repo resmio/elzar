@@ -13,7 +13,10 @@ gulp.task('browserSync', function() {
     server: {
       baseDir: 'build'
     },
-    files: ['build/**/*.html'],
+    files: [
+      'build/**/*.html',
+      'build/**/*.js'
+    ],
     browser: 'google chrome canary',
     middleware: [
         webpackDevMiddleware(bundler, {
