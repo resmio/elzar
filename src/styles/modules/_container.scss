@@ -1,0 +1,18 @@
+.container {
+  background-color: $wild-sand;
+  width: 100%;
+  margin: 0 auto;
+  height: rem(400);
+  align-items: center;
+  display: flex;
+  @include media(min-width $breakpoint-b) {
+    width: 80%;
+  }
+}
+
+.content--centered {
+
+  .container & {
+      margin: 0 auto;
+  }
+}
