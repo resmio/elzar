@@ -5,7 +5,7 @@ const Dropdown = React.createClass({
   render: function() {
     return (
       <div className="dropdown">
-        Hello, world! I am a Dropdown.
+        Hello, world! I am Awesome.
       </div>
     );
   }
