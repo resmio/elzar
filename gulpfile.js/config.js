@@ -3,14 +3,6 @@ var src = './src';
 var sassSrc = src + '/styles/**/*.{sass,scss}';
 
 module.exports = {
-  browserSync: {
-    server: {
-      baseDir: dest
-    },
-    files: ['build/**/*.html'],
-    browser: 'google chrome canary'
-  },
-
   js: {
     src: [src + '/javascripts/'],
     dest: dest,
