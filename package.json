@@ -4,7 +4,7 @@
   "description": "resmio glamourous style guide",
   "main": "index.js",
   "scripts": {
-    "test": "cd src/__tests__ && babel-node --presets es2015 -- testSuite.js | faucet"
+    "test": "cd src/__tests__ && babel-node --presets es2015,react testSuite.js | faucet"
   },
   "engines": {
     "npm": "~5.2.0"
@@ -30,6 +30,7 @@
     "babel-core": "^6.2.1",
     "babel-loader": "^6.2.0",
     "babel-plugin-transform-es2015-modules-commonjs": "^6.3.16",
+    "babel-plugin-transform-react-jsx": "^6.3.13",
     "babel-preset-es2015": "^6.1.18",
     "babel-preset-react": "^6.1.18",
     "browser-sync": "^2.3.1",

@@ -1,14 +1,29 @@
 import test from 'tape';
-// import Dropdown from '../components/Dropdown.jsx';
-// import React from 'react/addons';
-// const {TestUtils} = React.addons;
+import Dropdown from '../components/Dropdown.jsx';
+import React from 'react/addons';
+const {TestUtils} = React.addons;
+
+const setup = () => {
+  const renderer = TestUtils.createRenderer();
+  const props = {
+    collapsed: true,
+  };
+
+  renderer.render(
+    <Dropdown
+      collapsed='true'
+    />
+  );
+  return renderer.getRenderOutput();
+};
 
 test(
-  'Passing test',
+  'Dropdown renders a <div> with a class of dropdown',
   (assert) => {
+    const component = setup();
     assert.equal(
-      true,
-      true
+      component.props.className,
+      'dropdown'
     );
     assert.end();
   }

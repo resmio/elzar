@@ -1,5 +1,5 @@
 const React = require('react');
-// const ReactDOM = require('react-dom');
+const ReactDOM = require('react-dom');
 
 export default class Dropdown extends React.Component {
   render () {
