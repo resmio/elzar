@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "lint": "cd src && eslint . --ext .js --ext .jsx --fix --cache; exit 0",
+    "start": "webpack-dev-server",
     "test": "cd src/__tests__ && babel-node --presets es2015,react testSuite.js | faucet"
   },
   "engines": {
@@ -55,11 +56,13 @@
     "gulp-svgmin": "^1.2.0",
     "gulp-util": "^3.0.7",
     "gulp-watch": "^4.2.0",
+    "html-webpack-plugin": "^1.7.0",
     "react-hot-loader": "^1.3.0",
     "require-dir": "^0.3.0",
     "tape": "^4.2.2",
     "webpack": "^1.12.9",
     "webpack-dev-middleware": "^1.4.0",
+    "webpack-dev-server": "^1.14.0",
     "webpack-hot-middleware": "^2.6.0"
   },
   "dependencies": {

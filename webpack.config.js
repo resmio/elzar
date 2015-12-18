@@ -1,19 +1,39 @@
-var path = require('path');
-var webpack = require('webpack');
+const path = require('path');
+const webpack = require('webpack');
+const HtmlwebpackPlugin = require('html-webpack-plugin');
+
+const PATHS = {
+  app: path.join(__dirname, 'src/index.js'),
+  build: path.join(__dirname, 'build')
+};
 
 module.exports = {
     entry: [
       'webpack/hot/dev-server',
       'webpack-hot-middleware/client',
-      './src/javascripts/app.js',
+      PATHS.app,
     ],
     output: {
-      path: path.join(__dirname, '/build/'),
+      path: PATHS.build,
       filename: 'main.js'
     },
     devtool: 'source-map',
     debug: true,
+    devServer: {
+      historyApiFallback: true,
+      hot: true,
+      inline: true,
+      progress: true,
+
+      // Display only errors to reduce the amount of output.
+      stats: 'errors-only',
+
+      // Parse host and port from env so this is easy to customize.
+      host: process.env.HOST,
+      port: process.env.PORT
+    },
     plugins: [
+      new HtmlwebpackPlugin({ title: 'Elzar'}),
       new webpack.optimize.OccurenceOrderPlugin(),
       new webpack.HotModuleReplacementPlugin(),
       new webpack.NoErrorsPlugin()
