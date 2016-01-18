@@ -1,5 +1,5 @@
 import test from 'tape';
-import Dropdown from '../components/Dropdown.jsx';
+import Dropdown from '../Dropdown.jsx';
 import React from 'react/addons';
 const { TestUtils } = React.addons;
 
