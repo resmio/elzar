@@ -1,7 +1,7 @@
 import test from 'tape';
 import Dropdown from '../Dropdown.jsx';
-import React from 'react/addons';
-const { TestUtils } = React.addons;
+import React from 'react';
+import TestUtils from 'react-addons-test-utils';
 
 const setup = () => {
   const renderer = TestUtils.createRenderer();
