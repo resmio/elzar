@@ -3,13 +3,15 @@ import Dropdown from '../Dropdown.jsx';
 import React from 'react';
 import TestUtils from 'react-addons-test-utils';
 
-const setup = () => {
+const setupWithoutRender = () => {
+  return new Dropdown();
+};
+
+const setupWithRender = () => {
   const renderer = TestUtils.createRenderer();
 
   renderer.render(
-    <Dropdown
-      collapsed="true"
-    />
+    <Dropdown />
   );
   return renderer.getRenderOutput();
 };
@@ -17,10 +19,22 @@ const setup = () => {
 test(
   'Dropdown renders a <div> with a class of dropdown',
   (assert) => {
-    const component = setup();
+    const component = setupWithRender();
     assert.equal(
       component.props.className,
       'dropdown'
+    );
+    assert.end();
+  }
+);
+
+test(
+  'Dropdown is closed initially',
+  (assert) => {
+    const component = setupWithoutRender();
+    assert.equal(
+      component.state.isOpen,
+      false
     );
     assert.end();
   }
