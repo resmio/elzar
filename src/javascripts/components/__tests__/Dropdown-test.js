@@ -60,7 +60,7 @@ test(
     const component = setupWithRender();
     assert.equal(
       component.props.children[1].props.className,
-      'hidden'
+      'dropdown__list hidden'
     );
     assert.end();
   }
@@ -76,6 +76,7 @@ test(
     component = renderer.getRenderOutput();
 
     // manually invoke onClick handler via props
+    // http://stackoverflow.com/a/33729151/2565132
     component.props.onClick({ preventDefault: () => {} });
 
     // we need to retrieve the output in order to get the changed element
@@ -83,7 +84,7 @@ test(
 
     assert.notEqual(
       component.props.children[1].props.className,
-      'hidden'
+      'dropdown__list hidden'
     );
     assert.end();
   }

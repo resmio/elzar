@@ -1,5 +1,5 @@
 const React = require('react');
-// const ReactDOM = require('react-dom');
+var classNames = require('classnames');
 
 export default class Dropdown extends React.Component {
 
@@ -26,9 +26,13 @@ export default class Dropdown extends React.Component {
   }
 
   _renderChildren() {
+    var childrenClass = classNames({
+      'dropdown__list': true,
+      'hidden': !this.state.isOpen
+    });
     return (
       <div
-        className={ this.state.isOpen ? "" : "hidden" }
+        className={ childrenClass }
       >
         { this.props.children }
       </div>
