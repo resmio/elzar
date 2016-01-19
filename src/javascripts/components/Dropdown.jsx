@@ -26,10 +26,13 @@ export default class Dropdown extends React.Component {
   }
 
   _renderChildren() {
-    if (this.state.isOpen)
-     {
-      return this.props.children
-    }
+    return (
+      <div
+        className={ this.state.isOpen ? "" : "hidden" }
+      >
+        { this.props.children }
+      </div>
+    )
   }
 
   _switchState() {

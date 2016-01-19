@@ -11,7 +11,7 @@ const setupWithRender = () => {
   const renderer = TestUtils.createRenderer();
 
   renderer.render(
-    <Dropdown />
+    <Dropdown displayText="Carabiruri"/>
   );
   return renderer.getRenderOutput();
 };
@@ -27,6 +27,19 @@ test(
     assert.end();
   }
 );
+
+test(
+  'Dropdown renders its display text',
+  (assert) => {
+    const component = setupWithRender();
+    assert.equal(
+      component.props.children[0],
+      'Carabiruri'
+    );
+    assert.end();
+  }
+);
+
 
 test(
   'Dropdown is closed initially',
