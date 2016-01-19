@@ -11,10 +11,11 @@ const setupWithRender = () => {
   const renderer = TestUtils.createRenderer();
 
   renderer.render(
-    <Dropdown displayText="Carabiruri"/>
+    <Dropdown displayText="Carabiruri" ref="Dropdown"/>
   );
   return renderer.getRenderOutput();
 };
+
 
 test(
   'Dropdown renders a <div> with a class of dropdown',
@@ -48,6 +49,41 @@ test(
     assert.equal(
       component.state.isOpen,
       false
+    );
+    assert.end();
+  }
+);
+
+test(
+  'The children are hidden by default',
+  (assert) => {
+    const component = setupWithRender();
+    assert.equal(
+      component.props.children[1].props.className,
+      'hidden'
+    );
+    assert.end();
+  }
+);
+
+test(
+  'After we click the children are not hidden anymore',
+  (assert) => {
+    let component;
+    const renderer = TestUtils.createRenderer();
+    renderer.render(<Dropdown />);
+
+    component = renderer.getRenderOutput();
+
+    // manually invoke onClick handler via props
+    component.props.onClick({ preventDefault: () => {} });
+
+    // we need to retrieve the output in order to get the changed element
+    component = renderer.getRenderOutput();
+
+    assert.notEqual(
+      component.props.children[1].props.className,
+      'hidden'
     );
     assert.end();
   }
