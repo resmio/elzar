@@ -1,0 +1,122 @@
+// The dropdown wrapper (div)
+.dropdown {
+  // We remove the margin from the dropdown button to make the list append to it
+  // So we apply it here for the button to have margins when closed
+  margin-bottom: $button-margin;
+  position: relative;
+}
+
+.dropdown_btn {
+  background-color: $white;
+  border: $base-border;
+  color: $dusty-gray;
+  height: $forms-height;
+  margin-bottom: 0;
+  padding: $dropdown-padding;
+
+  &:hover {
+    background: $wild-sand;
+    color: $dusty-gray;
+  }
+  // Prevent the focus on the dropdown toggle when closing dropdowns
+  &:focus {
+    background-color: $white;
+    border-color: $action-color;
+    color: $dusty-gray;
+    outline: 0;
+  }
+    //WE NEED TO CHANGE WHEN IT'S SELECTED - COLOR $EMPIRE
+    // ADD SOME ANIMATIONS LIKE THIS: http://semantic-ui.com/modules/dropdown.html
+}
+
+
+// The dropdown menu (ul)
+.dropdown_list {
+  background-clip: padding-box;
+  background-color: $white;
+  border: 1px solid $pacific-blue;
+  display: none; // none by default, but block on "open" of the menu
+  float: left;
+  font-size: $base-font-size;
+  list-style: none;
+  margin: 0; // override default ul
+  min-width: rem(160);
+  padding: rem(5) rem(0);
+  position: absolute;
+  text-align: left; // Ensures proper alignment if parent has it changed (e.g., modal footer)
+  z-index: 100;
+  // Open state for the dropdown
+  .open & {
+    // Show the menu
+    display: block;
+    //margin to remove white space between dropdown button and dropdown list
+    margin-top: rem(-3);
+    // Remove the outline when :focus is triggered
+    a {
+      outline: 0;
+    }
+  }
+}
+
+// `<button>`-specific styles are denoted with `// for <button>s`
+.dropdown_item {
+  background: none; // For `<button>`s
+  border: 0; // For `<button>`s
+  clear: both;
+  display: block;
+  font-weight: normal;
+  line-height: $base-line-height;
+  padding: rem(4) rem(16);
+  text-align: inherit; // For `<button>`s
+  white-space: nowrap; // prevent links from randomly breaking onto new lines
+  width: 100%; // For `<button>`s
+
+  &:hover {
+    background: $wild-sand;
+    cursor: pointer;
+  }
+}
+
+.dropdown_link {
+  color: $emperor;
+}
+
+.dropdown_colored {
+
+  .dropdown_btn {
+    background-color: $pacific-blue;
+    border: $large-buttons-border;
+    color: $white;
+
+    &:hover {
+      background-color: $deep-cerulean;
+    }
+
+    &:focus {
+      background-color: $white;
+      color: $dusty-gray;
+    }
+  }
+
+  .dropdown_list {
+    width: rem(250);
+  }
+}
+
+.dropdown_icon {
+  height: rem(15);
+  margin-left: rem(5);
+  stroke: $dusty-gray;
+
+  .dropdown_btn:focus & {
+    stroke: $pacific-blue;
+  }
+
+  .dropdown_colored & {
+    stroke: $white;
+
+    &:focus & {
+      stroke: $pacific-blue;
+    }
+  }
+}

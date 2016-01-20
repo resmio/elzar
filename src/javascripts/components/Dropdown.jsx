@@ -1,5 +1,7 @@
 const React = require('react');
 var classNames = require('classnames');
+import styles from './Dropdown.css';
+import CSSModules from 'react-css-modules';
 
 export default class Dropdown extends React.Component {
 
@@ -20,6 +22,9 @@ export default class Dropdown extends React.Component {
         onClick={ this._switchState }
       >
         { this.props.displayText }
+        <svg viewBox="0 0 100 100" className="icon arrows_icon dropdown_icon">
+          <use xlinkHref="#symbol-arrow-down"></use>
+        </svg>
         { this._renderChildren() }
       </div>
     );
