@@ -27,29 +27,33 @@ export default class Dropdown extends React.Component {
 
   _renderChildren() {
     let childrenClass = classNames({
-      'dropdown_list': true,
+      // dropdown_list is colliding with the styles so we set it to false for the time being
+      'dropdown_list': false,
       'hidden': !this.state.isOpen
     });
     var that = this;
-    let children = React.Children.map(that.props.children, function(child){that._renderChild(child)});
-    console.log(that.props.children);
-    console.log(children);
+    let children = React.Children.map(
+      that.props.children,
+      function(child){
+        return that._renderChild(child)
+      }
+    );
     return (
-      <div
+      <ul
         className={ childrenClass }
       >
+        Boohoo
         { children }
-      </div>
+      </ul>
     )
   }
 
   _renderChild(child) {
-    let childProps = child.props || {};
-    return React.cloneElement(
-      child,
-      { className: 'dropdown_item' },
-      child.props
-    );
+    return (
+      <li class="dropdown_item">
+        { child }
+      </li>
+    )
   }
 
   _switchState() {

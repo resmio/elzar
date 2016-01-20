@@ -60,7 +60,7 @@ test(
     const component = setupWithRender();
     assert.equal(
       component.props.children[1].props.className,
-      'dropdown__list hidden'
+      'hidden'
     );
     assert.end();
   }
