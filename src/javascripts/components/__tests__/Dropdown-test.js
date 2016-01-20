@@ -89,3 +89,39 @@ test(
     assert.end();
   }
 );
+
+test(
+  'When we pass children to a Dropdown component they get rendered as <li> with a class of dropdown_item',
+  (assert) => {
+    let component;
+    const renderer = TestUtils.createRenderer();
+    renderer.render(
+      <Dropdown>
+        <p>Test 1</p>
+        <div>
+          <div>Yo</div>
+        </div>
+      </Dropdown>
+    );
+
+    component = renderer.getRenderOutput();
+
+    assert.equal(
+      component.props.children[1].props.children[0].type,
+      'li'
+    );
+
+    assert.equal(
+      component.props.children[1].props.children[1].type,
+      'li'
+    );
+
+    assert.equal(
+      component.props.children[1].props.children[0].props.className,
+      'dropdown_item'
+    );
+
+    assert.end()
+  }
+
+);

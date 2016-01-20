@@ -42,7 +42,6 @@ export default class Dropdown extends React.Component {
       <ul
         className={ childrenClass }
       >
-        Boohoo
         { children }
       </ul>
     )
@@ -50,7 +49,7 @@ export default class Dropdown extends React.Component {
 
   _renderChild(child) {
     return (
-      <li class="dropdown_item">
+      <li className="dropdown_item">
         { child }
       </li>
     )
