@@ -16,7 +16,8 @@ export default class Dropdown extends React.Component {
   render() {
     let theClass = classNames({
       'dropdown': true,
-      'open': this.state.isOpen
+      'open': this.state.isOpen,
+      'dropdown_colored': this.props.colored
     });
     return (
       <div className={ theClass }

@@ -84,7 +84,7 @@ test(
     let component;
     const renderer = TestUtils.createRenderer();
     renderer.render(
-      <Dropdown>
+      <Dropdown displayText="whatever">
         <p>Test 1</p>
         <div>
           <div>Yo</div>
@@ -111,5 +111,24 @@ test(
 
     assert.end()
   }
+);
 
+test(
+  'Passing a colored prop to a Dropdown assigns it a class of dropdown_colored',
+  (assert) => {
+    let component;
+    const renderer = TestUtils.createRenderer();
+    renderer.render(
+      <Dropdown displayText="whatever" colored />
+    );
+
+    component = renderer.getRenderOutput();
+
+    assert.equal(
+      component.props.className,
+      'dropdown dropdown_colored'
+    );
+
+    assert.end()
+  }
 );
