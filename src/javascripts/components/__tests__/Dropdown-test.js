@@ -131,4 +131,28 @@ test(
 
     assert.end()
   }
+
+);
+
+test(
+  'If a dropdown_item is a link it gets a dropdown_link class',
+  (assert) => {
+    let component;
+    const renderer = TestUtils.createRenderer();
+    renderer.render(
+      <Dropdown displayText="whatever">
+        <a href="#">One</a>
+        <a href="#">Two</a>
+      </Dropdown>
+    );
+
+    component = renderer.getRenderOutput();
+
+    assert.equal(
+      component.props.children[1].props.children[0].props.className,
+      'dropdown_item'
+    );
+
+    assert.end()
+  }
 );
