@@ -69,3 +69,8 @@ export default class Dropdown extends React.Component {
     this.setState({isOpen: !this.state.isOpen});
   }
 }
+
+Dropdown.propTypes = {
+  displayText: React.PropTypes.string,
+  colored: React.PropTypes.bool
+};
