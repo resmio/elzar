@@ -142,15 +142,20 @@ test(
     renderer.render(
       <Dropdown displayText="whatever">
         <a href="#">One</a>
-        <a href="#">Two</a>
+        <p>Two</p>
       </Dropdown>
     );
 
     component = renderer.getRenderOutput();
 
     assert.equal(
-      component.props.children[1].props.children[0].props.className,
-      'dropdown_item'
+      component.props.children[1].props.children[0].props.children.props.className,
+      'dropdown_link'
+    );
+
+    assert.notEqual(
+      component.props.children[1].props.children[1].props.children.props.className,
+      'dropdown_link'
     );
 
     assert.end()

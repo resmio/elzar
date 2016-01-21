@@ -59,8 +59,9 @@ export default class Dropdown extends React.Component {
 
   _renderItems(item) {
     let theClass = classNames({
-      'dropdown_link': item.type === 'a'
+      'dropdown_link': (item.type === 'a')
     });
+    console.log(theClass);
 
     // We can not extend React elements, that's whay we clone it
     let itemWithClass = React.cloneElement(
