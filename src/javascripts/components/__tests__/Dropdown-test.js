@@ -57,15 +57,16 @@ test(
 test(
   'After we click the dropdown is open',
   (assert) => {
-    let component;
+    let component, button;
     const renderer = TestUtils.createRenderer();
     renderer.render(<Dropdown />);
 
     component = renderer.getRenderOutput();
+    button = component.props.children[0];
 
     // manually invoke onClick handler via props
     // http://stackoverflow.com/a/33729151/2565132
-    component.props.onClick({ preventDefault: () => {} });
+    button.props.onClick({ preventDefault: () => {} });
 
     // we need to retrieve the output in order to get the changed element
     component = renderer.getRenderOutput();
