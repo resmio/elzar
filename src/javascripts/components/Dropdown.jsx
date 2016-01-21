@@ -14,46 +14,52 @@ export default class Dropdown extends React.Component {
   }
 
   render() {
+    let theClass = classNames({
+      'dropdown': true,
+      'open': this.state.isOpen
+    });
     return (
-      <div
-        className="dropdown"
-        onClick={ this._switchState }
-      >
-        { this.props.displayText }
-        <svg viewBox="0 0 100 100" className="icon arrows_icon dropdown_icon">
-          <use xlinkHref="#symbol-arrow-down"></use>
-        </svg>
-        { this._renderChildren() }
+      <div className={ theClass }
+           onClick={ this._switchState }
+        >
+        <button id="dLabel"
+                className="dropdown_btn"
+                type="button"
+                aria-haspopup="true"
+                aria-expanded="false"
+        >
+          <span>{ this.props.displayText }</span>
+          <svg viewBox="0 0 100 100" className="icon arrows_icon dropdown_icon">
+            <use xlinkHref="#symbol-arrow-down"></use>
+          </svg>
+        </button>
+        { this._renderList() }
       </div>
     );
   }
 
-  _renderChildren() {
-    let childrenClass = classNames({
-      // dropdown_list is colliding with the styles so we set it to false for the time being
-      'dropdown_list': false,
-      'hidden': !this.state.isOpen
-    });
-    var that = this;
-    let children = React.Children.map(
+  _renderList() {
+    const that = this;
+    let items = React.Children.map(
       that.props.children,
       function(child){
-        return that._renderChild(child)
+        return that._renderItems(child)
       }
     );
     return (
       <ul
-        className={ childrenClass }
+        className='dropdown_list'
+        aria-labelledby="dLabel"
       >
-        { children }
+        { items }
       </ul>
     )
   }
 
-  _renderChild(child) {
+  _renderItems(item) {
     return (
       <li className="dropdown_item">
-        { child }
+        { item }
       </li>
     )
   }

@@ -34,7 +34,7 @@ test(
   (assert) => {
     const component = setupWithRender();
     assert.equal(
-      component.props.children[0],
+      component.props.children[0].props.children[0].props.children,
       'Carabiruri'
     );
     assert.end();
@@ -55,19 +55,7 @@ test(
 );
 
 test(
-  'The children are hidden by default',
-  (assert) => {
-    const component = setupWithRender();
-    assert.equal(
-      component.props.children[1].props.className,
-      'hidden'
-    );
-    assert.end();
-  }
-);
-
-test(
-  'After we click the children are not hidden anymore',
+  'After we click the dropdown is open',
   (assert) => {
     let component;
     const renderer = TestUtils.createRenderer();
@@ -82,9 +70,9 @@ test(
     // we need to retrieve the output in order to get the changed element
     component = renderer.getRenderOutput();
 
-    assert.notEqual(
-      component.props.children[1].props.className,
-      'dropdown__list hidden'
+    assert.equal(
+      component.props.className,
+      'dropdown open'
     );
     assert.end();
   }
