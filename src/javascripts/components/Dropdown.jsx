@@ -11,6 +11,7 @@ export default class Dropdown extends React.Component {
     };
 
     this._switchState = this._switchState.bind(this);
+    this._loseFocus = this._loseFocus.bind(this);
   }
 
   render() {
@@ -20,12 +21,12 @@ export default class Dropdown extends React.Component {
       'dropdown_colored': this.props.colored
     });
     return (
-      <div className={ theClass }
-           onClick={ this._switchState }
-        >
+      <div className={ theClass }>
         <button id="dLabel"
                 className="dropdown_btn"
                 type="button"
+                onClick={ this._switchState }
+                onBlur= { this._loseFocus }
                 aria-haspopup="true"
                 aria-expanded="false"
         >
@@ -61,7 +62,6 @@ export default class Dropdown extends React.Component {
     let theClass = classNames({
       'dropdown_link': (item.type === 'a')
     });
-    console.log(theClass);
 
     // We can not extend React elements, that's whay we clone it
     let itemWithClass = React.cloneElement(
@@ -78,6 +78,11 @@ export default class Dropdown extends React.Component {
 
   _switchState() {
     this.setState({isOpen: !this.state.isOpen});
+  }
+
+  _loseFocus() {
+    this.setState({ isOpen: false });
+    console.log('lost focus');
   }
 }
 
