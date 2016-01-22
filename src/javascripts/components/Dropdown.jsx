@@ -11,7 +11,7 @@ export default class Dropdown extends React.Component {
     };
 
     this._switchState = this._switchState.bind(this);
-    this._loseFocus = this._loseFocus.bind(this);
+    this._closeDropdown = this._closeDropdown.bind(this);
   }
 
   render() {
@@ -26,7 +26,7 @@ export default class Dropdown extends React.Component {
                 className="dropdown_btn"
                 type="button"
                 onClick={ this._switchState }
-                onBlur= { this._loseFocus }
+                onBlur= { this._closeDropdown }
                 aria-haspopup="true"
                 aria-expanded="false"
         >
@@ -80,9 +80,8 @@ export default class Dropdown extends React.Component {
     this.setState({isOpen: !this.state.isOpen});
   }
 
-  _loseFocus() {
+  _closeDropdown() {
     this.setState({ isOpen: false });
-    console.log('lost focus');
   }
 }
 
