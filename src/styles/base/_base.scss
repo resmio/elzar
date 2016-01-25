@@ -8,9 +8,14 @@
 // Neat Settings -- uncomment if using Neat -- must be imported before Neat
 @import "grid-settings";
 
-@import "buttons";
-@import "forms";
-@import "lists";
-@import "tables";
-@import "typography";
-@import "validations";
+
+// We comment this out, since we are going to use the common element rules from
+// the main app for now.
+// We can try to make this work later, after we remove bootstrap
+
+// @import "buttons";
+// @import "forms";
+// @import "lists";
+// @import "tables";
+// @import "typography";
+// @import "validations";

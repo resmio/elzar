@@ -7,6 +7,7 @@ var sassConfig = require('../config').sass;
 var sasslint = require('gulp-scss-lint');
 var gulpFilter = require('gulp-filter');
 var base64 = require('gulp-base64');
+var classPrefix = require('gulp-class-prefix');
 var autoprefixer = require('gulp-autoprefixer');
 
 gulp.task('sass', function() {
@@ -26,6 +27,7 @@ gulp.task('sass', function() {
       browsers: ['> 1%', 'ie 9']
     }))
     .on('error', handleErrors)
+    .pipe(classPrefix('elzar-'))
     .pipe(sourcemaps.write())
     .pipe(base64({
       extensions: ['svg'],

@@ -1,4 +1,4 @@
-# Same as our .gitignore but we don't want to ignore the build
+# Same as our gitignore but we don't want to ignore the build
 
 # Logs
 logs
