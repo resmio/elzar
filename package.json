@@ -8,7 +8,7 @@
     "test": "cd src/__tests__ && babel-node --presets es2015,react testSuite.js | faucet"
   },
   "engines": {
-    "npm": "~5.2.0"
+    "npm": "~3.3"
   },
   "repository": {
     "type": "git",
