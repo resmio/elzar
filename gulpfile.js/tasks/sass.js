@@ -1,7 +1,7 @@
 var gulp = require('gulp');
 var browserSync = require('browser-sync');
 var sass = require('gulp-sass');
-var sourcemaps = require('gulp-sourcemaps');
+// var sourcemaps = require('gulp-sourcemaps');
 var handleErrors = require('../lib/handleErrors');
 var sassConfig = require('../config').sass;
 var sasslint = require('gulp-scss-lint');
@@ -15,7 +15,7 @@ gulp.task('sass', function() {
     ['**/*.scss', '!base/**/*', '!vendor/**/*'], {restore: true}
   );
   return gulp.src(sassConfig.src)
-    .pipe(sourcemaps.init())
+    // .pipe(sourcemaps.init())
     .pipe(lintFilter)
     .pipe(sasslint({
       'config': 'scss-lint.yml'
