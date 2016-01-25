@@ -28,7 +28,7 @@ gulp.task('sass', function() {
     }))
     .on('error', handleErrors)
     .pipe(classPrefix('elzar-'))
-    .pipe(sourcemaps.write())
+    // .pipe(sourcemaps.write())
     .pipe(base64({
       extensions: ['svg'],
       baseDir: './src'
