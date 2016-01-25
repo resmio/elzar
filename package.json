@@ -1,7 +1,7 @@
 {
   "name": "elzar",
   "version": "0.0.7",
-  "description": "resmio glamourous style guide",
+  "description": "resmio glamourous style guide, includes react components to use in our fancy apps",
   "main": "index.js",
   "scripts": {
     "lint": "cd src && eslint . --ext .js --ext .jsx --fix --cache; exit 0",
@@ -18,7 +18,8 @@
     "styleguide",
     "resmio",
     "bootstrap",
-    "css"
+    "css",
+    "react"
   ],
   "author": "resmio <developers@resmio.com> (resmio.com)",
   "license": "MIT",
