@@ -25,6 +25,7 @@ export default class Button extends React.Component {
 }
 
 Button.propTypes = {
+  displayText: React.PropTypes.string,
   borderColor: React.PropTypes.string,
   fillColor: React.PropTypes.string,
   hoverColor: React.PropTypes.string,
