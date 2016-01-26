@@ -1,12 +1,13 @@
 var gulp = require('gulp');
 var browserSync = require('browser-sync');
 var sass = require('gulp-sass');
-var sourcemaps = require('gulp-sourcemaps');
+// var sourcemaps = require('gulp-sourcemaps');
 var handleErrors = require('../lib/handleErrors');
 var sassConfig = require('../config').sass;
 var sasslint = require('gulp-scss-lint');
 var gulpFilter = require('gulp-filter');
 var base64 = require('gulp-base64');
+var classPrefix = require('gulp-class-prefix');
 var autoprefixer = require('gulp-autoprefixer');
 
 gulp.task('sass', function() {
@@ -14,7 +15,7 @@ gulp.task('sass', function() {
     ['**/*.scss', '!base/**/*', '!vendor/**/*'], {restore: true}
   );
   return gulp.src(sassConfig.src)
-    .pipe(sourcemaps.init())
+    // .pipe(sourcemaps.init())
     .pipe(lintFilter)
     .pipe(sasslint({
       'config': 'scss-lint.yml'
@@ -26,7 +27,8 @@ gulp.task('sass', function() {
       browsers: ['> 1%', 'ie 9']
     }))
     .on('error', handleErrors)
-    .pipe(sourcemaps.write())
+    .pipe(classPrefix('elzar-'))
+    // .pipe(sourcemaps.write())
     .pipe(base64({
       extensions: ['svg'],
       baseDir: './src'

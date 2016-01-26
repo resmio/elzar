@@ -1,14 +1,14 @@
 {
   "name": "elzar",
-  "version": "0.0.7",
-  "description": "resmio glamourous style guide",
+  "version": "0.1.3",
+  "description": "resmio glamourous style guide, includes react components to use in our fancy apps",
   "main": "index.js",
   "scripts": {
     "lint": "cd src && eslint . --ext .js --ext .jsx --fix --cache; exit 0",
     "test": "cd src/__tests__ && babel-node --presets es2015,react testSuite.js | faucet"
   },
   "engines": {
-    "npm": "~5.2.0"
+    "npm": "~3.3"
   },
   "repository": {
     "type": "git",
@@ -18,7 +18,8 @@
     "styleguide",
     "resmio",
     "bootstrap",
-    "css"
+    "css",
+    "react"
   ],
   "author": "resmio <developers@resmio.com> (resmio.com)",
   "license": "MIT",
@@ -45,6 +46,7 @@
     "gulp": "^3.8.11",
     "gulp-autoprefixer": "^3.1.0",
     "gulp-base64": "^0.1.3",
+    "gulp-class-prefix": "^1.0.1",
     "gulp-filter": "^3.0.0",
     "gulp-gh-pages": "^0.5.2",
     "gulp-notify": "^2.2.0",

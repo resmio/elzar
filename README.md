@@ -44,45 +44,22 @@ is an explanation on how to create a pull request.
 
 8. Celebrate!  
 
-##How to update to test your changes to elzar in the main app##
-Sometimes you will want to preview the changes on the app, before making the
-pull request, to do this you must have your branch pushed to the elzar github
-repo (do until step 6 from the previous section). Then:  
-
-1. Go to the app that is requiring the elzar bower package and open its
-bower.json file.  
-
-2. Under dependencies look for elzar it should be something like:
-`"elzar": "0.0.9"`  
-
-3. Change the "0.0.9" part to `"git@github.com:resmio/elzar.git#your-branch"`  
-
-4. Run bower install from the terminal  
-
-5. Test your new stuff in the main app, after checking that everything is
-allright continue from step 6 in the previous section.  
-
-##How to update the bower package##
+##How to update the npm module##
 Best to do this when the branch is tested and the feature is merged into
 master, but we can do it from any branch. Here's how to do it:  
 
-1. In elzar open bower.json and look for the field called 'version', after it
-you will see a number (ie: 0.0.7), update that number (we use [semantic
-versioning](http://semver.org/))  
+1. Stage and commit all your changes.  
 
-2. Update that number in package.json too (to the same version number)  
+2. Go to the elzar directory in the terminal and run `npm version <type>`
+replacing <type> with the kind of update you are doing (we use [semantic
+versioning](http://semver.org/)) this is: patch, minor or major. This will
+update package.json to reflect the new version.  
 
-3. Add and commit the changes.   
+3. Run `npm publish` to update the changes in the npm repo.
 
-4. Tag the release by running `git tag -a v0.0.2`  
-
-5. Push the tags to github `git push origin master --tags`  
-
-6. Don't forget to update bower.json in the places where you use elzar.  
-
-(You can also tag the release directly from
-[github](https://help.github.com/articles/creating-releases/))  
-
+4. You will need to update the elzar version in the repo where you use it. You
+can do this by running `npm update -S elzar` the -S causes the version to be
+also updated in package.json.
 
 ##The ten commandments of sane style sheets##
 These are extracted from the great book [Enduring CSS](https://leanpub.com/enduringcss)
