@@ -1,6 +1,6 @@
 {
   "name": "elzar",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "resmio glamourous style guide, includes react components to use in our fancy apps",
   "main": "index.js",
   "scripts": {
