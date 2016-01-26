@@ -9,6 +9,12 @@ module.exports = {
     watch: [src + '/javascripts/**/*.js'],
   },
 
+  reactCss: {
+    src: [src + '/javascripts/'],
+    dest: dest,
+    watch: [src + '/javascripts/**/*.css'],
+  },
+
   html: {
     src: [src + '/views/index.html'],
     dest: dest,

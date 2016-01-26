@@ -1,7 +1,9 @@
+import CSSModules from 'react-css-modules';
+import styles from './Dropdown.css';
 const React = require('react');
 var classNames = require('classnames');
 
-export default class Dropdown extends React.Component {
+class Dropdown extends React.Component {
 
   constructor(props) {
     super(props);
@@ -21,7 +23,7 @@ export default class Dropdown extends React.Component {
       'dropdown_colored': this.props.colored
     });
     return (
-      <div className={ theClass }>
+      <div className={ theClass } styleName='dropdown-test'>
         <button id="dLabel"
                 className="dropdown_btn"
                 type="button"
@@ -89,3 +91,5 @@ Dropdown.propTypes = {
   displayText: React.PropTypes.string,
   colored: React.PropTypes.bool
 };
+
+export default CSSModules(Dropdown, styles);
