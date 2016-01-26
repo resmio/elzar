@@ -2,27 +2,15 @@ import test from 'tape';
 import Dropdown from '../Dropdown.jsx';
 import React from 'react';
 import TestUtils from 'react-addons-test-utils';
+import sd from 'skin-deep';
 
-const setupWithoutRender = () => {
-  return new Dropdown();
-};
-
-const setupWithRender = () => {
-  const renderer = TestUtils.createRenderer();
-
-  renderer.render(
-    <Dropdown displayText="Carabiruri" ref="Dropdown"/>
-  );
-  return renderer.getRenderOutput();
-};
-
+const tree = sd.shallowRender(<Dropdown displayText="Carabiruri" ref="Dropdown"/>);
 
 test(
   'Dropdown renders a <div> with a class of dropdown',
   (assert) => {
-    const component = setupWithRender();
     assert.equal(
-      component.props.className,
+      tree.props.className,
       'dropdown'
     );
     assert.end();
@@ -32,20 +20,19 @@ test(
 test(
   'Dropdown renders its display text',
   (assert) => {
-    const component = setupWithRender();
     assert.equal(
-      component.props.children[0].props.children[0].props.children,
+      tree.subTree('span').text(),
       'Carabiruri'
     );
     assert.end();
   }
 );
 
-
 test(
   'Dropdown is closed initially',
   (assert) => {
-    const component = setupWithoutRender();
+    //need the mounted instance to check state
+    const component = tree.getMountedInstance();
     assert.equal(
       component.state.isOpen,
       false
@@ -57,23 +44,13 @@ test(
 test(
   'After we click the dropdown is open',
   (assert) => {
-    let component, button;
-    const renderer = TestUtils.createRenderer();
-    renderer.render(<Dropdown />);
-
-    component = renderer.getRenderOutput();
-    button = component.props.children[0];
-
     // manually invoke onClick handler via props
     // http://stackoverflow.com/a/33729151/2565132
-    button.props.onClick({ preventDefault: () => {} });
-
-    // we need to retrieve the output in order to get the changed element
-    component = renderer.getRenderOutput();
+    tree.subTree('button').props.onClick({ preventDefault: () => {} });
 
     assert.equal(
-      component.props.className,
-      'dropdown open'
+      tree.getMountedInstance().state.isOpen,
+      true
     );
     assert.end();
   }
@@ -82,9 +59,7 @@ test(
 test(
   'When we pass children to a Dropdown component they get rendered as <li> with a class of dropdown_item',
   (assert) => {
-    let component;
-    const renderer = TestUtils.createRenderer();
-    renderer.render(
+    const specialTree = sd.shallowRender(
       <Dropdown displayText="whatever">
         <p>Test 1</p>
         <div>
@@ -93,20 +68,14 @@ test(
       </Dropdown>
     );
 
-    component = renderer.getRenderOutput();
-
     assert.equal(
-      component.props.children[1].props.children[0].type,
-      'li'
+      //2 children
+      specialTree.everySubTree('li').length,
+      2
     );
 
     assert.equal(
-      component.props.children[1].props.children[1].type,
-      'li'
-    );
-
-    assert.equal(
-      component.props.children[1].props.children[0].props.className,
+      specialTree.subTree('li').props.className,
       'dropdown_item'
     );
 
@@ -117,16 +86,10 @@ test(
 test(
   'Passing a colored prop to a Dropdown assigns it a class of dropdown_colored',
   (assert) => {
-    let component;
-    const renderer = TestUtils.createRenderer();
-    renderer.render(
-      <Dropdown displayText="whatever" colored />
-    );
-
-    component = renderer.getRenderOutput();
+    const specialTree = sd.shallowRender(<Dropdown displayText="whatever" colored />);
 
     assert.equal(
-      component.props.className,
+      specialTree.props.className,
       'dropdown dropdown_colored'
     );
 
@@ -138,24 +101,20 @@ test(
 test(
   'If a dropdown_item is a link it gets a dropdown_link class',
   (assert) => {
-    let component;
-    const renderer = TestUtils.createRenderer();
-    renderer.render(
+    const specialTree = sd.shallowRender(
       <Dropdown displayText="whatever">
         <a href="#">One</a>
         <p>Two</p>
       </Dropdown>
     );
 
-    component = renderer.getRenderOutput();
-
     assert.equal(
-      component.props.children[1].props.children[0].props.children.props.className,
+      specialTree.subTree('a').props.className,
       'dropdown_link'
     );
 
     assert.notEqual(
-      component.props.children[1].props.children[1].props.children.props.className,
+      specialTree.subTree('p').props.className,
       'dropdown_link'
     );
 

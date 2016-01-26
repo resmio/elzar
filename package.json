@@ -67,6 +67,7 @@
   "dependencies": {
     "babel-polyfill": "^6.2.0",
     "react": "^0.14.6",
-    "react-dom": "^0.14.6"
+    "react-dom": "^0.14.6",
+    "skin-deep": "^0.14.0"
   }
 }
