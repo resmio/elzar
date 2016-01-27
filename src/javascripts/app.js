@@ -16,10 +16,8 @@ const testPage = (
       <a href="#">Element 2</a>
       <a href="#">Element 3</a>
     </Dropdown>
-    
-    <Alert>
-		
-	</Alert>
+
+    <Alert type='error' displayHeader="Error!" displayText="Some text" />
   </div>
 );
 

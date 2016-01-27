@@ -6,57 +6,49 @@ export default class Alert extends React.Component {
   constructor(props) {
     super(props);
 
-    /*
     this.state = {
-      isOpen: false
+      isOpen: true
     };
 
-    this._switchState = this._switchState.bind(this);
-    */
+    this._closeAlert = this._closeAlert.bind(this);
+
   }
 
   render() {
+    let theClass = classNames({
+      'message_container': true,
+      'open': this.state.isOpen,
+      'hidden': !this.state.isOpen
+    });
     return (
-      <div
-        className="alert"
-      >
-        Hello World!
+      <div className={ theClass }>
+        <div className={'alert-box--'+this.props.type }>
+          <span className="close_alert" onClick={ this._closeAlert }>
+            <svg viewBox="0 0 100 100" className="icon close_icon">
+              <use xlinkHref="#symbol-close"></use>
+            </svg>
+          </span>
+        </div>
+        <ul
+          className='alert_content'
+        >
+          <li className='alert_text'>
+            <span className={'alert_text--'+this.props.type }>
+              { this.props.displayHeader }
+            </span>
+          </li>
+          <li className='line_message'>
+            <span>
+              { this.props.displayText }
+            </span>
+          </li>
+        </ul>
       </div>
     );
   }
 
-  _renderChildren() {
-    let childrenClass = classNames({
-      // dropdown_list is colliding with the styles so we set it to false for the time being
-      'dropdown_list': false,
-      'hidden': !this.state.isOpen
-    });
-    var that = this;
-    let children = React.Children.map(
-      that.props.children,
-      function(child){
-        return that._renderChild(child)
-      }
-    );
-    return (
-      <ul
-        className={ childrenClass }
-      >
-        Boohoo
-        { children }
-      </ul>
-    )
+  _closeAlert() {
+    this.setState({ isOpen: false });
   }
 
-  _renderChild(child) {
-    return (
-      <li class="dropdown_item">
-        { child }
-      </li>
-    )
-  }
-
-  _switchState() {
-    this.setState({isOpen: !this.state.isOpen});
-  }
 }
