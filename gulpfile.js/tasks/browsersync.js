@@ -17,8 +17,7 @@ gulp.task('browserSync', function() {
       'build/**/*.html',
       'build/**/*.js'
     ],
-    // browser: 'google chrome canary',
-    browser: 'google-chrome',
+    browser: 'google chrome canary',
     middleware: [
         webpackDevMiddleware(bundler, {
           // IMPORTANT: dev middleware can't access config, so we should
