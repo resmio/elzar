@@ -17,7 +17,6 @@ export default class Alert extends React.Component {
   render() {
     let theClass = classNames({
       'message_container': true,
-      'open': this.state.isOpen,
       'hidden': !this.state.isOpen
     });
     return (
@@ -32,12 +31,12 @@ export default class Alert extends React.Component {
         <ul
           className='alert_content'
         >
-          <li className='alert_text'>
+          <li className='alert_header'>
             <span className={'alert_text--'+this.props.type }>
               { this.props.displayHeader }
             </span>
           </li>
-          <li className='line_message'>
+          <li className='alert_message'>
             <span>
               { this.props.displayText }
             </span>
