@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Dropdown from './components/Dropdown.jsx';
+import Alert from './components/Alert.jsx';
 
 const testPage = (
   <div>
@@ -15,6 +16,8 @@ const testPage = (
       <a href="#">Element 2</a>
       <a href="#">Element 3</a>
     </Dropdown>
+
+    <Alert type='success' displayHeader="Success!" displayText="Some text" />
   </div>
 );
 
