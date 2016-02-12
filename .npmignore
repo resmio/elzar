@@ -22,3 +22,6 @@ bower_components
 
 # Caches
 .eslintcache
+
+# ghpages publish folder
+.publish
