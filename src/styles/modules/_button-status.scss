@@ -7,7 +7,7 @@
 }
 
 .btn_status {
-  background-color: $silver;
+  background-color: $very-light-grey;
   border-radius: 0;
   height: $status-height;
   margin-bottom: 0;
@@ -19,11 +19,11 @@
   }
 
   &:hover {
-    background-color: rgba($dusty-gray, 0.90);
+    background-color: rgba($nobel, 0.90);
   }
 
   &:focus {
-    background-color: $dusty-gray;
+    background-color: $nobel;
   }
 }
 
@@ -31,7 +31,7 @@
 .status_list {
   background-clip: padding-box;
   background-color: $white;
-  border: 1px solid $alto;
+  border: 1px solid $gainsboro;
   display: none; // none by default, but block on "open" of the menu
   float: left;
   font-size: $base-font-size;
@@ -74,7 +74,7 @@
   width: 100%; // For `<button>`s
 
   &:hover {
-    background: $wild-sand;
+    background: $white-smoke;
     cursor: pointer;
   }
 }
@@ -84,10 +84,10 @@
 }
 
 .status_link {
-  color: $emperor;
+  color: $mattherhorn;
 
   &:hover {
-    color: $emperor;
+    color: $mattherhorn;
   }
 }
 
@@ -116,14 +116,14 @@
 
 //Diferente states:
 .status--active {
-  background-color: $java;
+  background-color: $shamrock;
 
   &:hover {
-    background-color: rgba($mountain-meadow, 0.80);
+    background-color: rgba($niagara, 0.80);
   }
 
   &:focus {
-    background-color: $mountain-meadow;
+    background-color: $niagara;
   }
 }
 
@@ -131,22 +131,22 @@
   background-color: $amaranth;
 
   &:hover {
-    background-color: rgba($maroon-flush, 0.80);
+    background-color: rgba($cardinal, 0.80);
   }
 
   &:focus {
-    background-color: $maroon-flush;
+    background-color: $cardinal;
   }
 }
 
 .status--no-show {
-  background-color: $west-side;
+  background-color: $dark-orange;
 
   &:hover {
-    background-color: rgba($tahiti-gold, 0.80);
+    background-color: rgba($golden-tainoi, 0.80);
   }
 
   &:focus {
-    background-color: $tahiti-gold;
+    background-color: $golden-tainoi;
   }
 }

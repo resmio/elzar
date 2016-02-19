@@ -9,20 +9,20 @@
 .dropdown_btn {
   background-color: $white;
   border: $base-border;
-  color: $dusty-gray;
+  color: $nobel;
   height: $forms-height;
   margin-bottom: 0;
   padding: $dropdown-padding;
 
   &:hover {
-    background: $wild-sand;
-    color: $dusty-gray;
+    background: $white-smoke;
+    color: $nobel;
   }
   // Prevent the focus on the dropdown toggle when closing dropdowns
   &:focus {
     background-color: $white;
     border-color: $action-color;
-    color: $dusty-gray;
+    color: $nobel;
     outline: 0;
   }
     //WE NEED TO CHANGE WHEN IT'S SELECTED - COLOR $EMPIRE
@@ -72,13 +72,13 @@
   width: 100%; // For `<button>`s
 
   &:hover {
-    background: $wild-sand;
+    background: $white-smoke;
     cursor: pointer;
   }
 }
 
 .dropdown_link {
-  color: $emperor;
+  color: $mattherhorn;
 }
 
 .dropdown_colored {
@@ -89,12 +89,12 @@
     color: $white;
 
     &:hover {
-      background-color: $deep-cerulean;
+      background-color: $eastern-blue;
     }
 
     &:focus {
       background-color: $white;
-      color: $dusty-gray;
+      color: $nobel;
     }
   }
 
@@ -106,7 +106,7 @@
 .dropdown_icon {
   height: rem(15);
   margin-left: rem(5);
-  stroke: $dusty-gray;
+  stroke: $nobel;
 
   .dropdown_btn:focus & {
     stroke: $pacific-blue;
