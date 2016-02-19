@@ -2,9 +2,28 @@
   display: inline-block;
   fill: none;
   height: rem(25);
+  // If we don't assign a data-stroke-color in the html it defaults to white
+  // We need to research if we can target elements with not a particular data
+  // attribute and provide a default for just those, instead of overriding
+  // this value as we do now
   stroke: $white;
   stroke-width: 1.5px;
   vertical-align: middle;
+
+  // To gain flexibilty we apply the stroke color as a data-id in the html
+  // To make it really cool this should be a sass function that takes a
+  // color argument
+  &[data-stroke-color="silver"] {
+    stroke: $silver;
+  }
+
+  &[data-stroke-color="amaranth"] {
+    stroke: $amaranth;
+  }
+
+  &[data-stroke-color="mountain-meadow"] {
+    stroke: $mountain-meadow;
+  }
 }
 
 .status_list_icon {
