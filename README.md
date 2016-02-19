@@ -83,7 +83,7 @@ Please don't, they introduce specifity and specifity is evil.
 We will add them later using a post-processor.  
 
 5. **Use variables for colors, sizing, z-index and breakpoints**  
-It helps us maintain consistency, to find the colors please use [name that color](http://chir.ag/projects/name-that-color/) to avoid things like `$red-darker-than-darkest`.  
+It helps us maintain consistency, to find the colors please use [htmlcsscolor](http://www.htmlcsscolor.com/) to avoid things like `$red-darker-than-darkest`.  
 For breakpoints we use the $breakpoint-a $breakpoint-b scheme, a being the smallest one.   
 
 6. **Write rules mobile first, avoid max-width**  

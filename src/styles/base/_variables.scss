@@ -39,54 +39,58 @@ $min-component-width: rem(180);
 
 // Blues
 $pacific-blue:          #00A7C4;
-$deep-cerulean:         #018EA6;
+$eastern-blue:          #018EA6;
 $ocean-blue:            #333B4F;
-$sidebar-blue:          #333B4F;
-$sidebar-dark-lue:      #293140;
-$sidebar-darker-lue:    #1E2532;
+$bunting:               #293140;
+$midnight-express:      #1E2532;
 
 // Greens
-$java:                  #22CCAA;
-$mountain-meadow:       #21B498;
+$shamrock:              #22CCAA;
+$niagara:               #21B498;
+
 // Purples
-$royal-purple:          #543EAC;
-$minsk:                 #43318C;
+$blue-gem:              #543EAC;
+
 // Reds
 $amaranth:              #E62C4F;
-$maroon-flush:          #BC213F;
+$cardinal:              #BC213F;
+
 // Yellows
-$casablanca:            #F8C150;
-$old-gold:              #D7A43B;
+$golden-tainoi:         #F8C150;
+$metallic-gold:         #D7A43B;
+
 // Oranges
-$west-side:             #FF910A;
-$tahiti-gold:           #D97B08;
+$dark-orange:           #FF910A;
+$mango-tango:           #D97B08;
+
 // Grays
-$mine-shaft:               #222;
-$emperor:                  #555;
-$dusty-gray:               #999;
-$silver:                   #CCC;
-$alto:                     #DDD;
+$nero:                     #222;
+$mattherhorn:              #555;
+$nobel:                    #999;
+$very-light-grey:          #CCC;
+$gainsboro:                #DDD;
+
 // Whites
-$wild-sand:             #F7F7F7;
+$white-smoke:           #F7F7F7;
 $white:                    #FFF;
 
 // Error Colors
-$success-color: $java;
+$success-color: $shamrock;
 $error-color: $amaranth;
-$warning-color: $casablanca;
+$warning-color: $golden-tainoi;
 
 // Font Colors
-$base-font-color: $emperor;
+$base-font-color: $mattherhorn;
 $action-color: $pacific-blue;
-$action-color-darker: $deep-cerulean;
-$hiperlink-color: $sidebar-blue;
+$action-color-darker: $eastern-blue;
+$hiperlink-color: $ocean-blue;
 
 
 // Border
-$base-border-color: $alto;
+$base-border-color: $gainsboro;
 $base-border-radius: rem(3);
 $base-border: 1px solid $base-border-color;
-$large-buttons-border: 1px solid $deep-cerulean;
+$large-buttons-border: 1px solid $eastern-blue;
 
 // Background Colors
 $base-background-color: #fff;

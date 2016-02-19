@@ -17,7 +17,7 @@ select {
   padding-right: rem(10);
 
     &:hover {
-      border-color: shade($silver, 10%);
+      border-color: shade($very-light-grey, 10%);
     }
 
     &:focus {
@@ -26,7 +26,7 @@ select {
     }
 }
 ::-webkit-input-placeholder{
-  color: $alto;
+  color: $gainsboro;
   font-family: $base-font-family;
   font-size: $base-font-size;
 }
@@ -57,7 +57,7 @@ select[multiple=multiple] {
   transition: border-color $base-duration $base-timing;
   width: 100%;
   padding-left: $forms-padding;
-  color: $emperor;
+  color: $mattherhorn;
 
 
   &:disabled {

@@ -1,6 +1,6 @@
 #{$all-buttons} {
   appearance: none;
-  background-color: $java;
+  background-color: $shamrock;
   border: 0;
   border-radius: $base-border-radius;
   color: $white;
@@ -19,7 +19,7 @@
   white-space: nowrap;
 
   &:hover {
-    background-color: $mountain-meadow;
+    background-color: $niagara;
     color: $white;
   }
   &:focus {
