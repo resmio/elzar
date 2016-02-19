@@ -13,8 +13,7 @@
   line-height: rem(24);
 }
 
-// Make a mixin for this
-
+// we need to create a mixin for this
 .table-heading--10 {
   width: 10%;
 }
@@ -37,4 +36,8 @@
 
 .table-row {
   border: 0;
+}
+
+.table-row:nth-of-type(even) {
+  background-color: $amaranth;
 }
