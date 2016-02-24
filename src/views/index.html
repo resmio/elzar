@@ -10,6 +10,29 @@
 <body>
   <div id="root"></div>
   {% include "svg/svg-symbols.svg" %}
+  <p>Here you can see detailed info about your guests.</p>
+
+  <button type="button" class="btn-light">
+    <svg viewBox="0 0 100 100" class="icon" data-stroke-color="blue">
+      <use xlink:href="#symbol-add"></use>
+    </svg>
+    <span class="btn_text">Add new guest</span>
+  </button>
+
+  <div class="message-box--upgrade">
+
+    <span class="message-box_icon-container">
+      <svg viewBox="0 0 100 100" class="icon" data-stroke-color="white">
+        <use xlink:href="#symbol-password"></use>
+      </svg>
+    </span>
+
+    <span class="message-box__message">
+      <a class="message-box__link" href="#">Upgrade plan</a>
+      to have unlimited access to all of your guests info and groups
+    </span>
+  </div>
+
   {% include "components/guests-table.html" %}
   <!-- <script src="main.js"></script> -->
 </body>

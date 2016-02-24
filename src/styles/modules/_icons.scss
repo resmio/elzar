@@ -17,6 +17,10 @@
     stroke: $very-light-grey;
   }
 
+  &[data-stroke-color="blue"] {
+    stroke: $pacific-blue;
+  }
+
   &[data-stroke-color="amaranth"] {
     stroke: $amaranth;
   }
@@ -27,6 +31,10 @@
 
   &[data-stroke-color="nero"] {
     stroke: $nero;
+  }
+
+  &[data-stroke-color="white"] {
+    stroke: $white;
   }
 }
 
