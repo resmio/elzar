@@ -1,19 +1,24 @@
 .message-box--upgrade {
+  align-items: center;
   border: 1px solid $golden-tainoi;
+  box-shadow: $base-box-shadow;
   color: $nobel;
-  display: inline-block;
+  display: flex;
   padding-right: 15px;
-  width : 100%;
+  width: 100%;
 }
 
 .message-box_icon-container {
+  // This makes the background fill the full container height
+  align-self: stretch;
   background: $golden-tainoi;
-  display: inline-block;
   padding: 10px;
 }
 
 .message-box__message {
+  align-items: center;
   margin-left: 15px;
+  padding: 10px 0;
 }
 
 .message-box__link {
