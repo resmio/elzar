@@ -1,6 +1,8 @@
 .message-box--upgrade {
   align-items: center;
+  background: $white;
   border: 1px solid $golden-tainoi;
+  border-radius: $base-border-radius;
   box-shadow: $base-box-shadow;
   color: $nobel;
   display: flex;

@@ -3,3 +3,23 @@
 .hidden {
   display: none;
 }
+
+.container--main {
+  background: $white-smoke;
+}
+
+[data-show-from="breakpoint-a"] {
+  display: none;
+
+  @include media($breakpoint-a) {
+    display: inline-block;
+  }
+}
+
+[data-show-from="breakpoint-b"] {
+  display: none;
+
+  @include media($breakpoint-b) {
+    display: inline-block;
+  }
+}
