@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="symbol-check-circle" stroke="#555555" stroke-width="1.3">
+            <path d="M16.5,29 C23.4035594,29 29,23.4035594 29,16.5 C29,9.59644063 23.4035594,4 16.5,4 C9.59644063,4 4,9.59644063 4,16.5 C4,23.4035594 9.59644063,29 16.5,29 Z M10,16.5782127 L13.8077294,20.4499607 C14.1971647,20.8459435 14.8330391,20.8406944 15.2187705,20.4476358 L23.5089287,12" id="success"></path>
+        </g>
+        <g id="resmio-icons" transform="translate(-475.000000, -479.000000)"></g>
+    </g>
+</svg>

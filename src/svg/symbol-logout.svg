@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="35px" height="35px" viewBox="0 0 35 35" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <defs></defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
-        <g id="symbol-logout" stroke="#FFFFFF" stroke-width="1.3">
-            <path d="M29.6982423,18.9370117 L24.495834,13.75 M19.6737057,5.75 L6.49583398,5.75 M19.75,13.098877 L19.75,5.76660156 M24.6847121,24.6448457 L29.6659598,19.0555387 M11.8333333,18.75 L29.2434076,18.8672504 M6.49583398,5.75 L6.49583398,30.7038994 M19.5648197,30.75 L6.49583398,30.75 M19.6518555,30.760376 L19.6518555,23.6888428" id="logout" transform="translate(17.675336, 18.250000) scale(-1, -1) translate(-17.675336, -18.250000) "></path>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="symbol-logout" stroke="#555555" stroke-width="1.3" stroke-linecap="square">
+            <path d="M8.73837676,16.9654618 L26.148451,17.0827122 M21.8914575,10.9771805 L26.9704873,16.2150821 C27.3552566,16.6118869 27.3657993,17.2518764 26.9798332,17.6595392 L22.0617049,22.8541337 M15.9059032,21.5064774 L15.9059032,27.7130834 C15.9059032,28.2666817 15.4628107,28.7154618 14.9049366,28.7154618 L3.58950825,28.7154618 C3.03668967,28.7154618 2.58854167,28.2653805 2.58854167,27.7159753 L2.58854167,4.99948648 C2.58854167,4.44748534 3.04327299,4 3.59352158,4 L15.2507354,4 C15.8057705,4 16.2557153,4.45431092 16.2557153,5.00983956 L16.2557153,11.2626442" id="logout" transform="translate(15.127858, 16.357731) scale(-1, -1) translate(-15.127858, -16.357731) "></path>
         </g>
+        <g id="resmio-icons" transform="translate(-475.000000, -543.000000)"></g>
     </g>
 </svg>

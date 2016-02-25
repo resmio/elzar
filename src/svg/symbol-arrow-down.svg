@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="35px" height="35px" viewBox="0 0 35 35" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <defs></defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="symbol-arrow-down" stroke="#999999" stroke-width="1.5">
-            <path d="M5,12.1174624 L17.2987231,25.1973988 L29.5156948,12" id="arrow-down"></path>
+        <g id="symbol-arrow-down" stroke="#555555" stroke-width="1.3">
+            <path d="M3,12.1174624 L14.6199719,24.4755333 C14.9948358,24.8742086 15.6007174,24.8711691 15.9729627,24.4690507 L27.5156948,12" id="arrow-down"></path>
         </g>
+        <g id="resmio-icons" transform="translate(-25.000000, -479.000000)"></g>
     </g>
 </svg>

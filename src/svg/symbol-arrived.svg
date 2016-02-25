@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="35px" height="35px" viewBox="0 0 35 35" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <defs></defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="symbol-arrived" stroke="#FFFFFF" stroke-width="1.3">
-            <path d="M17.2240671,32 C17.2240671,32 27.1497138,21.4050633 27.149713,14.7405063 C27.1497123,8.07594937 23.0715791,5 17.2240671,5 C11.376555,5 8,8.43002736 8,14.7405063 C8,21.0509853 17.2240671,32 17.2240671,32 Z M13,17.0941819 L16.0500163,20.1954775 L22.1300001,14" id="arrived"></path>
+        <g id="symbol-arrived" stroke="#555555" stroke-width="1.3">
+            <path d="M14.5900596,29.2215064 C14.9402122,29.6514565 15.532006,29.6634777 15.8907291,29.2619961 C15.8907291,29.2619961 25.1497138,19.4050633 25.149713,12.7405063 C25.1497123,6.07594937 21.0715791,3 15.2240671,3 C9.37655502,3 6,6.43002736 6,12.7405063 C6,19.0509853 14.5900596,29.2215064 14.5900596,29.2215064 Z M11,15.0941819 L13.3426151,17.4761829 C13.733302,17.8734384 14.3598824,17.8797253 14.7474677,17.4847775 L20.1300001,12" id="arrived"></path>
         </g>
+        <g id="resmio-icons" transform="translate(-75.000000, -342.000000)"></g>
     </g>
 </svg>

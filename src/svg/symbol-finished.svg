@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="35px" height="35px" viewBox="0 0 35 35" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <defs></defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="symbol-finished" stroke="#FFFFFF" stroke-width="1.3">
-            <path d="M22.214423,9.92234268 C21.1594322,9.19872461 19.9719387,8.65424067 18.6957966,8.33274503 C17.8331874,8.11542977 16.9300737,8 16,8 C9.92486775,8 5,12.9248678 5,19 C5,25.0751322 9.92486775,30 16,30 L16,30 C22.0751322,30 27,25.0751322 27,19 M14,15.1275982 L19.0544081,20.2669852 L29.1300001,10" id="finished"></path>
+        <g id="symbol-finished" stroke="#555555" stroke-width="1.3">
+            <path d="M22.214423,7.92234268 C21.1594322,7.19872461 19.9719387,6.65424067 18.6957966,6.33274503 C17.8331874,6.11542977 16.9300737,6 16,6 C9.92486775,6 5,10.9248678 5,17 C5,23.0751322 9.92486775,28 16,28 L16,28 C22.0751322,28 27,23.0751322 27,17 M14,13.1275982 L18.3516143,17.5523755 C18.7397566,17.9470435 19.3669991,17.9484563 19.7549048,17.5531821 L29.1300001,8" id="finished"></path>
         </g>
+        <g id="resmio-icons" transform="translate(-175.000000, -342.000000)"></g>
     </g>
 </svg>
