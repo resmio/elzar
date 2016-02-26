@@ -4,23 +4,54 @@
   <meta charset="UTF-8">
   <title>Test Elzar</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!--  We comment jquery and bootstrap for testing purposes, they should be deleted after we finish -->
-  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> -->
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/js/bootstrap.min.js"></script> -->
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="main.css">
 </head>
 <body>
   <div id="root"></div>
   {% include "svg/svg-symbols.svg" %}
-  {% include "components/buttons.html" %}
-  {% include "components/forms.html" %}
-  {% include "components/dropdowns.html" %}
-  {% include "components/button-status.html" %}
-  {% include "components/alerts.html" %}
-  {% include "components/typography.html" %}
-  {% include "components/header.html" %}
-  {% include "components/container.html" %}
-  <script src="main.js"></script>
+  <div class="container--main">
+
+    <div class="message-banner">
+
+      <p>Here you can see detailed info about your guests.</p>
+
+      <button type="button" class="btn-light">
+        <svg viewBox="0 0 100 100" class="icon" data-stroke-color="blue">
+          <use xlink:href="#symbol-plus"></use>
+        </svg>
+        <span class="navbar_button-text" data-show-from="breakpoint-a">Add new guest</span>
+      </button>
+
+    </div><!-- message-banner -->
+
+    <div class="message-box--upgrade">
+
+      <span class="message-box_icon-container">
+        <svg viewBox="0 0 100 100" class="icon" data-stroke-color="white">
+          <use xlink:href="#symbol-lock"></use>
+        </svg>
+      </span>
+
+      <span class="message-box__message">
+        <a class="message-box__link" href="#">Upgrade plan</a>
+        to have unlimited access to all of your guests info and groups and whatever the fuck it takes to make this line longer.
+      </span>
+    </div>
+
+    <div class="section_header">
+      <h1>All Guests: 8</h1>
+      <button type="button" class="btn-secondary">
+        <svg viewBox="0 0 100 100" class="icon" data-stroke-color="white">
+          <use xlink:href="#symbol-import"></use>
+        </svg>
+        <span class="navbar_button-text" data-show-from="breakpoint-a">Import</span>
+      </button>
+    </div>
+
+    {% include "components/guests-table.html" %}
+
+  </div><!-- container-main -->
+  <!-- <script src="main.js"></script> -->
 </body>
 </html>

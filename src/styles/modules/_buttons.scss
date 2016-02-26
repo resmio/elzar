@@ -1,20 +1,14 @@
 @mixin button {
+  padding: $default-button-padding--mobile;
 
-}
-
-.btn_text {
-
-  .navbar_button & {
-    display: none;
-
-    @include media(min-width $breakpoint-b) {
-      display: inline;
-    }
+  @include media(min-width $breakpoint-b) {
+    padding: $default-button-padding;
   }
 }
 
-
 .btn-light {
+  @include button;
+
   background: none;
   border: 1px solid $action-color;
   color: $action-color;
@@ -39,12 +33,9 @@
 }
 
 .btn-secondary {
+  @include button;
+  
   background: $very-light-grey;
-  padding: $default-button-padding--mobile;
-
-  @include media(min-width $breakpoint-b) {
-    padding: $default-button-padding;
-  }
 
   &:hover {
     background: $nobel;

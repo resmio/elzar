@@ -2,32 +2,42 @@
   @include outer-container;
 }
 
-// ----------------------------------------------------------------------------
+// Header is the container of the headings
 .table_header {
-  background-color: $white-smoke;
+  background-color: tint($white-smoke, 70%);
   border-bottom: 2px solid $gainsboro;
-  box-shadow: $base-box-shadow;
-  // display: inline-block;
+  box-shadow: $base-box-shadow/2;
   height: rem(32);
 }
 
+// Headings are the column names
 .table_heading--guest,
 .table_heading--contact {
-  border: 0;
   color: $nobel;
   font-weight: 400;
   line-height: rem(36);
-  padding-left: 10px;
 }
 
-.table_heading--guest {
+.table_row {
+  height: rem(60); // This centers the content vertically
+  line-height: rem(57);
+  white-space: nowrap; // We need this for the ellipsis to work
+}
+
+.table_row:nth-of-type(odd) {
+  background-color: $white;
+}
+
+.table_heading--guest,
+.table_cell--guest {
   @include span-columns(4 of 6);
+  overflow: hidden;
+  padding-left: 10px;
+  text-overflow: ellipsis;
 }
 
-.table_heading--contact {
+.table_heading--contact,
+.table_cell--contact {
   @include span-columns(2 of 6);
-}
-
-.table_row:nth-of-type(even) {
-  background-color: $amaranth;
-}
+  padding-left: 10px;
+}  
