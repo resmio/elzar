@@ -34,10 +34,18 @@
   overflow: hidden;
   padding-left: 10px;
   text-overflow: ellipsis;
+
+  @include media($breakpoint-b) {
+    @include span-columns(3 of 6);
+  }
 }
 
 .table_heading--contact,
 .table_cell--contact {
   @include span-columns(2 of 6);
   padding-left: 10px;
-}  
+
+  @include media($breakpoint-b) {
+    @include span-columns(3 of 6);
+  }
+}
