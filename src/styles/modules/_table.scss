@@ -1,11 +1,9 @@
 .table {
-  border-collapse: separate;
-  border-spacing: 0;
-  width: 100%;
+  @include outer-container;
 }
 
 // ----------------------------------------------------------------------------
-.table__header {
+.table_header {
   background-color: $white-smoke;
   border-bottom: 2px solid $gainsboro;
   box-shadow: $base-box-shadow;
@@ -13,38 +11,23 @@
   height: rem(32);
 }
 
-.table-heading {
+.table_heading--guest,
+.table_heading--contact {
   border: 0;
   color: $nobel;
   font-weight: 400;
-  line-height: rem(24);
+  line-height: rem(36);
+  padding-left: 10px;
 }
 
-// we need to create a mixin for this
-.table-heading--10 {
-  width: 10%;
+.table_heading--guest {
+  @include span-columns(4 of 6);
 }
 
-.table-heading--15 {
-  width: 15%;
+.table_heading--contact {
+  @include span-columns(2 of 6);
 }
 
-.table-heading--20 {
-  width: 20%;
-}
-
-.table-heading--50 {
-  width: 50%;
-}
-
-.table-heading--60 {
-  width: 60%;
-}
-
-.table-row {
-  border: 0;
-}
-
-.table-row:nth-of-type(even) {
+.table_row:nth-of-type(even) {
   background-color: $amaranth;
 }

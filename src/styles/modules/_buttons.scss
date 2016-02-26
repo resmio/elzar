@@ -1,26 +1,10 @@
-.btn-large {
-  background: $action-color;
-  border-left: $large-buttons-border;
-  border-radius: 0;
-  border-right: $large-buttons-border;
-  float: right;
-  height: 100%;
-  margin-right: rem(-3);
-  padding: $large-button-padding--mobile;
+@mixin button {
 
-  @include media(min-width $breakpoint-b) {
-    padding: $large-button-padding;
-  }
-
-  &:hover,
-  &:focus {
-    background-color: shade($action-color-darker, 5%);
-  }
 }
 
 .btn_text {
 
-  .btn-large & {
+  .navbar_button & {
     display: none;
 
     @include media(min-width $breakpoint-b) {
@@ -56,6 +40,11 @@
 
 .btn-secondary {
   background: $very-light-grey;
+  padding: $default-button-padding--mobile;
+
+  @include media(min-width $breakpoint-b) {
+    padding: $default-button-padding;
+  }
 
   &:hover {
     background: $nobel;

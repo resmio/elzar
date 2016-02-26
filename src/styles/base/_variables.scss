@@ -15,12 +15,15 @@ $font-small-size: rem(12);
 $base-line-height: 1.5;
 $heading-line-height: 1.2;
 
+// Buttons spacing
+$button-margin: rem(8) 0;
+$default-button-padding: rem(14) rem(30);
+$default-button-padding--mobile: rem(14) rem(15);
+$navbar-button-padding: 0 rem(27);
+$navbar-button-padding--mobile: 0 rem(15);
+
 // Other Sizes
 $base-z-index: 0;
-$button-margin: rem(8) 0;
-$large-button-padding: 0 rem(27);
-$large-button-padding--mobile: 0 rem(15);
-$default-button-padding: rem(14) rem(38);
 $small-spacing: rem(10) rem(10);
 $base-spacing: rem(10) rem(30);
 $banner-padding: rem(20) rem(15);
@@ -92,7 +95,7 @@ $hiperlink-color: $ocean-blue;
 $base-border-color: $gainsboro;
 $base-border-radius: rem(3);
 $base-border: 1px solid $base-border-color;
-$large-buttons-border: 1px solid $eastern-blue;
+$navbar-button-border: 1px solid $eastern-blue;
 
 // Background Colors
 $base-background-color: #fff;

@@ -23,3 +23,31 @@
     top: rem(12);
   }
 }
+
+.navbar_button {
+  background: $action-color;
+  border-left: $navbar-button-border;
+  border-radius: 0;
+  border-right: $navbar-button-border;
+  float: right;
+  height: 100%;
+  margin-right: rem(-3);
+  padding: $navbar-button-padding--mobile;
+
+  @include media(min-width $breakpoint-b) {
+    padding: $navbar-button-padding;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: shade($action-color-darker, 5%);
+  }
+}
+
+.navbar_button-text {
+  display: none;
+
+  @include media(min-width $breakpoint-b) {
+    display: inline;
+  }
+}

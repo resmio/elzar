@@ -1,15 +1,26 @@
-<table class="table">
-  <thead class="table__header">
-    <tr>
-      <th class="table-heading">Guest name</th>
-      <th class="table-heading">Contact info</th>
-      <th class="table-heading" data-show-from="breakpoint-b">Newsletter</th>
-      <th class="table-heading" data-show-from="breakpoint-b">Email verified</th>
-    </tr>
-  </thead>
-  <tbody class="table__body">
+<div class="table">
 
-    <tr class="table-row">
+  <div class="table_header">
+    <span class="table_heading--guest">Guest name</span>
+    <span class="table_heading--contact">Contact info</span>
+  </div>
+
+  <div class="table_body">
+    <div class="table_row">
+      <div class="table_cell--guest">
+        John Nada
+      </div>
+      <div class="table_cell--contact">
+        <svg viewBox="0 0 100 100" class="icon" data-stroke-color="grey">
+          <use xlink:href="#symbol-phone"></use>
+        </svg>
+        <svg viewBox="0 0 100 100" class="icon" data-stroke-color="grey">
+          <use xlink:href="#symbol-email"></use>
+        </svg>
+      </div>
+    </div>
+
+    <!-- <tr class="table-row">
       <td class="table-cell--guest-name" >John Nada</td>
       <td>
         <svg viewBox="0 0 100 100" class="icon" data-stroke-color="grey">
@@ -27,6 +38,6 @@
           <use xlink:href="#symbol-close"></use>
         </svg>
       </td>
-    </tr>
-  </tbody>
-</table>
+    </tr> -->
+  </div>
+</div>
