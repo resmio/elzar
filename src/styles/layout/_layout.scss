@@ -26,10 +26,10 @@
   }
 }
 
-[data-show-from="breakpoint-b"] {
+[data-show-from="breakpoint-c"] {
   display: none;
 
-  @include media($breakpoint-b) {
+  @include media($breakpoint-c) {
     display: inline-block;
   }
 }
