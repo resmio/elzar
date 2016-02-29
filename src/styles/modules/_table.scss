@@ -12,7 +12,9 @@
 
 // Headings are the column names
 .table_heading--guest,
-.table_heading--contact {
+.table_heading--contact,
+.table_heading--newsletter,
+.table_heading--email {
   color: $nobel;
   font-weight: 400;
   line-height: rem(36);
@@ -36,16 +38,44 @@
   text-overflow: ellipsis;
 
   @include media($breakpoint-b) {
-    @include span-columns(3 of 6);
+    @include span-columns(2 of 6);
+  }
+
+  @include media($breakpoint-c) {
+    @include span-columns(5 of 16);
   }
 }
 
 .table_heading--contact,
 .table_cell--contact {
   @include span-columns(2 of 6);
+  @include omega;
   padding-left: 10px;
 
   @include media($breakpoint-b) {
-    @include span-columns(3 of 6);
+    @include span-columns(4 of 6);
+    @include omega;
+  }
+
+  @include media($breakpoint-c) {
+    @include span-columns(7 of 16);
+  }
+
+  .icon:nth-child(n+2) {
+    // Adds a padding to all icons but first
+    padding-left: rem(10);
+  }
+}
+
+.table_heading--newsletter,
+.table_heading--email,
+.table_cell--newsletter,
+.table_cell--email {
+  display: none;
+  text-align: center;
+
+  @include media($breakpoint-c) {
+    @include span-columns(2 of 16);
+    display: block;
   }
 }

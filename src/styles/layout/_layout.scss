@@ -1,17 +1,27 @@
 // This rules should be very few,
 // So we put them in this file directly.
 .hidden {
-  display: none;
+  @include hide-text;
 }
 
 .container--main {
   background: $white-smoke;
 }
 
+// Create a function that does this, we need to put the breakpoints into an
+// array and loop through them
 [data-show-from="breakpoint-a"] {
   display: none;
 
   @include media($breakpoint-a) {
+    display: inline-block;
+  }
+}
+
+[data-show-from="breakpoint-b"] {
+  display: none;
+
+  @include media($breakpoint-b) {
     display: inline-block;
   }
 }
