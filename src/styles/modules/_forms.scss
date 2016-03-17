@@ -12,14 +12,14 @@
   }
 }
 
-.messages_feedback {
+.elzar-messages_feedback {
 
-  .form-list & {
+  .elzar-form-list & {
     margin-top: rem(-2);
   }
 }
 
-.form-list_element {
+.elzar-form-list_element {
   border-radius: none;
   margin-bottom: rem(16);
   //remove white space between input field and error box.
@@ -27,21 +27,21 @@
   min-width: $min-component-width;
 }
 
-.form-error {
+.elzar-form-error {
   @include form-feedback(
     'svg/symbol-close.svg',
     $error-color
   );
 }
 
-.form-success {
+.elzar-form-success {
   @include form-feedback(
     'svg/symbol-check.svg',
     $success-color
   );
 }
 
-.form-warning {
+.elzar-form-warning {
   @include form-feedback(
     'svg/symbol-warning.svg',
     $warning-color

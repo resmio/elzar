@@ -8,7 +8,7 @@
   width: 100%;
 }
 
-.message_container {
+.elzar-message_container {
   margin: 0 auto;
   min-width: $min-component-width;
   width: 80%;
@@ -22,42 +22,42 @@
    }
 }
 
-.alert-box--success {
+.elzar-alert-box--success {
   @include alert-box (
     'svg/symbol-success.svg',
     $success-color
   );
 }
 
-.alert-box--warning {
+.elzar-alert-box--warning {
   @include alert-box (
     'svg/symbol-alert-warning.svg',
     $warning-color
   );
 }
 
-.alert-box--error {
+.elzar-alert-box--error {
   @include alert-box (
     'svg/symbol-alert-error.svg',
     $error-color
   );
 }
 
-.close_alert {
+.elzar-close_alert {
   text-align: right;
 
   &:hover {
     cursor: pointer;
   }
 
-  .close_icon {
+  .elzar-close_icon {
     position: absolute;
     right: rem(7);
     top: rem(7);
   }
 }
 
-.alert_content {
+.elzar-alert_content {
   border: $base-border;
   border-radius: $base-border-radius;
   margin: 0 auto;
@@ -65,23 +65,23 @@
   text-align: center;
 }
 
-.alert_text {
+.elzar-alert_text {
   padding-bottom: 10px;
 }
 
-.alert_text--success {
+.elzar-alert_text--success {
   color: $success-color;
 }
 
-.alert_text--warning {
+.elzar-alert_text--warning {
   color: $warning-color;
 }
 
-.alert_text--error {
+.elzar-alert_text--error {
   color: $error-color;
 }
 
-.alert_btn {
+.elzar-alert_btn {
   color: $nobel;
   padding-left: 60px;
 

@@ -1,4 +1,4 @@
-.container {
+.elzar-container {
   align-items: center;
   background-color: $white-smoke;
   display: flex;
@@ -11,9 +11,9 @@
   }
 }
 
-.content--centered {
+.elzar-content--centered {
 
-  .container & {
+  .elzar-container & {
     margin: 0 auto;
   }
 }

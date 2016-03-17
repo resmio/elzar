@@ -1,4 +1,4 @@
-.banner {
+.elzar-banner {
   @include fill-parent();
   background: $blue;
   color: $white;
@@ -8,12 +8,12 @@
   padding: $banner-padding;
 }
 
-.banner__header {
+.elzar-banner__header {
   font-size: em(22, 14);
   line-height: em(30, 14);
 }
 
-.banner__text {
+.elzar-banner__text {
   font-size: em(18, 14);
   line-height: em(22, 14);
 }

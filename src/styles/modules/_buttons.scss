@@ -1,4 +1,4 @@
-.btn-large {
+.elzar-btn-large {
   background: $action-color;
   border-left: $large-buttons-border;
   border-radius: 0;
@@ -18,9 +18,9 @@
   }
 }
 
-.btn_text {
+.elzar-btn_text {
 
-  .btn-large & {
+  .elzar-btn-large & {
     display: none;
 
     @include media(min-width $breakpoint-b) {
@@ -30,7 +30,7 @@
 }
 
 
-.btn-light {
+.elzar-btn-light {
   background: none;
   border: 1px solid $action-color;
   color: $action-color;
@@ -40,7 +40,7 @@
   }
 }
 
-.btn-link {
+.elzar-btn-link {
   background: none;
   color: $hiperlink-color;
   padding: 0;
@@ -54,7 +54,7 @@
   }
 }
 
-.btn-secondary {
+.elzar-btn-secondary {
   background: $very-light-grey;
 
   &:hover {

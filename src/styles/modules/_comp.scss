@@ -1,4 +1,4 @@
-.container_comp {
+.elzar-container_comp {
   @include row;
   background: $pacific-blue;
 
@@ -8,7 +8,7 @@
   }
 }
 
-.comp1 {
+.elzar-comp1 {
   background-color: $amaranth;
   display: none;
   height: 300px;
@@ -18,7 +18,7 @@
   }
 }
 
-.comp2 {
+.elzar-comp2 {
   background-color: $shamrock;
   display: none;
   height: 300px;
@@ -28,7 +28,7 @@
   }
 }
 
-.comp3 {
+.elzar-comp3 {
   background-color: $golden-tainoi;
   display: none;
   height: 300px;

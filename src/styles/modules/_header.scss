@@ -1,4 +1,4 @@
-.header {
+.elzar-header {
   background: $white;
   box-shadow: 0 rem(1) rem(2) $gainsboro;
   min-width: rem(320);
@@ -14,28 +14,28 @@
   }
 }
 
-.text_container {
+.elzar-text_container {
   @include media (min-width $breakpoint-b) {
     width: 75%;
   }
 
-  .header & {
+  .elzar-header & {
     width: 100%;
   }
 }
 
-.btn_container {
+.elzar-btn_container {
   width: 25%;
 }
 
-.btn-secondary {
+.elzar-btn-secondary {
 
-  .header & {
+  .elzar-header & {
     float: none;
     margin-top: rem(15);
   }
 
-  .btn_container & {
+  .elzar-btn_container & {
     @include media (min-width $breakpoint-b) {
       float: right;
       margin-left: rem(30);
