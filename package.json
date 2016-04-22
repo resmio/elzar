@@ -1,6 +1,6 @@
 {
   "name": "elzar",
-  "version": "0.1.8-beta.3",
+  "version": "0.1.8-beta.4",
   "description": "resmio glamourous style guide in sass mode",
   "main": "index.js",
   "scripts": {
