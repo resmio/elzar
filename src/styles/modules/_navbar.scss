@@ -1,4 +1,4 @@
-.navbar {
+.elzar-navbar {
   background: $pacific-blue;
   height: $navbar_height;
   min-width: rem(320);
@@ -11,9 +11,9 @@
   }
 }
 
-.navbar_title {
+.elzar-navbar_title {
 
-  .navbar & {
+  .elzar-navbar & {
     color: $white;
     display: inline;
     font-size: $font-headers-size;

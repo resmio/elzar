@@ -1,12 +1,12 @@
 // The dropdown wrapper (div)
-.dropdown {
+.elzar-dropdown {
   // We remove the margin from the dropdown button to make the list append to it
   // So we apply it here for the button to have margins when closed
   margin-bottom: $button-margin;
   position: relative;
 }
 
-.dropdown_btn {
+.elzar-dropdown_btn {
   background-color: $white;
   border: $base-border;
   color: $nobel;
@@ -31,7 +31,7 @@
 
 
 // The dropdown menu (ul)
-.dropdown_list {
+.elzar-dropdown_list {
   background-clip: padding-box;
   background-color: $white;
   border: 1px solid $pacific-blue;
@@ -59,7 +59,7 @@
 }
 
 // `<button>`-specific styles are denoted with `// for <button>s`
-.dropdown_item {
+.elzar-dropdown_item {
   background: none; // For `<button>`s
   border: 0; // For `<button>`s
   clear: both;
@@ -77,13 +77,13 @@
   }
 }
 
-.dropdown_link {
+.elzar-dropdown_link {
   color: $mattherhorn;
 }
 
-.dropdown_colored {
+.elzar-dropdown_colored {
 
-  .dropdown_btn {
+  .elzar-dropdown_btn {
     background-color: $pacific-blue;
     border: $large-buttons-border;
     color: $white;
@@ -98,21 +98,21 @@
     }
   }
 
-  .dropdown_list {
+  .elzar-dropdown_list {
     width: rem(250);
   }
 }
 
-.dropdown_icon {
+.elzar-dropdown_icon {
   height: rem(15);
   margin-left: rem(5);
   stroke: $nobel;
 
-  .dropdown_btn:focus & {
+  .elzar-dropdown_btn:focus & {
     stroke: $pacific-blue;
   }
 
-  .dropdown_colored & {
+  .elzar-dropdown_colored & {
     stroke: $white;
 
     &:focus & {

@@ -1,7 +1,6 @@
 body {
   color: $base-font-color;
   font-family: $base-font-family;
-  font-feature-settings: "kern", "liga", "pnum";
   font-size: $base-font-size;
   line-height: $base-line-height;
 }
@@ -35,13 +34,13 @@ a {
   }
 }
 
-hr {
-  border-bottom: $base-border;
-  border-left: 0;
-  border-right: 0;
-  border-top: 0;
-  margin: $base-spacing 0;
-}
+// hr {
+//   border-bottom: $base-border;
+//   border-left: 0;
+//   border-right: 0;
+//   border-top: 0;
+//   margin: $base-spacing 0;
+// }
 
 img,
 picture {
@@ -49,15 +48,15 @@ picture {
   max-width: 100%;
 }
 
-.big_text{
+.elzar-big_text{
     font-size: $font-big-size;
 }
 
-.medium_text{
+.elzar-medium_text{
   font-size: $font-medium-size;
   font-weight: 100;
 }
 
-.small_text{
+.elzar-small_text{
   font-size: $font-small-size;
 }

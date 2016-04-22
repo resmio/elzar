@@ -1,12 +1,12 @@
 // The dropdown wrapper (div)
-.status {
+.elzar-status {
   // We remove the margin from the dropdown button to make the list append to it
   // So we apply it here for the button to have margins when closed
   margin-bottom: $button-margin;
   position: relative;
 }
 
-.btn_status {
+.elzar-btn_status {
   background-color: $very-light-grey;
   border-radius: 0;
   height: $status-height;
@@ -28,7 +28,7 @@
 }
 
 // The status button menu (ul)
-.status_list {
+.elzar-status_list {
   background-clip: padding-box;
   background-color: $white;
   border: 1px solid $gainsboro;
@@ -49,7 +49,7 @@
    }
 
   // Show the menu
-  .open & {
+  .elzar-open & {
     display: block;
     // Remove the outline when :focus is triggered
     a {
@@ -61,7 +61,7 @@
 // Links, buttons, and more within the dropdown menu
 //
 // `<button>`-specific styles are denoted with `// for <button>s`
-.status_item {
+.elzar-status_item {
   background: none; // For `<button>`s
   border: 0; // For `<button>`s
   clear: both;
@@ -79,11 +79,11 @@
   }
 }
 
-.status_item--selected {
+.elzar-status_item--selected {
   opacity: 0.4;
 }
 
-.status_link {
+.elzar-status_link {
   color: $mattherhorn;
 
   &:hover {
@@ -91,16 +91,16 @@
   }
 }
 
-.status_icon {
-  .btn_status & {
+.elzar-status_icon {
+  .elzar-btn_status & {
     height: rem(30);
     stroke: $white;
   }
 }
 
-.arrow_icon {
+.elzar-arrow_icon {
 
-  .btn_status & {
+  .elzar-btn_status & {
     float: right;
     //only way to be aligned – maybe we should have a better way?
     margin: rem(5) rem(16) 0 0;
@@ -115,7 +115,7 @@
 }
 
 //Diferente states:
-.status--active {
+.elzar-status--active {
   background-color: $shamrock;
 
   &:hover {
@@ -127,7 +127,7 @@
   }
 }
 
-.status--cancelled {
+.elzar-status--cancelled {
   background-color: $amaranth;
 
   &:hover {
@@ -139,7 +139,7 @@
   }
 }
 
-.status--no-show {
+.elzar-status--no-show {
   background-color: $dark-orange;
 
   &:hover {

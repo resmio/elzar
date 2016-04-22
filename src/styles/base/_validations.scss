@@ -1,21 +1,21 @@
-.messages-all{
+.elzar-messages-all{
   opacity:0.9;
   padding: 0 rem(10) rem(3);
 }
 
-.success-messages{
+.elzar-success-messages{
   background-color: $success-color;
 }
 
-.error-messages{
+.elzar-error-messages{
   background-color: $error-color;
 }
 
-.warning-messages{
+.elzar-warning-messages{
   background-color: $warning-color;
 }
 
-.message{
+.elzar-message{
   color: $white;
   font-size: $font-small-size;
 }
