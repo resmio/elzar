@@ -1,14 +1,11 @@
 {
   "name": "elzar",
-  "version": "0.1.8-beta.4",
+  "version": "0.1.8-beta.5",
   "description": "resmio glamourous style guide in sass mode",
   "main": "index.js",
   "scripts": {
     "lint": "cd src && eslint . --ext .js --ext .jsx --fix --cache; exit 0",
     "test": "cd src/__tests__ && babel-node --presets es2015,react testSuite.js | faucet"
-  },
-  "engines": {
-    "npm": "~3.3"
   },
   "repository": {
     "type": "git",
